@@ -1,0 +1,1092 @@
+{
+  "course_id": "math",
+  "level": "section",
+  "strategy": "llm",
+  "toc_path": "C:\\Users\\duyan\\Code\\aithucchien\\als_pro\\adaptive-learning-ai\\data\\tocs\\linear_algebra.txt",
+  "toc_mtime": 1775893071.4028387,
+  "modules": [
+    {
+      "module_id": "math:2.1",
+      "course_id": "math",
+      "title": "Linear equations: the beginning of algebra",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Linear Equations and Matrices",
+      "toc_number": "2.1",
+      "start_page": 15,
+      "level": "section",
+      "selection_reason": "This section teaches core concepts of linear equations, which are fundamental to understanding matrices and vector spaces. It is essential for building mental models and will be frequently reused in later topics."
+    },
+    {
+      "module_id": "math:2.2",
+      "course_id": "math",
+      "title": "Matrices",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Linear Equations and Matrices",
+      "toc_number": "2.2",
+      "start_page": 18,
+      "level": "section",
+      "selection_reason": "Matrices are a core concept in linear algebra that learners will frequently use in solving linear equations and understanding vector spaces. This section is essential for building foundational knowledge and skills that are necessary for later topics."
+    },
+    {
+      "module_id": "math:2.3",
+      "course_id": "math",
+      "title": "Reduced Row Echelon Form and Row Operations",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Linear Equations and Matrices",
+      "toc_number": "2.3",
+      "start_page": 23,
+      "level": "section",
+      "selection_reason": "This section teaches core concepts essential for solving linear equations and understanding matrix operations, which are foundational for later topics. Learners will frequently apply these concepts in various contexts, making it crucial for their success in the course."
+    },
+    {
+      "module_id": "math:2.4",
+      "course_id": "math",
+      "title": "Solving Linear Systems via Gaussian Reduction",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Linear Equations and Matrices",
+      "toc_number": "2.4",
+      "start_page": 26,
+      "level": "section",
+      "selection_reason": "This section teaches a core concept essential for solving linear systems, which is fundamental to understanding linear algebra. Learners will frequently apply Gaussian reduction in later topics, making it critical for their success."
+    },
+    {
+      "module_id": "math:3.1",
+      "course_id": "math",
+      "title": "Matrix Multiplication",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "More Matrix Theory",
+      "toc_number": "3.1",
+      "start_page": 37,
+      "level": "section",
+      "selection_reason": "Matrix multiplication is a core concept in linear algebra that learners will frequently use in various applications. Understanding this topic is essential for grasping more advanced concepts and solving problems related to matrices and vector spaces."
+    },
+    {
+      "module_id": "math:3.2",
+      "course_id": "math",
+      "title": "Elementary Matrices and Row Operations",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "More Matrix Theory",
+      "toc_number": "3.2",
+      "start_page": 43,
+      "level": "section",
+      "selection_reason": "This section teaches core concepts related to matrices and row operations, which are fundamental for understanding vector spaces and solving linear equations. Learners will frequently apply this knowledge in subsequent topics, making it essential for their success in the course."
+    },
+    {
+      "module_id": "math:3.3",
+      "course_id": "math",
+      "title": "Matrix Inverses",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "More Matrix Theory",
+      "toc_number": "3.3",
+      "start_page": 49,
+      "level": "section",
+      "selection_reason": "Matrix inverses are a core concept in linear algebra that learners will frequently use in solving systems of equations and understanding transformations. This section is essential for building foundational knowledge that supports later topics in the course."
+    },
+    {
+      "module_id": "math:3.4",
+      "course_id": "math",
+      "title": "The LPDU Factorization",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "More Matrix Theory",
+      "toc_number": "3.4",
+      "start_page": 59,
+      "level": "section",
+      "selection_reason": "The LPDU Factorization teaches a core concept in matrix theory that is essential for understanding advanced topics in linear algebra. It provides actionable steps for learners to apply immediately, and later topics will depend on this knowledge for problem-solving."
+    },
+    {
+      "module_id": "math:4.1",
+      "course_id": "math",
+      "title": "What is a Field?",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Fields and Vector Spaces",
+      "toc_number": "4.1",
+      "start_page": 75,
+      "level": "section",
+      "selection_reason": "This section teaches a core concept essential for understanding vector spaces and operations in linear algebra. It is foundational knowledge that learners will frequently apply in later topics."
+    },
+    {
+      "module_id": "math:4.2",
+      "course_id": "math",
+      "title": "The Integers Modulo a Prime p",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Fields and Vector Spaces",
+      "toc_number": "4.2",
+      "start_page": 84,
+      "level": "section",
+      "selection_reason": "This section teaches a core concept essential for understanding vector spaces and fields, which are foundational in linear algebra. Learners will apply this knowledge in various contexts, making it crucial for their success in the course."
+    },
+    {
+      "module_id": "math:4.3",
+      "course_id": "math",
+      "title": "The Field of Complex Numbers",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Fields and Vector Spaces",
+      "toc_number": "4.3",
+      "start_page": 93,
+      "level": "section",
+      "selection_reason": "This section teaches core concepts essential for understanding vector spaces and complex number operations, which are fundamental in linear algebra. Learners will frequently apply this knowledge in later topics, making it crucial for their success."
+    },
+    {
+      "module_id": "math:4.4",
+      "course_id": "math",
+      "title": "Vector Spaces",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Fields and Vector Spaces",
+      "toc_number": "4.4",
+      "start_page": 98,
+      "level": "section",
+      "selection_reason": "This section teaches core concepts essential for understanding linear algebra, directly supports the course objectives, and is foundational for later topics. Learners will frequently apply this knowledge in various contexts, making it crucial for their success."
+    },
+    {
+      "module_id": "math:4.5",
+      "course_id": "math",
+      "title": "Inner Product Spaces",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Fields and Vector Spaces",
+      "toc_number": "4.5",
+      "start_page": 105,
+      "level": "section",
+      "selection_reason": "Inner Product Spaces are a core concept in linear algebra that are essential for understanding vector spaces and their properties. This knowledge is foundational for later topics and will be frequently applied in various contexts."
+    },
+    {
+      "module_id": "math:4.6",
+      "course_id": "math",
+      "title": "Subspaces and Spanning Sets",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Fields and Vector Spaces",
+      "toc_number": "4.6",
+      "start_page": 112,
+      "level": "section",
+      "selection_reason": "This section teaches core concepts essential for understanding vector spaces and their properties, which are foundational for later topics. Learners will apply this knowledge frequently in problem-solving and further studies in linear algebra."
+    },
+    {
+      "module_id": "math:5.1",
+      "course_id": "math",
+      "title": "The Notion of Dimension",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Finite Dimensional Vector Spaces",
+      "toc_number": "5.1",
+      "start_page": 119,
+      "level": "section",
+      "selection_reason": "This section teaches a core concept essential for understanding vector spaces and their properties. It is foundational for later topics and will be frequently applied in problem-solving."
+    },
+    {
+      "module_id": "math:5.2",
+      "course_id": "math",
+      "title": "Bases and Dimension",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Finite Dimensional Vector Spaces",
+      "toc_number": "5.2",
+      "start_page": 126,
+      "level": "section",
+      "selection_reason": "This section teaches core concepts essential for understanding vector spaces, including how to identify bases and calculate dimensions, which are fundamental for later topics. Learners will frequently apply this knowledge in various contexts within linear algebra."
+    },
+    {
+      "module_id": "math:5.3",
+      "course_id": "math",
+      "title": "Some Results on Matrices",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Finite Dimensional Vector Spaces",
+      "toc_number": "5.3",
+      "start_page": 135,
+      "level": "section",
+      "selection_reason": "This section likely presents core results that are fundamental to understanding matrices, which are essential for later topics in linear algebra. Learners will need to apply these results in problem-solving and will benefit from guidance on their implications."
+    },
+    {
+      "module_id": "math:5.4",
+      "course_id": "math",
+      "title": "Intersections and Sums of Subspaces",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Finite Dimensional Vector Spaces",
+      "toc_number": "5.4",
+      "start_page": 141,
+      "level": "section",
+      "selection_reason": "This section teaches core concepts related to vector spaces that are essential for understanding linear combinations and dimensionality. Learners will frequently apply these concepts in later topics, making it crucial for their overall comprehension."
+    },
+    {
+      "module_id": "math:5.5",
+      "course_id": "math",
+      "title": "Vector Space Quotients",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Finite Dimensional Vector Spaces",
+      "toc_number": "5.5",
+      "start_page": 148,
+      "level": "section",
+      "selection_reason": "This section teaches a core concept essential for understanding the structure of vector spaces and their relationships, which learners will apply in later topics. It is fundamental for building mental models and solving problems related to vector spaces."
+    },
+    {
+      "module_id": "math:6.1",
+      "course_id": "math",
+      "title": "Linear Codes",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Linear Coding Theory",
+      "toc_number": "6.1",
+      "start_page": 155,
+      "level": "section",
+      "selection_reason": "Linear Codes teach core concepts essential for understanding coding theory and are applicable in various contexts, making them fundamental for learners' future problem-solving. Skipping this section would hinder comprehension of subsequent topics in Linear Coding Theory."
+    },
+    {
+      "module_id": "math:6.2",
+      "course_id": "math",
+      "title": "Error-Correcting Codes",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Linear Coding Theory",
+      "toc_number": "6.2",
+      "start_page": 162,
+      "level": "section",
+      "selection_reason": "Error-correcting codes are fundamental concepts in linear coding theory that teach learners how to detect and correct errors in data transmission. This knowledge is essential for understanding applications in computer science and telecommunications, making it a core part of the course objectives."
+    },
+    {
+      "module_id": "math:6.3",
+      "course_id": "math",
+      "title": "Codes With Large Minimal Distance",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Linear Coding Theory",
+      "toc_number": "6.3",
+      "start_page": 166,
+      "level": "section",
+      "selection_reason": "This section teaches core concepts related to coding theory and minimal distance, which are essential for understanding error correction in linear codes. Learners will apply this knowledge in practical coding scenarios, making it crucial for their overall understanding of the subject."
+    },
+    {
+      "module_id": "math:6.4",
+      "course_id": "math",
+      "title": "Perfect Linear Codes",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Linear Coding Theory",
+      "toc_number": "6.4",
+      "start_page": 170,
+      "level": "section",
+      "selection_reason": "This section teaches core concepts related to linear coding theory, which are essential for understanding error correction in coding. Learners will apply this knowledge in practical scenarios and later topics will depend on this foundational understanding."
+    },
+    {
+      "module_id": "math:7.1",
+      "course_id": "math",
+      "title": "Definitions and Examples",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Linear Transformations",
+      "toc_number": "7.1",
+      "start_page": 183,
+      "level": "section",
+      "selection_reason": "This section teaches core concepts and provides essential definitions that are foundational for understanding linear transformations. Learners will frequently reference these definitions and examples to apply their knowledge in problem-solving."
+    },
+    {
+      "module_id": "math:7.2",
+      "course_id": "math",
+      "title": "Linear Transformations on Fn and Matrices",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Linear Transformations",
+      "toc_number": "7.2",
+      "start_page": 190,
+      "level": "section",
+      "selection_reason": "This section teaches core concepts of linear transformations and their relationship with matrices, which are fundamental for understanding vector spaces. Learners will apply this knowledge in subsequent topics, making it essential for their success in the course."
+    },
+    {
+      "module_id": "math:7.3",
+      "course_id": "math",
+      "title": "Geometry of Linear Transformations on Rn",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Linear Transformations",
+      "toc_number": "7.3",
+      "start_page": 196,
+      "level": "section",
+      "selection_reason": "This section teaches core concepts related to the geometric interpretation of linear transformations, which is essential for understanding vector spaces and their applications. Learners will frequently apply this knowledge in later topics, making it crucial for their overall success in the course."
+    },
+    {
+      "module_id": "math:7.4",
+      "course_id": "math",
+      "title": "The Matrix of a Linear Transformation",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Linear Transformations",
+      "toc_number": "7.4",
+      "start_page": 202,
+      "level": "section",
+      "selection_reason": "This section teaches a core concept essential for understanding linear transformations and their applications. It is foundational for later topics and will be frequently used in problem-solving."
+    },
+    {
+      "module_id": "math:7.5",
+      "course_id": "math",
+      "title": "Further Results on Linear Transformations",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Linear Transformations",
+      "toc_number": "7.5",
+      "start_page": 214,
+      "level": "section",
+      "selection_reason": "This section likely presents additional core concepts and results that deepen understanding of linear transformations, which are essential for later topics. Learners will benefit from applying these results in practical scenarios, making it integral to their learning process."
+    },
+    {
+      "module_id": "math:8.1",
+      "course_id": "math",
+      "title": "The Definition of the Determinant",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "An Introduction to the Theory of Determinants",
+      "toc_number": "8.1",
+      "start_page": 227,
+      "level": "section",
+      "selection_reason": "This section teaches a core concept essential for understanding determinants, which are fundamental in linear algebra. It is necessary for later topics and will be frequently used in problem-solving."
+    },
+    {
+      "module_id": "math:8.2",
+      "course_id": "math",
+      "title": "Determinants and Row Operations",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "An Introduction to the Theory of Determinants",
+      "toc_number": "8.2",
+      "start_page": 236,
+      "level": "section",
+      "selection_reason": "This section teaches core concepts related to determinants and their application in row operations, which are essential for understanding matrix theory. Learners will frequently apply this knowledge in solving linear algebra problems, making it crucial for their success in the course."
+    },
+    {
+      "module_id": "math:8.3",
+      "course_id": "math",
+      "title": "Some Further Properties of the Determinant",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "An Introduction to the Theory of Determinants",
+      "toc_number": "8.3",
+      "start_page": 244,
+      "level": "section",
+      "selection_reason": "This section likely teaches additional core concepts related to determinants that are essential for understanding their properties and applications. Learners will benefit from this knowledge in future topics and problem-solving scenarios."
+    },
+    {
+      "module_id": "math:8.4",
+      "course_id": "math",
+      "title": "Geometric Applications of the Determinant",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "An Introduction to the Theory of Determinants",
+      "toc_number": "8.4",
+      "start_page": 251,
+      "level": "section",
+      "selection_reason": "This section teaches core concepts related to the geometric interpretation of determinants, which is essential for understanding their applications in linear transformations. Learners will frequently use this knowledge in later topics, making it crucial for their overall comprehension of the subject."
+    },
+    {
+      "module_id": "math:9.1",
+      "course_id": "math",
+      "title": "Dynamical Systems",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Eigen theory",
+      "toc_number": "9.1",
+      "start_page": 257,
+      "level": "section",
+      "selection_reason": "Dynamical Systems teaches core concepts related to the behavior of systems over time, which is essential for understanding eigen theory and its applications. This knowledge is frequently reused in various contexts, making it critical for learners' success."
+    },
+    {
+      "module_id": "math:9.2",
+      "course_id": "math",
+      "title": "Eigen theory: the Basic Definitions",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Eigen theory",
+      "toc_number": "9.2",
+      "start_page": 263,
+      "level": "section",
+      "selection_reason": "This section teaches core concepts essential for understanding eigenvalues and eigenvectors, which are fundamental to linear algebra. Learners will frequently apply these definitions in later topics, making it crucial for their overall comprehension."
+    },
+    {
+      "module_id": "math:9.3",
+      "course_id": "math",
+      "title": "Eigenvectors and Diagonalizability",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Eigen theory",
+      "toc_number": "9.3",
+      "start_page": 274,
+      "level": "section",
+      "selection_reason": "This section teaches core concepts essential for understanding eigen theory and diagonalization, which are fundamental in linear algebra. Learners will frequently apply this knowledge in solving problems related to matrix transformations and systems of equations."
+    },
+    {
+      "module_id": "math:9.4",
+      "course_id": "math",
+      "title": "When is a Matrix Diagonalizable?",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Eigen theory",
+      "toc_number": "9.4",
+      "start_page": 280,
+      "level": "section",
+      "selection_reason": "This section teaches a core concept essential for understanding eigen theory and matrix behavior, which learners will apply in various contexts. It is fundamental for later topics and requires explanation and examples to grasp fully."
+    },
+    {
+      "module_id": "math:9.5",
+      "course_id": "math",
+      "title": "The Exponential of a Matrix",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Eigen theory",
+      "toc_number": "9.5",
+      "start_page": 291,
+      "level": "section",
+      "selection_reason": "This section teaches a core concept that is essential for understanding advanced topics in linear algebra, such as differential equations and stability analysis. Learners will apply this knowledge in various contexts, making it crucial for their overall understanding of the subject."
+    },
+    {
+      "module_id": "math:10.1",
+      "course_id": "math",
+      "title": "The Orthogonal Projection on a Subspace",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "The Inner Product Spaces Rn and Cn",
+      "toc_number": "10.1",
+      "start_page": 297,
+      "level": "section",
+      "selection_reason": "This section teaches a core concept essential for understanding inner product spaces and vector projections, which are fundamental in linear algebra. Learners will apply this knowledge frequently in solving problems related to vector spaces and will depend on it for later topics."
+    },
+    {
+      "module_id": "math:10.2",
+      "course_id": "math",
+      "title": "Orthonormal Sets",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "The Inner Product Spaces Rn and Cn",
+      "toc_number": "10.2",
+      "start_page": 308,
+      "level": "section",
+      "selection_reason": "Orthonormal sets are a core concept in inner product spaces that are essential for understanding vector spaces and their properties. This knowledge is frequently applied in various linear algebra problems and is foundational for later topics."
+    },
+    {
+      "module_id": "math:10.3",
+      "course_id": "math",
+      "title": "Gram-Schmidt and the QR-Factorization",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "The Inner Product Spaces Rn and Cn",
+      "toc_number": "10.3",
+      "start_page": 314,
+      "level": "section",
+      "selection_reason": "This section teaches core concepts related to orthogonalization and matrix factorization, which are essential for understanding inner product spaces and have practical applications in various areas of linear algebra. Skipping this would hinder learners' ability to grasp more advanced topics that build on these foundational techniques."
+    },
+    {
+      "module_id": "math:10.5",
+      "course_id": "math",
+      "title": "The Group of Rotations of R3",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "The Inner Product Spaces Rn and Cn",
+      "toc_number": "10.5",
+      "start_page": 324,
+      "level": "section",
+      "selection_reason": "This section teaches core concepts related to transformations in vector spaces, which are essential for understanding inner product spaces. Learners will apply this knowledge in various contexts, making it foundational for later topics."
+    },
+    {
+      "module_id": "math:11.1",
+      "course_id": "math",
+      "title": "The Normal Matrix Theorem",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Unitary Diagonalization Theorems",
+      "toc_number": "11.1",
+      "start_page": 333,
+      "level": "section",
+      "selection_reason": "The Normal Matrix Theorem teaches a core concept essential for understanding unitary diagonalization and is foundational for later topics in linear algebra. Learners will apply this theorem in various contexts, making it crucial for their overall understanding."
+    },
+    {
+      "module_id": "math:11.2",
+      "course_id": "math",
+      "title": "The Principal Axis Theorem",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Unitary Diagonalization Theorems",
+      "toc_number": "11.2",
+      "start_page": 340,
+      "level": "section",
+      "selection_reason": "The Principal Axis Theorem teaches a core concept essential for understanding unitary diagonalization and has practical applications in solving problems related to quadratic forms. Skipping this section would hinder learners' ability to grasp later topics that build on this foundational theorem."
+    },
+    {
+      "module_id": "math:11.3",
+      "course_id": "math",
+      "title": "Diagonalization of Self Adjoint Operators",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Unitary Diagonalization Theorems",
+      "toc_number": "11.3",
+      "start_page": 347,
+      "level": "section",
+      "selection_reason": "This section teaches a core concept essential for understanding unitary diagonalization and self-adjoint operators, which are fundamental in linear algebra. Learners will apply this knowledge in future topics and problem-solving scenarios."
+    },
+    {
+      "module_id": "math:12.1",
+      "course_id": "math",
+      "title": "Quadratic Forms",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Some Applications of Eigen theory",
+      "toc_number": "12.1",
+      "start_page": 357,
+      "level": "section",
+      "selection_reason": "Quadratic forms are essential for understanding eigen theory applications, influencing problem-solving and conceptual frameworks in linear algebra. Learners will frequently apply this knowledge in later topics, making it crucial for their success."
+    },
+    {
+      "module_id": "math:12.2",
+      "course_id": "math",
+      "title": "Symmetric Matrices and Graph Theory",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Some Applications of Eigen theory",
+      "toc_number": "12.2",
+      "start_page": 367,
+      "level": "section",
+      "selection_reason": "This section teaches core concepts related to symmetric matrices and their applications in graph theory, which are essential for understanding eigen theory. Learners will apply this knowledge in future topics and problem-solving scenarios."
+    },
+    {
+      "module_id": "math:12.3",
+      "course_id": "math",
+      "title": "Computing Eigenvalues",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Some Applications of Eigen theory",
+      "toc_number": "12.3",
+      "start_page": 370,
+      "level": "section",
+      "selection_reason": "This section teaches a core concept essential for understanding eigen theory and is necessary for solving problems related to eigenvalues in various applications. Learners will frequently apply this knowledge in later topics, making it crucial for their overall understanding."
+    },
+    {
+      "module_id": "math:13.1",
+      "course_id": "math",
+      "title": "The Main Result",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "The Jordan Decomposition Theorem",
+      "toc_number": "13.1",
+      "start_page": 378,
+      "level": "section",
+      "selection_reason": "This section teaches a core concept essential for understanding the Jordan Decomposition Theorem, which learners will apply in later topics. It is fundamental for building mental models and solving related problems in linear algebra."
+    },
+    {
+      "module_id": "math:13.2",
+      "course_id": "math",
+      "title": "Further Results on Linear Transformations",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "The Jordan Decomposition Theorem",
+      "toc_number": "13.2",
+      "start_page": 386,
+      "level": "section",
+      "selection_reason": "This section likely teaches core concepts related to linear transformations that are essential for understanding the Jordan Decomposition Theorem. It will provide actionable insights and frameworks that learners can apply in future contexts, making it integral to their learning progression."
+    },
+    {
+      "module_id": "math:14.1",
+      "course_id": "math",
+      "title": "Basic Concepts",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Appendix: R2 and R3",
+      "toc_number": "14.1",
+      "start_page": 393,
+      "level": "section",
+      "selection_reason": "This section teaches core concepts essential for understanding linear algebra, which learners will reuse in later topics. It is foundational for building mental models and solving problems related to matrices and vector spaces."
+    },
+    {
+      "module_id": "math:14.2",
+      "course_id": "math",
+      "title": "Lines",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Appendix: R2 and R3",
+      "toc_number": "14.2",
+      "start_page": 394,
+      "level": "section",
+      "selection_reason": "This section teaches core concepts related to lines in R2 and R3, which are fundamental for understanding vector spaces and their applications. Learners will frequently use this knowledge in later topics, making it essential for their success."
+    },
+    {
+      "module_id": "math:14.3",
+      "course_id": "math",
+      "title": "The Inner Product",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Appendix: R2 and R3",
+      "toc_number": "14.3",
+      "start_page": 395,
+      "level": "section",
+      "selection_reason": "The Inner Product is a core concept in linear algebra that is essential for understanding vector spaces and their properties. It directly supports the course objective and is necessary for later topics, making it crucial for learners' success."
+    },
+    {
+      "module_id": "math:14.4",
+      "course_id": "math",
+      "title": "Planes",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Appendix: R2 and R3",
+      "toc_number": "14.4",
+      "start_page": 397,
+      "level": "section",
+      "selection_reason": "The concept of planes is fundamental in understanding vector spaces and their applications in linear algebra. It is essential for learners to grasp this concept to solve problems involving multidimensional spaces."
+    },
+    {
+      "module_id": "math:14.5",
+      "course_id": "math",
+      "title": "Orthogonal Decomposition and Projection",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Appendix: R2 and R3",
+      "toc_number": "14.5",
+      "start_page": 399,
+      "level": "section",
+      "selection_reason": "This section teaches core concepts related to vector spaces and projections, which are essential for understanding linear transformations. Learners will frequently apply these concepts in later topics, making it crucial for their overall success in the course."
+    },
+    {
+      "module_id": "math:14.6",
+      "course_id": "math",
+      "title": "The Cauchy-Schwartz Inequality and Cosines",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Appendix: R2 and R3",
+      "toc_number": "14.6",
+      "start_page": 401,
+      "level": "section",
+      "selection_reason": "This section teaches a core concept that is fundamental to understanding relationships in vector spaces and will be reused in various applications. It also requires explanation and examples to grasp fully, making it essential for learners' success."
+    },
+    {
+      "module_id": "math:14.7",
+      "course_id": "math",
+      "title": "Examples",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Appendix: R2 and R3",
+      "toc_number": "14.7",
+      "start_page": 402,
+      "level": "section",
+      "selection_reason": "The 'Examples' section teaches core concepts and provides actionable insights that learners can apply immediately. It is essential for understanding and reinforces the main topics, making it a critical part of the learning process."
+    },
+    {
+      "module_id": "math:14.8",
+      "course_id": "math",
+      "title": "The Cross Product",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Appendix: R2 and R3",
+      "toc_number": "14.8",
+      "start_page": 405,
+      "level": "section",
+      "selection_reason": "The Cross Product teaches a core concept in vector operations that is essential for understanding higher-dimensional geometry and physics. It is actionable, frequently used in applications, and foundational for later topics in linear algebra."
+    }
+  ]
+}

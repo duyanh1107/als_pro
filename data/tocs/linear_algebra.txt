@@ -1,0 +1,235 @@
+1 Introduction 11
+2 Linear Equations and Matrices 15
+2.1 Linear equations: the beginning of algebra 15
+2.2 Matrices 18
+2.2.1 Matrix Addition and Vectors 18
+2.2.2 Some Examples 19
+2.2.3 Matrix Product 21
+2.3 Reduced Row Echelon Form and Row Operations 23
+2.4 Solving Linear Systems via Gaussian Reduction 26
+2.4.1 Row Operations and Equivalent Systems 26
+2.4.2 The Homogeneous Case 27
+2.4.3 The Non-homogeneous Case 29
+2.4.4 Criteria for Consistency and Uniqueness 31
+2.5 Summary 36
+3 More Matrix Theory 37
+3.1 Matrix Multiplication 37
+3.1.1 The Transpose of a Matrix 39
+3.1.2 The Algebraic Laws 40
+3.2 Elementary Matrices and Row Operations 43
+3.2.1 Application to Linear Systems 46
+3.3 Matrix Inverses 49
+3.3.1 A Necessary and Sufficient Condition for Existence 50
+3.3.2 Methods for Finding Inverses 51
+3.3.3 Matrix Groups 53
+3.4 The LPDU Factorization 59
+3.4.1 The Basic Ingredients: L, P, D and U 59
+3.4.2 The Main Result 61
+3.4.3 Further Uniqueness in LPDU 65
+3.4.4 Further Uniqueness in LPDU 66
+3.4.5 The symmetric LDU decomposition 67
+3.4.6 LPDU and Reduced Row Echelon Form 68
+3.5 Summary 73
+4 Fields and Vector Spaces 75
+4.1 What is a Field? 75
+4.1.1 The Definition of a Field 75
+4.1.2 Arbitrary Sums and Products 79
+4.1.3 Examples 80
+4.1.4 An Algebraic Number Field 81
+4.2 The Integers Modulo a Prime p 84
+4.2.1 A Field with Four Elements 87
+4.2.2 The Characteristic of a Field 88
+4.2.3 Connections With Number Theory 89
+4.3 The Field of Complex Numbers 93
+4.3.1 The Construction 93
+4.3.2 The Geometry of C 95
+4.4 Vector Spaces 98
+4.4.1 The Notion of a Vector Space 98
+4.4.2 Examples 100
+4.5 Inner Product Spaces 105
+4.5.1 The Real Case 105
+4.5.2 Orthogonality 106
+4.5.3 Hermitian Inner Products 109
+4.6 Subspaces and Spanning Sets 112
+4.6.1 The Definition of a Subspace 112
+4.7 Summary 117
+5 Finite Dimensional Vector Spaces 119
+5.1 The Notion of Dimension 119
+5.1.1 Linear Independence 120
+5.1.2 The Definition of a Basis 122
+5.2 Bases and Dimension 126
+5.2.1 The Definition of Dimension 126
+5.2.2 Examples 127
+5.2.3 The Dimension Theorem 128
+5.2.4 An Application 130
+5.2.5 Examples 130
+5.3 Some Results on Matrices 135
+5.3.1 A Basis of the Column Space 135
+5.3.2 The Row Space of A and the Ranks of A and AT 136
+5.3.3 The Uniqueness of Row Echelon Form 138
+5.4 Intersections and Sums of Subspaces 141
+5.4.1 Intersections and Sums 141
+5.4.2 The Hausdorff Intersection Formula 142
+5.4.3 Direct Sums of Several Subspaces 144
+5.4.4 External Direct Sums 146
+5.5 Vector Space Quotients 148
+5.5.1 Equivalence Relations and Quotient Spaces 148
+5.5.2 Cosets 149
+5.6 Summary 154
+6 Linear Coding Theory 155
+6.1 Linear Codes 155
+6.1.1 The Notion of a Code 156
+6.1.2 Linear Codes Defined by Generating Matrices 157
+6.1.3 The International Standard Book Number 158
+6.2 Error-Correcting Codes 162
+6.2.1 Hamming Distance 162
+6.2.2 The Key Result 164
+6.3 Codes With Large Minimal Distance 166
+6.3.1 Hadamard Codes 166
+6.3.2 A Maximization Problem 167
+6.4 Perfect Linear Codes 170
+6.4.1 A Geometric Problem 170
+6.4.2 How to Test for Perfection 171
+6.4.3 The Existence of Binary Hamming Codes 172
+6.4.4 Perfect Codes and Cosets 173
+6.4.5 The hat problem 175
+6.4.6 The Standard Decoding Table 176
+6.5 Summary 182
+7 Linear Transformations 183
+7.1 Definitions and Examples 183
+7.1.1 Mappings 183
+7.1.2 The Definition of a Linear Transformation 184
+7.1.3 Some Examples 184
+7.1.4 General Properties of Linear Transformations 186
+7.2 Linear Transformations on Fn and Matrices 190
+7.2.1 Matrix Linear Transformations 190
+7.2.2 Composition and Multiplication 192
+7.2.3 An Example: Rotations of R2 193
+7.3 Geometry of Linear Transformations on Rn 196
+7.3.1 Transformations of the Plane 196
+7.3.2 Orthogonal Transformations 197
+7.4 The Matrix of a Linear Transformation 202
+7.4.1 The Matrix MB B' (T) 202
+7.4.2 Coordinates With Respect to a Basis 203
+7.4.3 Changing Basis for the Matrix of a Linear Transformation 208
+7.5 Further Results on Linear Transformations 214
+7.5.1 The Kernel and Image of a Linear Transformation 214
+7.5.2 Vector Space Isomorphisms 216
+7.5.3 Complex Linear Transformations 216
+7.6 Summary 224
+8 An Introduction to the Theory of Determinants 227
+8.1 The Definition of the Determinant 227
+8.1.1 The 1x1 and 2x2 Cases 228
+8.1.2 Some Combinatorial Preliminaries 228
+8.1.3 The Definition of the Determinant 231
+8.1.4 Permutations and Permutation Matrices 232
+8.1.5 The Determinant of a Permutation Matrix 233
+8.2 Determinants and Row Operations 236
+8.2.1 The Main Result 237
+8.2.2 Consequences 240
+8.3 Some Further Properties of the Determinant 244
+8.3.1 The Laplace Expansion 244
+8.3.2 The Case of Equal Rows 246
+8.3.3 Cramer's Rule 247
+8.3.4 The Inverse of a Matrix Over Z 248
+8.3.5 A Characterization of the Determinant 248
+8.3.6 The determinant of a linear transformation 249
+8.4 Geometric Applications of the Determinant 251
+8.4.1 Cross and Vector Products 251
+8.4.2 Determinants and Volumes 252
+8.4.3 Lewis Carroll's identity 253
+8.5 A Concise Summary of Determinants 255
+8.6 Summary 256
+9 Eigen theory 257
+9.1 Dynamical Systems 257
+9.1.1 The Fibonacci Sequence 258
+9.1.2 The Eigenvalue Problem 259
+9.1.3 Fibonacci Revisited 261
+9.1.4 An Infinite Dimensional Example 261
+9.2 Eigen theory: the Basic Definitions 263
+9.2.1 Eigen pairs for Linear Transformations and Matrices 263
+9.2.2 The Characteristic Polynomial 263
+9.2.3 Further Remarks on Linear Transformations 265
+9.2.4 Formulas for the Characteristic Polynomial 266
+9.3 Eigenvectors and Diagonalizability 274
+9.3.1 Semi-simple Linear Transformations and Diagonalizability 274
+9.3.2 Eigenspaces 275
+9.4 When is a Matrix Diagonalizable? 280
+9.4.1 A Characterization 280
+9.4.2 Do Non-diagonalizable Matrices Exist? 282
+9.4.3 Tridiagonalization of Complex Matrices 283
+9.4.4 The Cayley-Hamilton Theorem 285
+9.5 The Exponential of a Matrix 291
+9.5.1 Powers of Matrices 291
+9.5.2 The Exponential 291
+9.5.3 Uncoupling systems 292
+9.6 Summary 296
+10 The Inner Product Spaces Rn and Cn 297
+10.1 The Orthogonal Projection on a Subspace 297
+10.1.1 The Orthogonal Complement of a Subspace 298
+10.1.2 The Subspace Distance Problem 299
+10.1.3 The Projection on a Subspace 299
+10.1.4 Inconsistent Systems and the Pseudoinverse 302
+10.1.5 Applications of the Pseudoinverse 303
+10.2 Orthonormal Sets 308
+10.2.1 Some General Properties 308
+10.2.2 Orthonormal Bases 308
+10.2.3 Projections and Orthonormal Bases 310
+10.3 Gram-Schmidt and the QR-Factorization 314
+10.3.1 The Gram-Schmidt Method 314
+10.3.2 The QR-Decomposition 314
+10.4 Further Remarks on Inner Product Spaces 317
+10.4.1 The Space of Linear Transformations L(Rn, Rn) 317
+10.4.2 The Space C[a,b] 318
+10.4.3 Hermitian Inner Products 319
+10.4.4 Isometries 321
+10.5 The Group of Rotations of R3 324
+10.5.1 Rotations of R3 324
+10.5.2 Rotation Groups of Solids 327
+10.6 Summary 331
+11 Unitary Diagonalization Theorems 333
+11.1 The Normal Matrix Theorem 333
+11.1.1 Normal Matrices and the Main Theorem 335
+11.1.2 Examples 335
+11.2 The Principal Axis Theorem 340
+11.2.1 Examples 341
+11.2.2 A Projection Formula for Symmetric Matrices 342
+11.3 Diagonalization of Self Adjoint Operators 347
+11.3.1 Self Adjoint Operators 347
+11.3.2 The Geometry of Self Adjointness 347
+11.3.3 Another Proof of the Principal Axis Theorem 348
+11.3.4 An Infinite Dimensional Self Adjoint Operator 349
+11.4 Summary 355
+12 Some Applications of Eigen theory 357
+12.1 Quadratic Forms 357
+12.1.1 The Definition 357
+12.1.2 Critical Point Theory 358
+12.1.3 Sylvester's Theorem 360
+12.1.4 Positive Definite Matrices 362
+12.1.5 A Test For Positivity 363
+12.2 Symmetric Matrices and Graph Theory 367
+12.2.1 The Adjacency Matrix and Regular Graphs 367
+12.3 Computing Eigenvalues 370
+12.3.1 The QR-Algorithm 370
+12.3.2 The QR-Convergence Theorem 370
+12.3.3 The Power Method 372
+12.4 Summary 375
+13 The Jordan Decomposition Theorem 377
+13.1 The Main Result 378
+13.2 Further Results on Linear Transformations 386
+13.2.1 The Cayley-Hamilton Theorem 386
+13.2.2 The Jordan Canonical Form 388
+13.2.3 A Connection With Number Theory 390
+13.3 Summary 392
+14 Appendix: R2 and R3 393
+14.1 Basic Concepts 393
+14.2 Lines 394
+14.3 The Inner Product 395
+14.4 Planes 397
+14.5 Orthogonal Decomposition and Projection 399
+14.6 The Cauchy-Schwartz Inequality and Cosines 401
+14.7 Examples 402
+14.8 The Cross Product 405
+14.8.1 The Basic Definition 405
+14.8.2 Some further properties 406
+14.8.3 Examples and applications 407

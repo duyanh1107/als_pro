@@ -1,0 +1,959 @@
+{
+  "course_id": "math",
+  "level": "section",
+  "strategy": "heuristic",
+  "toc_path": "C:\\Users\\duyan\\Code\\aithucchien\\als_pro\\adaptive-learning-ai\\data\\tocs\\linear_algebra.txt",
+  "toc_mtime": 1775893071.4028387,
+  "modules": [
+    {
+      "module_id": "math:2.1",
+      "course_id": "math",
+      "title": "Linear equations: the beginning of algebra",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Linear Equations and Matrices",
+      "toc_number": "2.1",
+      "start_page": 15,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:2.2",
+      "course_id": "math",
+      "title": "Matrices",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Linear Equations and Matrices",
+      "toc_number": "2.2",
+      "start_page": 18,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:2.3",
+      "course_id": "math",
+      "title": "Reduced Row Echelon Form and Row Operations",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Linear Equations and Matrices",
+      "toc_number": "2.3",
+      "start_page": 23,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:2.4",
+      "course_id": "math",
+      "title": "Solving Linear Systems via Gaussian Reduction",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Linear Equations and Matrices",
+      "toc_number": "2.4",
+      "start_page": 26,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:3.1",
+      "course_id": "math",
+      "title": "Matrix Multiplication",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "More Matrix Theory",
+      "toc_number": "3.1",
+      "start_page": 37,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:3.2",
+      "course_id": "math",
+      "title": "Elementary Matrices and Row Operations",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "More Matrix Theory",
+      "toc_number": "3.2",
+      "start_page": 43,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:3.3",
+      "course_id": "math",
+      "title": "Matrix Inverses",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "More Matrix Theory",
+      "toc_number": "3.3",
+      "start_page": 49,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:3.4",
+      "course_id": "math",
+      "title": "The LPDU Factorization",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "More Matrix Theory",
+      "toc_number": "3.4",
+      "start_page": 59,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:4.1",
+      "course_id": "math",
+      "title": "What is a Field?",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Fields and Vector Spaces",
+      "toc_number": "4.1",
+      "start_page": 75,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:4.2",
+      "course_id": "math",
+      "title": "The Integers Modulo a Prime p",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Fields and Vector Spaces",
+      "toc_number": "4.2",
+      "start_page": 84,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:4.3",
+      "course_id": "math",
+      "title": "The Field of Complex Numbers",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Fields and Vector Spaces",
+      "toc_number": "4.3",
+      "start_page": 93,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:4.4",
+      "course_id": "math",
+      "title": "Vector Spaces",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Fields and Vector Spaces",
+      "toc_number": "4.4",
+      "start_page": 98,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:4.5",
+      "course_id": "math",
+      "title": "Inner Product Spaces",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Fields and Vector Spaces",
+      "toc_number": "4.5",
+      "start_page": 105,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:4.6",
+      "course_id": "math",
+      "title": "Subspaces and Spanning Sets",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Fields and Vector Spaces",
+      "toc_number": "4.6",
+      "start_page": 112,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:5.1",
+      "course_id": "math",
+      "title": "The Notion of Dimension",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Finite Dimensional Vector Spaces",
+      "toc_number": "5.1",
+      "start_page": 119,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:5.2",
+      "course_id": "math",
+      "title": "Bases and Dimension",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Finite Dimensional Vector Spaces",
+      "toc_number": "5.2",
+      "start_page": 126,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:5.3",
+      "course_id": "math",
+      "title": "Some Results on Matrices",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Finite Dimensional Vector Spaces",
+      "toc_number": "5.3",
+      "start_page": 135,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:5.4",
+      "course_id": "math",
+      "title": "Intersections and Sums of Subspaces",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Finite Dimensional Vector Spaces",
+      "toc_number": "5.4",
+      "start_page": 141,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:5.5",
+      "course_id": "math",
+      "title": "Vector Space Quotients",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Finite Dimensional Vector Spaces",
+      "toc_number": "5.5",
+      "start_page": 148,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:6.1",
+      "course_id": "math",
+      "title": "Linear Codes",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Linear Coding Theory",
+      "toc_number": "6.1",
+      "start_page": 155,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:6.2",
+      "course_id": "math",
+      "title": "Error-Correcting Codes",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Linear Coding Theory",
+      "toc_number": "6.2",
+      "start_page": 162,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:6.3",
+      "course_id": "math",
+      "title": "Codes With Large Minimal Distance",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Linear Coding Theory",
+      "toc_number": "6.3",
+      "start_page": 166,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:6.4",
+      "course_id": "math",
+      "title": "Perfect Linear Codes",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Linear Coding Theory",
+      "toc_number": "6.4",
+      "start_page": 170,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:7.1",
+      "course_id": "math",
+      "title": "Definitions and Examples",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Linear Transformations",
+      "toc_number": "7.1",
+      "start_page": 183,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:7.2",
+      "course_id": "math",
+      "title": "Linear Transformations on Fn and Matrices",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Linear Transformations",
+      "toc_number": "7.2",
+      "start_page": 190,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:7.3",
+      "course_id": "math",
+      "title": "Geometry of Linear Transformations on Rn",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Linear Transformations",
+      "toc_number": "7.3",
+      "start_page": 196,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:7.4",
+      "course_id": "math",
+      "title": "The Matrix of a Linear Transformation",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Linear Transformations",
+      "toc_number": "7.4",
+      "start_page": 202,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:7.5",
+      "course_id": "math",
+      "title": "Further Results on Linear Transformations",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Linear Transformations",
+      "toc_number": "7.5",
+      "start_page": 214,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:8.1",
+      "course_id": "math",
+      "title": "The Definition of the Determinant",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "An Introduction to the Theory of Determinants",
+      "toc_number": "8.1",
+      "start_page": 227,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:8.2",
+      "course_id": "math",
+      "title": "Determinants and Row Operations",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "An Introduction to the Theory of Determinants",
+      "toc_number": "8.2",
+      "start_page": 236,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:8.3",
+      "course_id": "math",
+      "title": "Some Further Properties of the Determinant",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "An Introduction to the Theory of Determinants",
+      "toc_number": "8.3",
+      "start_page": 244,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:8.4",
+      "course_id": "math",
+      "title": "Geometric Applications of the Determinant",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "An Introduction to the Theory of Determinants",
+      "toc_number": "8.4",
+      "start_page": 251,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:9.1",
+      "course_id": "math",
+      "title": "Dynamical Systems",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Eigen theory",
+      "toc_number": "9.1",
+      "start_page": 257,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:9.2",
+      "course_id": "math",
+      "title": "Eigen theory: the Basic Definitions",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Eigen theory",
+      "toc_number": "9.2",
+      "start_page": 263,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:9.3",
+      "course_id": "math",
+      "title": "Eigenvectors and Diagonalizability",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Eigen theory",
+      "toc_number": "9.3",
+      "start_page": 274,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:9.4",
+      "course_id": "math",
+      "title": "When is a Matrix Diagonalizable?",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Eigen theory",
+      "toc_number": "9.4",
+      "start_page": 280,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:9.5",
+      "course_id": "math",
+      "title": "The Exponential of a Matrix",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Eigen theory",
+      "toc_number": "9.5",
+      "start_page": 291,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:10.1",
+      "course_id": "math",
+      "title": "The Orthogonal Projection on a Subspace",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "The Inner Product Spaces Rn and Cn",
+      "toc_number": "10.1",
+      "start_page": 297,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:10.2",
+      "course_id": "math",
+      "title": "Orthonormal Sets",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "The Inner Product Spaces Rn and Cn",
+      "toc_number": "10.2",
+      "start_page": 308,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:10.3",
+      "course_id": "math",
+      "title": "Gram-Schmidt and the QR-Factorization",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "The Inner Product Spaces Rn and Cn",
+      "toc_number": "10.3",
+      "start_page": 314,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:10.4",
+      "course_id": "math",
+      "title": "Further Remarks on Inner Product Spaces",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "The Inner Product Spaces Rn and Cn",
+      "toc_number": "10.4",
+      "start_page": 317,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:10.5",
+      "course_id": "math",
+      "title": "The Group of Rotations of R3",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "The Inner Product Spaces Rn and Cn",
+      "toc_number": "10.5",
+      "start_page": 324,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:11.1",
+      "course_id": "math",
+      "title": "The Normal Matrix Theorem",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Unitary Diagonalization Theorems",
+      "toc_number": "11.1",
+      "start_page": 333,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:11.2",
+      "course_id": "math",
+      "title": "The Principal Axis Theorem",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Unitary Diagonalization Theorems",
+      "toc_number": "11.2",
+      "start_page": 340,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:11.3",
+      "course_id": "math",
+      "title": "Diagonalization of Self Adjoint Operators",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Unitary Diagonalization Theorems",
+      "toc_number": "11.3",
+      "start_page": 347,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:12.1",
+      "course_id": "math",
+      "title": "Quadratic Forms",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Some Applications of Eigen theory",
+      "toc_number": "12.1",
+      "start_page": 357,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:12.2",
+      "course_id": "math",
+      "title": "Symmetric Matrices and Graph Theory",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Some Applications of Eigen theory",
+      "toc_number": "12.2",
+      "start_page": 367,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:12.3",
+      "course_id": "math",
+      "title": "Computing Eigenvalues",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "Some Applications of Eigen theory",
+      "toc_number": "12.3",
+      "start_page": 370,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:13.1",
+      "course_id": "math",
+      "title": "The Main Result",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "The Jordan Decomposition Theorem",
+      "toc_number": "13.1",
+      "start_page": 378,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    },
+    {
+      "module_id": "math:13.2",
+      "course_id": "math",
+      "title": "Further Results on Linear Transformations",
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "chapter_title": "The Jordan Decomposition Theorem",
+      "toc_number": "13.2",
+      "start_page": 386,
+      "level": "section",
+      "selection_reason": "Included by heuristic because it looks like a teachable module."
+    }
+  ]
+}
