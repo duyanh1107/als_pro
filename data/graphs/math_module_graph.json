@@ -1,0 +1,1585 @@
+{
+  "course_id": "math",
+  "course_title": "Linear Algebra Foundations",
+  "graph_version": "phase_2_toc_plus_similarity",
+  "node_count": 50,
+  "edge_count": 78,
+  "nodes": [
+    {
+      "id": "math:2.1",
+      "type": "module",
+      "course_id": "math",
+      "title": "Linear equations: the beginning of algebra",
+      "chapter_title": "Linear Equations and Matrices",
+      "toc_number": "2.1",
+      "start_page": 15,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:2.2",
+      "type": "module",
+      "course_id": "math",
+      "title": "Matrices",
+      "chapter_title": "Linear Equations and Matrices",
+      "toc_number": "2.2",
+      "start_page": 18,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:2.3",
+      "type": "module",
+      "course_id": "math",
+      "title": "Reduced Row Echelon Form and Row Operations",
+      "chapter_title": "Linear Equations and Matrices",
+      "toc_number": "2.3",
+      "start_page": 23,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:2.4",
+      "type": "module",
+      "course_id": "math",
+      "title": "Solving Linear Systems via Gaussian Reduction",
+      "chapter_title": "Linear Equations and Matrices",
+      "toc_number": "2.4",
+      "start_page": 26,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:3.1",
+      "type": "module",
+      "course_id": "math",
+      "title": "Matrix Multiplication",
+      "chapter_title": "More Matrix Theory",
+      "toc_number": "3.1",
+      "start_page": 37,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:3.2",
+      "type": "module",
+      "course_id": "math",
+      "title": "Elementary Matrices and Row Operations",
+      "chapter_title": "More Matrix Theory",
+      "toc_number": "3.2",
+      "start_page": 43,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:3.3",
+      "type": "module",
+      "course_id": "math",
+      "title": "Matrix Inverses",
+      "chapter_title": "More Matrix Theory",
+      "toc_number": "3.3",
+      "start_page": 49,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:3.4",
+      "type": "module",
+      "course_id": "math",
+      "title": "The LPDU Factorization",
+      "chapter_title": "More Matrix Theory",
+      "toc_number": "3.4",
+      "start_page": 59,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:4.1",
+      "type": "module",
+      "course_id": "math",
+      "title": "What is a Field?",
+      "chapter_title": "Fields and Vector Spaces",
+      "toc_number": "4.1",
+      "start_page": 75,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:4.2",
+      "type": "module",
+      "course_id": "math",
+      "title": "The Integers Modulo a Prime p",
+      "chapter_title": "Fields and Vector Spaces",
+      "toc_number": "4.2",
+      "start_page": 84,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:4.3",
+      "type": "module",
+      "course_id": "math",
+      "title": "The Field of Complex Numbers",
+      "chapter_title": "Fields and Vector Spaces",
+      "toc_number": "4.3",
+      "start_page": 93,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:4.4",
+      "type": "module",
+      "course_id": "math",
+      "title": "Vector Spaces",
+      "chapter_title": "Fields and Vector Spaces",
+      "toc_number": "4.4",
+      "start_page": 98,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:4.5",
+      "type": "module",
+      "course_id": "math",
+      "title": "Inner Product Spaces",
+      "chapter_title": "Fields and Vector Spaces",
+      "toc_number": "4.5",
+      "start_page": 105,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:4.6",
+      "type": "module",
+      "course_id": "math",
+      "title": "Subspaces and Spanning Sets",
+      "chapter_title": "Fields and Vector Spaces",
+      "toc_number": "4.6",
+      "start_page": 112,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:5.1",
+      "type": "module",
+      "course_id": "math",
+      "title": "The Notion of Dimension",
+      "chapter_title": "Finite Dimensional Vector Spaces",
+      "toc_number": "5.1",
+      "start_page": 119,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:5.2",
+      "type": "module",
+      "course_id": "math",
+      "title": "Bases and Dimension",
+      "chapter_title": "Finite Dimensional Vector Spaces",
+      "toc_number": "5.2",
+      "start_page": 126,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:5.3",
+      "type": "module",
+      "course_id": "math",
+      "title": "Some Results on Matrices",
+      "chapter_title": "Finite Dimensional Vector Spaces",
+      "toc_number": "5.3",
+      "start_page": 135,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:5.4",
+      "type": "module",
+      "course_id": "math",
+      "title": "Intersections and Sums of Subspaces",
+      "chapter_title": "Finite Dimensional Vector Spaces",
+      "toc_number": "5.4",
+      "start_page": 141,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:5.5",
+      "type": "module",
+      "course_id": "math",
+      "title": "Vector Space Quotients",
+      "chapter_title": "Finite Dimensional Vector Spaces",
+      "toc_number": "5.5",
+      "start_page": 148,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:6.1",
+      "type": "module",
+      "course_id": "math",
+      "title": "Linear Codes",
+      "chapter_title": "Linear Coding Theory",
+      "toc_number": "6.1",
+      "start_page": 155,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:6.2",
+      "type": "module",
+      "course_id": "math",
+      "title": "Error-Correcting Codes",
+      "chapter_title": "Linear Coding Theory",
+      "toc_number": "6.2",
+      "start_page": 162,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:6.3",
+      "type": "module",
+      "course_id": "math",
+      "title": "Codes With Large Minimal Distance",
+      "chapter_title": "Linear Coding Theory",
+      "toc_number": "6.3",
+      "start_page": 166,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:6.4",
+      "type": "module",
+      "course_id": "math",
+      "title": "Perfect Linear Codes",
+      "chapter_title": "Linear Coding Theory",
+      "toc_number": "6.4",
+      "start_page": 170,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:7.1",
+      "type": "module",
+      "course_id": "math",
+      "title": "Definitions and Examples",
+      "chapter_title": "Linear Transformations",
+      "toc_number": "7.1",
+      "start_page": 183,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:7.2",
+      "type": "module",
+      "course_id": "math",
+      "title": "Linear Transformations on Fn and Matrices",
+      "chapter_title": "Linear Transformations",
+      "toc_number": "7.2",
+      "start_page": 190,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:7.3",
+      "type": "module",
+      "course_id": "math",
+      "title": "Geometry of Linear Transformations on Rn",
+      "chapter_title": "Linear Transformations",
+      "toc_number": "7.3",
+      "start_page": 196,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:7.4",
+      "type": "module",
+      "course_id": "math",
+      "title": "The Matrix of a Linear Transformation",
+      "chapter_title": "Linear Transformations",
+      "toc_number": "7.4",
+      "start_page": 202,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:7.5",
+      "type": "module",
+      "course_id": "math",
+      "title": "Further Results on Linear Transformations",
+      "chapter_title": "Linear Transformations",
+      "toc_number": "7.5",
+      "start_page": 214,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:8.1",
+      "type": "module",
+      "course_id": "math",
+      "title": "The Definition of the Determinant",
+      "chapter_title": "An Introduction to the Theory of Determinants",
+      "toc_number": "8.1",
+      "start_page": 227,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:8.2",
+      "type": "module",
+      "course_id": "math",
+      "title": "Determinants and Row Operations",
+      "chapter_title": "An Introduction to the Theory of Determinants",
+      "toc_number": "8.2",
+      "start_page": 236,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:8.3",
+      "type": "module",
+      "course_id": "math",
+      "title": "Some Further Properties of the Determinant",
+      "chapter_title": "An Introduction to the Theory of Determinants",
+      "toc_number": "8.3",
+      "start_page": 244,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:8.4",
+      "type": "module",
+      "course_id": "math",
+      "title": "Geometric Applications of the Determinant",
+      "chapter_title": "An Introduction to the Theory of Determinants",
+      "toc_number": "8.4",
+      "start_page": 251,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:9.1",
+      "type": "module",
+      "course_id": "math",
+      "title": "Dynamical Systems",
+      "chapter_title": "Eigen theory",
+      "toc_number": "9.1",
+      "start_page": 257,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:9.2",
+      "type": "module",
+      "course_id": "math",
+      "title": "Eigen theory: the Basic Definitions",
+      "chapter_title": "Eigen theory",
+      "toc_number": "9.2",
+      "start_page": 263,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:9.3",
+      "type": "module",
+      "course_id": "math",
+      "title": "Eigenvectors and Diagonalizability",
+      "chapter_title": "Eigen theory",
+      "toc_number": "9.3",
+      "start_page": 274,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:9.4",
+      "type": "module",
+      "course_id": "math",
+      "title": "When is a Matrix Diagonalizable?",
+      "chapter_title": "Eigen theory",
+      "toc_number": "9.4",
+      "start_page": 280,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:9.5",
+      "type": "module",
+      "course_id": "math",
+      "title": "The Exponential of a Matrix",
+      "chapter_title": "Eigen theory",
+      "toc_number": "9.5",
+      "start_page": 291,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:10.1",
+      "type": "module",
+      "course_id": "math",
+      "title": "The Orthogonal Projection on a Subspace",
+      "chapter_title": "The Inner Product Spaces Rn and Cn",
+      "toc_number": "10.1",
+      "start_page": 297,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:10.2",
+      "type": "module",
+      "course_id": "math",
+      "title": "Orthonormal Sets",
+      "chapter_title": "The Inner Product Spaces Rn and Cn",
+      "toc_number": "10.2",
+      "start_page": 308,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:10.3",
+      "type": "module",
+      "course_id": "math",
+      "title": "Gram-Schmidt and the QR-Factorization",
+      "chapter_title": "The Inner Product Spaces Rn and Cn",
+      "toc_number": "10.3",
+      "start_page": 314,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:10.4",
+      "type": "module",
+      "course_id": "math",
+      "title": "Further Remarks on Inner Product Spaces",
+      "chapter_title": "The Inner Product Spaces Rn and Cn",
+      "toc_number": "10.4",
+      "start_page": 317,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:10.5",
+      "type": "module",
+      "course_id": "math",
+      "title": "The Group of Rotations of R3",
+      "chapter_title": "The Inner Product Spaces Rn and Cn",
+      "toc_number": "10.5",
+      "start_page": 324,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:11.1",
+      "type": "module",
+      "course_id": "math",
+      "title": "The Normal Matrix Theorem",
+      "chapter_title": "Unitary Diagonalization Theorems",
+      "toc_number": "11.1",
+      "start_page": 333,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:11.2",
+      "type": "module",
+      "course_id": "math",
+      "title": "The Principal Axis Theorem",
+      "chapter_title": "Unitary Diagonalization Theorems",
+      "toc_number": "11.2",
+      "start_page": 340,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:11.3",
+      "type": "module",
+      "course_id": "math",
+      "title": "Diagonalization of Self Adjoint Operators",
+      "chapter_title": "Unitary Diagonalization Theorems",
+      "toc_number": "11.3",
+      "start_page": 347,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:12.1",
+      "type": "module",
+      "course_id": "math",
+      "title": "Quadratic Forms",
+      "chapter_title": "Some Applications of Eigen theory",
+      "toc_number": "12.1",
+      "start_page": 357,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:12.2",
+      "type": "module",
+      "course_id": "math",
+      "title": "Symmetric Matrices and Graph Theory",
+      "chapter_title": "Some Applications of Eigen theory",
+      "toc_number": "12.2",
+      "start_page": 367,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:12.3",
+      "type": "module",
+      "course_id": "math",
+      "title": "Computing Eigenvalues",
+      "chapter_title": "Some Applications of Eigen theory",
+      "toc_number": "12.3",
+      "start_page": 370,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:13.1",
+      "type": "module",
+      "course_id": "math",
+      "title": "The Main Result",
+      "chapter_title": "The Jordan Decomposition Theorem",
+      "toc_number": "13.1",
+      "start_page": 378,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    },
+    {
+      "id": "math:13.2",
+      "type": "module",
+      "course_id": "math",
+      "title": "Further Results on Linear Transformations",
+      "chapter_title": "The Jordan Decomposition Theorem",
+      "toc_number": "13.2",
+      "start_page": 386,
+      "primary_skill": "math:conceptual_understanding",
+      "skills": [
+        "math:procedural_fluency",
+        "math:conceptual_understanding",
+        "global:problem_decomposition",
+        "global:logical_reasoning",
+        "global:abstraction",
+        "global:error_analysis"
+      ],
+      "level": "section"
+    }
+  ],
+  "edges": [
+    {
+      "source": "math:2.1",
+      "target": "math:2.2",
+      "relation": "prerequisite_of",
+      "directed": true,
+      "weight": 0.9,
+      "reason": "Consecutive modules in the same chapter usually build on each other."
+    },
+    {
+      "source": "math:2.2",
+      "target": "math:2.3",
+      "relation": "prerequisite_of",
+      "directed": true,
+      "weight": 0.9,
+      "reason": "Consecutive modules in the same chapter usually build on each other."
+    },
+    {
+      "source": "math:2.2",
+      "target": "math:3.1",
+      "relation": "similar_to",
+      "directed": false,
+      "weight": 0.85,
+      "reason": "module embedding similarity=0.85"
+    },
+    {
+      "source": "math:2.3",
+      "target": "math:2.4",
+      "relation": "prerequisite_of",
+      "directed": true,
+      "weight": 0.9,
+      "reason": "Consecutive modules in the same chapter usually build on each other."
+    },
+    {
+      "source": "math:2.3",
+      "target": "math:3.2",
+      "relation": "similar_to",
+      "directed": false,
+      "weight": 0.84,
+      "reason": "module embedding similarity=0.84"
+    },
+    {
+      "source": "math:3.1",
+      "target": "math:3.2",
+      "relation": "prerequisite_of",
+      "directed": true,
+      "weight": 0.9,
+      "reason": "Consecutive modules in the same chapter usually build on each other."
+    },
+    {
+      "source": "math:3.1",
+      "target": "math:3.3",
+      "relation": "similar_to",
+      "directed": false,
+      "weight": 0.85,
+      "reason": "module embedding similarity=0.85"
+    },
+    {
+      "source": "math:3.1",
+      "target": "math:7.2",
+      "relation": "similar_to",
+      "directed": false,
+      "weight": 0.83,
+      "reason": "module embedding similarity=0.83"
+    },
+    {
+      "source": "math:3.2",
+      "target": "math:3.3",
+      "relation": "prerequisite_of",
+      "directed": true,
+      "weight": 0.9,
+      "reason": "Consecutive modules in the same chapter usually build on each other."
+    },
+    {
+      "source": "math:3.2",
+      "target": "math:3.3",
+      "relation": "similar_to",
+      "directed": false,
+      "weight": 0.82,
+      "reason": "module embedding similarity=0.82"
+    },
+    {
+      "source": "math:3.3",
+      "target": "math:3.4",
+      "relation": "prerequisite_of",
+      "directed": true,
+      "weight": 0.9,
+      "reason": "Consecutive modules in the same chapter usually build on each other."
+    },
+    {
+      "source": "math:4.1",
+      "target": "math:4.2",
+      "relation": "prerequisite_of",
+      "directed": true,
+      "weight": 0.9,
+      "reason": "Consecutive modules in the same chapter usually build on each other."
+    },
+    {
+      "source": "math:4.1",
+      "target": "math:4.2",
+      "relation": "similar_to",
+      "directed": false,
+      "weight": 0.85,
+      "reason": "module embedding similarity=0.85"
+    },
+    {
+      "source": "math:4.2",
+      "target": "math:4.3",
+      "relation": "prerequisite_of",
+      "directed": true,
+      "weight": 0.9,
+      "reason": "Consecutive modules in the same chapter usually build on each other."
+    },
+    {
+      "source": "math:4.3",
+      "target": "math:4.4",
+      "relation": "prerequisite_of",
+      "directed": true,
+      "weight": 0.9,
+      "reason": "Consecutive modules in the same chapter usually build on each other."
+    },
+    {
+      "source": "math:4.4",
+      "target": "math:4.5",
+      "relation": "prerequisite_of",
+      "directed": true,
+      "weight": 0.9,
+      "reason": "Consecutive modules in the same chapter usually build on each other."
+    },
+    {
+      "source": "math:4.5",
+      "target": "math:4.6",
+      "relation": "prerequisite_of",
+      "directed": true,
+      "weight": 0.9,
+      "reason": "Consecutive modules in the same chapter usually build on each other."
+    },
+    {
+      "source": "math:4.5",
+      "target": "math:10.4",
+      "relation": "similar_to",
+      "directed": false,
+      "weight": 0.91,
+      "reason": "module embedding similarity=0.91"
+    },
+    {
+      "source": "math:5.1",
+      "target": "math:5.2",
+      "relation": "prerequisite_of",
+      "directed": true,
+      "weight": 0.9,
+      "reason": "Consecutive modules in the same chapter usually build on each other."
+    },
+    {
+      "source": "math:5.1",
+      "target": "math:5.2",
+      "relation": "similar_to",
+      "directed": false,
+      "weight": 0.92,
+      "reason": "module embedding similarity=0.92"
+    },
+    {
+      "source": "math:5.2",
+      "target": "math:5.3",
+      "relation": "prerequisite_of",
+      "directed": true,
+      "weight": 0.9,
+      "reason": "Consecutive modules in the same chapter usually build on each other."
+    },
+    {
+      "source": "math:5.2",
+      "target": "math:5.3",
+      "relation": "similar_to",
+      "directed": false,
+      "weight": 0.84,
+      "reason": "module embedding similarity=0.84"
+    },
+    {
+      "source": "math:5.2",
+      "target": "math:5.4",
+      "relation": "similar_to",
+      "directed": false,
+      "weight": 0.83,
+      "reason": "module embedding similarity=0.83"
+    },
+    {
+      "source": "math:5.3",
+      "target": "math:5.4",
+      "relation": "prerequisite_of",
+      "directed": true,
+      "weight": 0.9,
+      "reason": "Consecutive modules in the same chapter usually build on each other."
+    },
+    {
+      "source": "math:5.4",
+      "target": "math:5.5",
+      "relation": "prerequisite_of",
+      "directed": true,
+      "weight": 0.9,
+      "reason": "Consecutive modules in the same chapter usually build on each other."
+    },
+    {
+      "source": "math:6.1",
+      "target": "math:6.2",
+      "relation": "prerequisite_of",
+      "directed": true,
+      "weight": 0.9,
+      "reason": "Consecutive modules in the same chapter usually build on each other."
+    },
+    {
+      "source": "math:6.1",
+      "target": "math:6.2",
+      "relation": "similar_to",
+      "directed": false,
+      "weight": 0.84,
+      "reason": "module embedding similarity=0.84"
+    },
+    {
+      "source": "math:6.1",
+      "target": "math:6.4",
+      "relation": "similar_to",
+      "directed": false,
+      "weight": 0.85,
+      "reason": "module embedding similarity=0.85"
+    },
+    {
+      "source": "math:6.2",
+      "target": "math:6.3",
+      "relation": "prerequisite_of",
+      "directed": true,
+      "weight": 0.9,
+      "reason": "Consecutive modules in the same chapter usually build on each other."
+    },
+    {
+      "source": "math:6.2",
+      "target": "math:6.3",
+      "relation": "similar_to",
+      "directed": false,
+      "weight": 0.85,
+      "reason": "module embedding similarity=0.85"
+    },
+    {
+      "source": "math:6.2",
+      "target": "math:6.4",
+      "relation": "similar_to",
+      "directed": false,
+      "weight": 0.86,
+      "reason": "module embedding similarity=0.86"
+    },
+    {
+      "source": "math:6.3",
+      "target": "math:6.4",
+      "relation": "prerequisite_of",
+      "directed": true,
+      "weight": 0.9,
+      "reason": "Consecutive modules in the same chapter usually build on each other."
+    },
+    {
+      "source": "math:6.3",
+      "target": "math:6.4",
+      "relation": "similar_to",
+      "directed": false,
+      "weight": 0.85,
+      "reason": "module embedding similarity=0.85"
+    },
+    {
+      "source": "math:7.1",
+      "target": "math:7.2",
+      "relation": "prerequisite_of",
+      "directed": true,
+      "weight": 0.9,
+      "reason": "Consecutive modules in the same chapter usually build on each other."
+    },
+    {
+      "source": "math:7.1",
+      "target": "math:7.2",
+      "relation": "similar_to",
+      "directed": false,
+      "weight": 0.83,
+      "reason": "module embedding similarity=0.83"
+    },
+    {
+      "source": "math:7.1",
+      "target": "math:7.4",
+      "relation": "similar_to",
+      "directed": false,
+      "weight": 0.83,
+      "reason": "module embedding similarity=0.83"
+    },
+    {
+      "source": "math:7.1",
+      "target": "math:7.5",
+      "relation": "similar_to",
+      "directed": false,
+      "weight": 0.87,
+      "reason": "module embedding similarity=0.87"
+    },
+    {
+      "source": "math:7.2",
+      "target": "math:7.3",
+      "relation": "prerequisite_of",
+      "directed": true,
+      "weight": 0.9,
+      "reason": "Consecutive modules in the same chapter usually build on each other."
+    },
+    {
+      "source": "math:7.2",
+      "target": "math:7.4",
+      "relation": "similar_to",
+      "directed": false,
+      "weight": 0.84,
+      "reason": "module embedding similarity=0.84"
+    },
+    {
+      "source": "math:7.2",
+      "target": "math:7.5",
+      "relation": "similar_to",
+      "directed": false,
+      "weight": 0.84,
+      "reason": "module embedding similarity=0.84"
+    },
+    {
+      "source": "math:7.3",
+      "target": "math:7.4",
+      "relation": "prerequisite_of",
+      "directed": true,
+      "weight": 0.9,
+      "reason": "Consecutive modules in the same chapter usually build on each other."
+    },
+    {
+      "source": "math:7.4",
+      "target": "math:7.5",
+      "relation": "prerequisite_of",
+      "directed": true,
+      "weight": 0.9,
+      "reason": "Consecutive modules in the same chapter usually build on each other."
+    },
+    {
+      "source": "math:7.4",
+      "target": "math:7.5",
+      "relation": "similar_to",
+      "directed": false,
+      "weight": 0.88,
+      "reason": "module embedding similarity=0.88"
+    },
+    {
+      "source": "math:7.5",
+      "target": "math:13.1",
+      "relation": "similar_to",
+      "directed": false,
+      "weight": 0.86,
+      "reason": "module embedding similarity=0.86"
+    },
+    {
+      "source": "math:8.1",
+      "target": "math:8.2",
+      "relation": "prerequisite_of",
+      "directed": true,
+      "weight": 0.9,
+      "reason": "Consecutive modules in the same chapter usually build on each other."
+    },
+    {
+      "source": "math:8.1",
+      "target": "math:8.2",
+      "relation": "similar_to",
+      "directed": false,
+      "weight": 0.91,
+      "reason": "module embedding similarity=0.91"
+    },
+    {
+      "source": "math:8.1",
+      "target": "math:8.3",
+      "relation": "similar_to",
+      "directed": false,
+      "weight": 0.85,
+      "reason": "module embedding similarity=0.85"
+    },
+    {
+      "source": "math:8.1",
+      "target": "math:8.4",
+      "relation": "similar_to",
+      "directed": false,
+      "weight": 0.82,
+      "reason": "module embedding similarity=0.82"
+    },
+    {
+      "source": "math:8.2",
+      "target": "math:8.3",
+      "relation": "prerequisite_of",
+      "directed": true,
+      "weight": 0.9,
+      "reason": "Consecutive modules in the same chapter usually build on each other."
+    },
+    {
+      "source": "math:8.2",
+      "target": "math:8.3",
+      "relation": "similar_to",
+      "directed": false,
+      "weight": 0.91,
+      "reason": "module embedding similarity=0.91"
+    },
+    {
+      "source": "math:8.2",
+      "target": "math:8.4",
+      "relation": "similar_to",
+      "directed": false,
+      "weight": 0.83,
+      "reason": "module embedding similarity=0.83"
+    },
+    {
+      "source": "math:8.3",
+      "target": "math:8.4",
+      "relation": "prerequisite_of",
+      "directed": true,
+      "weight": 0.9,
+      "reason": "Consecutive modules in the same chapter usually build on each other."
+    },
+    {
+      "source": "math:8.3",
+      "target": "math:8.4",
+      "relation": "similar_to",
+      "directed": false,
+      "weight": 0.83,
+      "reason": "module embedding similarity=0.83"
+    },
+    {
+      "source": "math:9.1",
+      "target": "math:9.2",
+      "relation": "prerequisite_of",
+      "directed": true,
+      "weight": 0.9,
+      "reason": "Consecutive modules in the same chapter usually build on each other."
+    },
+    {
+      "source": "math:9.1",
+      "target": "math:9.2",
+      "relation": "similar_to",
+      "directed": false,
+      "weight": 0.83,
+      "reason": "module embedding similarity=0.83"
+    },
+    {
+      "source": "math:9.1",
+      "target": "math:9.3",
+      "relation": "similar_to",
+      "directed": false,
+      "weight": 0.84,
+      "reason": "module embedding similarity=0.84"
+    },
+    {
+      "source": "math:9.2",
+      "target": "math:9.3",
+      "relation": "prerequisite_of",
+      "directed": true,
+      "weight": 0.9,
+      "reason": "Consecutive modules in the same chapter usually build on each other."
+    },
+    {
+      "source": "math:9.2",
+      "target": "math:9.3",
+      "relation": "similar_to",
+      "directed": false,
+      "weight": 0.84,
+      "reason": "module embedding similarity=0.84"
+    },
+    {
+      "source": "math:9.2",
+      "target": "math:9.4",
+      "relation": "similar_to",
+      "directed": false,
+      "weight": 0.87,
+      "reason": "module embedding similarity=0.87"
+    },
+    {
+      "source": "math:9.3",
+      "target": "math:9.4",
+      "relation": "prerequisite_of",
+      "directed": true,
+      "weight": 0.9,
+      "reason": "Consecutive modules in the same chapter usually build on each other."
+    },
+    {
+      "source": "math:9.3",
+      "target": "math:9.4",
+      "relation": "similar_to",
+      "directed": false,
+      "weight": 0.9,
+      "reason": "module embedding similarity=0.90"
+    },
+    {
+      "source": "math:9.4",
+      "target": "math:9.5",
+      "relation": "prerequisite_of",
+      "directed": true,
+      "weight": 0.9,
+      "reason": "Consecutive modules in the same chapter usually build on each other."
+    },
+    {
+      "source": "math:9.4",
+      "target": "math:11.1",
+      "relation": "similar_to",
+      "directed": false,
+      "weight": 0.83,
+      "reason": "module embedding similarity=0.83"
+    },
+    {
+      "source": "math:10.1",
+      "target": "math:10.2",
+      "relation": "prerequisite_of",
+      "directed": true,
+      "weight": 0.9,
+      "reason": "Consecutive modules in the same chapter usually build on each other."
+    },
+    {
+      "source": "math:10.1",
+      "target": "math:10.2",
+      "relation": "similar_to",
+      "directed": false,
+      "weight": 0.87,
+      "reason": "module embedding similarity=0.87"
+    },
+    {
+      "source": "math:10.1",
+      "target": "math:10.4",
+      "relation": "similar_to",
+      "directed": false,
+      "weight": 0.83,
+      "reason": "module embedding similarity=0.83"
+    },
+    {
+      "source": "math:10.2",
+      "target": "math:10.3",
+      "relation": "prerequisite_of",
+      "directed": true,
+      "weight": 0.9,
+      "reason": "Consecutive modules in the same chapter usually build on each other."
+    },
+    {
+      "source": "math:10.2",
+      "target": "math:10.4",
+      "relation": "similar_to",
+      "directed": false,
+      "weight": 0.82,
+      "reason": "module embedding similarity=0.82"
+    },
+    {
+      "source": "math:10.3",
+      "target": "math:10.4",
+      "relation": "prerequisite_of",
+      "directed": true,
+      "weight": 0.9,
+      "reason": "Consecutive modules in the same chapter usually build on each other."
+    },
+    {
+      "source": "math:10.4",
+      "target": "math:10.5",
+      "relation": "prerequisite_of",
+      "directed": true,
+      "weight": 0.9,
+      "reason": "Consecutive modules in the same chapter usually build on each other."
+    },
+    {
+      "source": "math:11.1",
+      "target": "math:11.2",
+      "relation": "prerequisite_of",
+      "directed": true,
+      "weight": 0.9,
+      "reason": "Consecutive modules in the same chapter usually build on each other."
+    },
+    {
+      "source": "math:11.1",
+      "target": "math:11.2",
+      "relation": "similar_to",
+      "directed": false,
+      "weight": 0.87,
+      "reason": "module embedding similarity=0.87"
+    },
+    {
+      "source": "math:11.2",
+      "target": "math:11.3",
+      "relation": "prerequisite_of",
+      "directed": true,
+      "weight": 0.9,
+      "reason": "Consecutive modules in the same chapter usually build on each other."
+    },
+    {
+      "source": "math:11.2",
+      "target": "math:11.3",
+      "relation": "similar_to",
+      "directed": false,
+      "weight": 0.85,
+      "reason": "module embedding similarity=0.85"
+    },
+    {
+      "source": "math:12.1",
+      "target": "math:12.2",
+      "relation": "prerequisite_of",
+      "directed": true,
+      "weight": 0.9,
+      "reason": "Consecutive modules in the same chapter usually build on each other."
+    },
+    {
+      "source": "math:12.2",
+      "target": "math:12.3",
+      "relation": "prerequisite_of",
+      "directed": true,
+      "weight": 0.9,
+      "reason": "Consecutive modules in the same chapter usually build on each other."
+    },
+    {
+      "source": "math:13.1",
+      "target": "math:13.2",
+      "relation": "prerequisite_of",
+      "directed": true,
+      "weight": 0.9,
+      "reason": "Consecutive modules in the same chapter usually build on each other."
+    },
+    {
+      "source": "math:13.1",
+      "target": "math:13.2",
+      "relation": "similar_to",
+      "directed": false,
+      "weight": 0.89,
+      "reason": "module embedding similarity=0.89"
+    }
+  ]
+}

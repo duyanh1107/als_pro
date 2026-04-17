@@ -117,6 +117,7 @@ def run_teacher_console() -> None:
     print("1. Configure module set from TOC")
     print("2. Generate lesson draft for a module")
     print("3. Print module -> chunk links")
+    print("4. Review course concepts in Streamlit")
 
     while True:
         choice = input("\nChoose an option: ").strip()
@@ -128,6 +129,9 @@ def run_teacher_console() -> None:
             return
         if choice == "3":
             run_module_chunk_debug()
+            return
+        if choice == "4":
+            run_teacher_concept_review()
             return
         print("Invalid choice. Try again.")
 
@@ -214,6 +218,14 @@ def run_module_chunk_debug() -> None:
                     f"/{chunk.get('chunk_part_count')}"
                 )
             print(f"{index}. {location} | pages {page_range}{part_suffix}")
+
+
+def run_teacher_concept_review() -> None:
+    print("\nTeacher Course Concept Review")
+    print("=============================")
+    print("Open the local teacher review app with:")
+    print("streamlit run app/streamlit_app.py")
+    print("\nThen switch the sidebar workspace to `Course concepts`.")
 
 
 def _run_manual_module_selection(course: Course) -> None:

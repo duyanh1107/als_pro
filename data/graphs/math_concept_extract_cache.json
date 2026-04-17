@@ -1,0 +1,1802 @@
+{
+  "math:2.1": {
+    "cache_key": "d301b63fd542108d426f773a9c1863835702386b75949739823fdcb0f5fb017c",
+    "concepts": [
+      {
+        "id": "concept:solution",
+        "label": "solution",
+        "score": 2.0,
+        "source_title": "Linear equations: the beginning of algebra"
+      },
+      {
+        "id": "concept:coefficient",
+        "label": "coefficient",
+        "score": 2.0,
+        "source_title": "Linear equations: the beginning of algebra"
+      },
+      {
+        "id": "concept:linear_equation",
+        "label": "linear equation",
+        "score": 2.0,
+        "source_title": "Linear equations: the beginning of algebra"
+      },
+      {
+        "id": "concept:gaussian_reduction",
+        "label": "gaussian reduction",
+        "score": 2.0,
+        "source_title": "Linear equations: the beginning of algebra"
+      },
+      {
+        "id": "concept:homogeneous_system",
+        "label": "homogeneous system",
+        "score": 2.0,
+        "source_title": "Linear equations: the beginning of algebra"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:2.2": {
+    "cache_key": "1fc3b47e05058e53a72da27fb4e0a1b0fd69e4c8d0502b41dcd0674c539e12bb",
+    "concepts": [
+      {
+        "id": "concept:matrix",
+        "label": "matrix",
+        "score": 2.0,
+        "source_title": "Matrices"
+      },
+      {
+        "id": "concept:vector",
+        "label": "vector",
+        "score": 2.0,
+        "source_title": "Matrices"
+      },
+      {
+        "id": "concept:matrix_product",
+        "label": "matrix product",
+        "score": 2.0,
+        "source_title": "Matrices"
+      },
+      {
+        "id": "concept:matrix_addition",
+        "label": "matrix addition",
+        "score": 2.0,
+        "source_title": "Matrices"
+      },
+      {
+        "id": "concept:linear_combination",
+        "label": "linear combination",
+        "score": 2.0,
+        "source_title": "Matrices"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:2.3": {
+    "cache_key": "9740a51ad3d908f236e8585375d23ac9cd4d522110fe461fead84e4f88f5bf8a",
+    "concepts": [
+      {
+        "id": "concept:rank",
+        "label": "rank",
+        "score": 2.0,
+        "source_title": "Reduced Row Echelon Form and Row Operations"
+      },
+      {
+        "id": "concept:row_operation",
+        "label": "row operation",
+        "score": 2.0,
+        "source_title": "Reduced Row Echelon Form and Row Operations"
+      },
+      {
+        "id": "concept:augmented_matrix",
+        "label": "augmented matrix",
+        "score": 2.0,
+        "source_title": "Reduced Row Echelon Form and Row Operations"
+      },
+      {
+        "id": "concept:coefficient_matrix",
+        "label": "coefficient matrix",
+        "score": 2.0,
+        "source_title": "Reduced Row Echelon Form and Row Operations"
+      },
+      {
+        "id": "concept:reduced_row_echelon_form",
+        "label": "reduced row echelon form",
+        "score": 2.0,
+        "source_title": "Reduced Row Echelon Form and Row Operations"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:2.4": {
+    "cache_key": "c52dd763d7e4704fb02489d5044113a126238dd404f2a06d352771f10cdf926d",
+    "concepts": [
+      {
+        "id": "concept:null_space",
+        "label": "null space",
+        "score": 2.0,
+        "source_title": "Solving Linear Systems via Gaussian Reduction"
+      },
+      {
+        "id": "concept:linear_system",
+        "label": "linear system",
+        "score": 2.0,
+        "source_title": "Solving Linear Systems via Gaussian Reduction"
+      },
+      {
+        "id": "concept:row_operation",
+        "label": "row operation",
+        "score": 2.0,
+        "source_title": "Solving Linear Systems via Gaussian Reduction"
+      },
+      {
+        "id": "concept:gaussian_reduction",
+        "label": "gaussian reduction",
+        "score": 2.0,
+        "source_title": "Solving Linear Systems via Gaussian Reduction"
+      },
+      {
+        "id": "concept:homogeneous_system",
+        "label": "homogeneous system",
+        "score": 2.0,
+        "source_title": "Solving Linear Systems via Gaussian Reduction"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:3.1": {
+    "cache_key": "0220c98a001c90a9cff232b244a0f8837fb96150d17951dad9732d47cbe0cf75",
+    "concepts": [
+      {
+        "id": "concept:matrix",
+        "label": "matrix",
+        "score": 2.0,
+        "source_title": "Matrix Multiplication"
+      },
+      {
+        "id": "concept:transpose",
+        "label": "transpose",
+        "score": 2.0,
+        "source_title": "Matrix Multiplication"
+      },
+      {
+        "id": "concept:algebraic_law",
+        "label": "algebraic law",
+        "score": 2.0,
+        "source_title": "Matrix Multiplication"
+      },
+      {
+        "id": "concept:symmetric_matrix",
+        "label": "symmetric matrix",
+        "score": 2.0,
+        "source_title": "Matrix Multiplication"
+      },
+      {
+        "id": "concept:matrix_multiplication",
+        "label": "matrix multiplication",
+        "score": 2.0,
+        "source_title": "Matrix Multiplication"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:3.2": {
+    "cache_key": "e1cb34113c17e130a89178d93395108dfd9a5c2fc3c7acb25c4a32c62787f08f",
+    "concepts": [
+      {
+        "id": "concept:reduced_form",
+        "label": "reduced form",
+        "score": 2.0,
+        "source_title": "Elementary Matrices and Row Operations"
+      },
+      {
+        "id": "concept:linear_system",
+        "label": "linear system",
+        "score": 2.0,
+        "source_title": "Elementary Matrices and Row Operations"
+      },
+      {
+        "id": "concept:row_operation",
+        "label": "row operation",
+        "score": 2.0,
+        "source_title": "Elementary Matrices and Row Operations"
+      },
+      {
+        "id": "concept:elementary_matrix",
+        "label": "elementary matrix",
+        "score": 2.0,
+        "source_title": "Elementary Matrices and Row Operations"
+      },
+      {
+        "id": "concept:matrix_multiplication",
+        "label": "matrix multiplication",
+        "score": 2.0,
+        "source_title": "Elementary Matrices and Row Operations"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:3.3": {
+    "cache_key": "b349c0996ee365cdf30290ffcd0fa5837f8554a4458bad38d1e8337292961b7f",
+    "concepts": [
+      {
+        "id": "concept:rank",
+        "label": "rank",
+        "score": 2.0,
+        "source_title": "Matrix Inverses"
+      },
+      {
+        "id": "concept:group",
+        "label": "group",
+        "score": 2.0,
+        "source_title": "Matrix Inverses"
+      },
+      {
+        "id": "concept:matrix",
+        "label": "matrix",
+        "score": 2.0,
+        "source_title": "Matrix Inverses"
+      },
+      {
+        "id": "concept:inverse",
+        "label": "inverse",
+        "score": 2.0,
+        "source_title": "Matrix Inverses"
+      },
+      {
+        "id": "concept:nonsingular",
+        "label": "nonsingular",
+        "score": 2.0,
+        "source_title": "Matrix Inverses"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:3.4": {
+    "cache_key": "01ce2005eed03829c2ec996b31d946eca19be5f338f0d7a43077a1bdd6852dfd",
+    "concepts": [
+      {
+        "id": "concept:diagonal_matrix",
+        "label": "diagonal matrix",
+        "score": 2.0,
+        "source_title": "The LPDU Factorization"
+      },
+      {
+        "id": "concept:lpdu_factorization",
+        "label": "lpdu factorization",
+        "score": 2.0,
+        "source_title": "The LPDU Factorization"
+      },
+      {
+        "id": "concept:permutation_matrix",
+        "label": "permutation matrix",
+        "score": 2.0,
+        "source_title": "The LPDU Factorization"
+      },
+      {
+        "id": "concept:lower_triangular_matrix",
+        "label": "lower triangular matrix",
+        "score": 2.0,
+        "source_title": "The LPDU Factorization"
+      },
+      {
+        "id": "concept:upper_triangular_matrix",
+        "label": "upper triangular matrix",
+        "score": 2.0,
+        "source_title": "The LPDU Factorization"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:4.1": {
+    "cache_key": "57ff7ec4e28a2e1c17ea5f289b84196bf98bc7a201ef6e2ab037a1b0a2cff56f",
+    "concepts": [
+      {
+        "id": "concept:field",
+        "label": "field",
+        "score": 2.0,
+        "source_title": "What is a Field?"
+      },
+      {
+        "id": "concept:vector_space",
+        "label": "vector space",
+        "score": 2.0,
+        "source_title": "What is a Field?"
+      },
+      {
+        "id": "concept:rational_number",
+        "label": "rational number",
+        "score": 2.0,
+        "source_title": "What is a Field?"
+      },
+      {
+        "id": "concept:binary_operation",
+        "label": "binary operation",
+        "score": 2.0,
+        "source_title": "What is a Field?"
+      },
+      {
+        "id": "concept:algebraic_structure",
+        "label": "algebraic structure",
+        "score": 2.0,
+        "source_title": "What is a Field?"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:4.2": {
+    "cache_key": "5b7cfe5a6613749447123d42bbf4d4709e8f0ad9bfbafd68a4776ca3fb5a52bf",
+    "concepts": [
+      {
+        "id": "concept:field",
+        "label": "field",
+        "score": 2.0,
+        "source_title": "The Integers Modulo a Prime p"
+      },
+      {
+        "id": "concept:congruence",
+        "label": "congruence",
+        "score": 2.0,
+        "source_title": "The Integers Modulo a Prime p"
+      },
+      {
+        "id": "concept:galois_field",
+        "label": "galois field",
+        "score": 2.0,
+        "source_title": "The Integers Modulo a Prime p"
+      },
+      {
+        "id": "concept:characteristic",
+        "label": "characteristic",
+        "score": 2.0,
+        "source_title": "The Integers Modulo a Prime p"
+      },
+      {
+        "id": "concept:modular_arithmetic",
+        "label": "modular arithmetic",
+        "score": 2.0,
+        "source_title": "The Integers Modulo a Prime p"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:4.3": {
+    "cache_key": "4cb72f74f1f544ad8c26dd940365ba6e8019d92fbf34d6e03be3d4ec8fcec50f",
+    "concepts": [
+      {
+        "id": "concept:field",
+        "label": "field",
+        "score": 2.0,
+        "source_title": "The Field of Complex Numbers"
+      },
+      {
+        "id": "concept:modulus",
+        "label": "modulus",
+        "score": 2.0,
+        "source_title": "The Field of Complex Numbers"
+      },
+      {
+        "id": "concept:polynomial",
+        "label": "polynomial",
+        "score": 2.0,
+        "source_title": "The Field of Complex Numbers"
+      },
+      {
+        "id": "concept:complex_number",
+        "label": "complex number",
+        "score": 2.0,
+        "source_title": "The Field of Complex Numbers"
+      },
+      {
+        "id": "concept:complex_conjugate",
+        "label": "complex conjugate",
+        "score": 2.0,
+        "source_title": "The Field of Complex Numbers"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:4.4": {
+    "cache_key": "3942c82d3598d3bfc754a88a1e8fb0131cf0a87e61bf0471fb09d6e9672b97f7",
+    "concepts": [
+      {
+        "id": "concept:vector_space",
+        "label": "vector space",
+        "score": 2.0,
+        "source_title": "Vector Spaces"
+      },
+      {
+        "id": "concept:vector_addition",
+        "label": "vector addition",
+        "score": 2.0,
+        "source_title": "Vector Spaces"
+      },
+      {
+        "id": "concept:additive_identity",
+        "label": "additive identity",
+        "score": 2.0,
+        "source_title": "Vector Spaces"
+      },
+      {
+        "id": "concept:linear_combination",
+        "label": "linear combination",
+        "score": 2.0,
+        "source_title": "Vector Spaces"
+      },
+      {
+        "id": "concept:scalar_multiplication",
+        "label": "scalar multiplication",
+        "score": 2.0,
+        "source_title": "Vector Spaces"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:4.5": {
+    "cache_key": "6ddff6acede85f03064571c9c4f777aec74a0c867e78838202d71d6e63eca6e2",
+    "concepts": [
+      {
+        "id": "concept:orthogonality",
+        "label": "orthogonality",
+        "score": 2.0,
+        "source_title": "Inner Product Spaces"
+      },
+      {
+        "id": "concept:euclidean_space",
+        "label": "euclidean space",
+        "score": 2.0,
+        "source_title": "Inner Product Spaces"
+      },
+      {
+        "id": "concept:inner_product_space",
+        "label": "inner product space",
+        "score": 2.0,
+        "source_title": "Inner Product Spaces"
+      },
+      {
+        "id": "concept:hermitian_inner_product",
+        "label": "hermitian inner product",
+        "score": 2.0,
+        "source_title": "Inner Product Spaces"
+      },
+      {
+        "id": "concept:cauchy_schwartz_inequality",
+        "label": "cauchy schwartz inequality",
+        "score": 2.0,
+        "source_title": "Inner Product Spaces"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:4.6": {
+    "cache_key": "9f84e6c1c65053627861487d6cb46f068a850ed1c869af9ff75737d51d9936bc",
+    "concepts": [
+      {
+        "id": "concept:span",
+        "label": "span",
+        "score": 2.0,
+        "source_title": "Subspaces and Spanning Sets"
+      },
+      {
+        "id": "concept:subspace",
+        "label": "subspace",
+        "score": 2.0,
+        "source_title": "Subspaces and Spanning Sets"
+      },
+      {
+        "id": "concept:vector_space",
+        "label": "vector space",
+        "score": 2.0,
+        "source_title": "Subspaces and Spanning Sets"
+      },
+      {
+        "id": "concept:homogeneous_system",
+        "label": "homogeneous system",
+        "score": 2.0,
+        "source_title": "Subspaces and Spanning Sets"
+      },
+      {
+        "id": "concept:linear_combination",
+        "label": "linear combination",
+        "score": 2.0,
+        "source_title": "Subspaces and Spanning Sets"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:5.1": {
+    "cache_key": "014579893340fe8f06ed6fba4828b1eb132cce9d28e31e0a32efec3a5dbc4dbe",
+    "concepts": [
+      {
+        "id": "concept:basis",
+        "label": "basis",
+        "score": 2.0,
+        "source_title": "The Notion of Dimension"
+      },
+      {
+        "id": "concept:field",
+        "label": "field",
+        "score": 2.0,
+        "source_title": "The Notion of Dimension"
+      },
+      {
+        "id": "concept:dimension",
+        "label": "dimension",
+        "score": 2.0,
+        "source_title": "The Notion of Dimension"
+      },
+      {
+        "id": "concept:vector_space",
+        "label": "vector space",
+        "score": 2.0,
+        "source_title": "The Notion of Dimension"
+      },
+      {
+        "id": "concept:linear_independence",
+        "label": "linear independence",
+        "score": 2.0,
+        "source_title": "The Notion of Dimension"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:5.2": {
+    "cache_key": "f6d07336f6ddca2f39f65d90a0a424cbe0a44b5a5147fd7716098f56352d03f7",
+    "concepts": [
+      {
+        "id": "concept:basis",
+        "label": "basis",
+        "score": 2.0,
+        "source_title": "Bases and Dimension"
+      },
+      {
+        "id": "concept:dimension",
+        "label": "dimension",
+        "score": 2.0,
+        "source_title": "Bases and Dimension"
+      },
+      {
+        "id": "concept:vector_space",
+        "label": "vector space",
+        "score": 2.0,
+        "source_title": "Bases and Dimension"
+      },
+      {
+        "id": "concept:independent_vector",
+        "label": "independent vector",
+        "score": 2.0,
+        "source_title": "Bases and Dimension"
+      },
+      {
+        "id": "concept:linear_combination",
+        "label": "linear combination",
+        "score": 2.0,
+        "source_title": "Bases and Dimension"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:5.3": {
+    "cache_key": "bea7c999b678c469feaa15d42605bf4a9b995b76b72c77b0e1833d390dd68842",
+    "concepts": [
+      {
+        "id": "concept:rank",
+        "label": "rank",
+        "score": 2.0,
+        "source_title": "Some Results on Matrices"
+      },
+      {
+        "id": "concept:basis",
+        "label": "basis",
+        "score": 2.0,
+        "source_title": "Some Results on Matrices"
+      },
+      {
+        "id": "concept:matrix",
+        "label": "matrix",
+        "score": 2.0,
+        "source_title": "Some Results on Matrices"
+      },
+      {
+        "id": "concept:row_space",
+        "label": "row space",
+        "score": 2.0,
+        "source_title": "Some Results on Matrices"
+      },
+      {
+        "id": "concept:column_space",
+        "label": "column space",
+        "score": 2.0,
+        "source_title": "Some Results on Matrices"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:5.4": {
+    "cache_key": "8200c215e8c16bb2b95db3e0fd4f942f36c74f813a1a9bea290002bc1ebb9e1e",
+    "concepts": [
+      {
+        "id": "concept:sum",
+        "label": "sum",
+        "score": 2.0,
+        "source_title": "Intersections and Sums of Subspaces"
+      },
+      {
+        "id": "concept:subspace",
+        "label": "subspace",
+        "score": 2.0,
+        "source_title": "Intersections and Sums of Subspaces"
+      },
+      {
+        "id": "concept:dimension",
+        "label": "dimension",
+        "score": 2.0,
+        "source_title": "Intersections and Sums of Subspaces"
+      },
+      {
+        "id": "concept:direct_sum",
+        "label": "direct sum",
+        "score": 2.0,
+        "source_title": "Intersections and Sums of Subspaces"
+      },
+      {
+        "id": "concept:intersection",
+        "label": "intersection",
+        "score": 2.0,
+        "source_title": "Intersections and Sums of Subspaces"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:5.5": {
+    "cache_key": "73b115e1b1f89446d43d21e723013ddffb0976123fba6de5b3bb9630fbc14421",
+    "concepts": [
+      {
+        "id": "concept:coset",
+        "label": "coset",
+        "score": 2.0,
+        "source_title": "Vector Space Quotients"
+      },
+      {
+        "id": "concept:subspace",
+        "label": "subspace",
+        "score": 2.0,
+        "source_title": "Vector Space Quotients"
+      },
+      {
+        "id": "concept:vector_space",
+        "label": "vector space",
+        "score": 2.0,
+        "source_title": "Vector Space Quotients"
+      },
+      {
+        "id": "concept:quotient_space",
+        "label": "quotient space",
+        "score": 2.0,
+        "source_title": "Vector Space Quotients"
+      },
+      {
+        "id": "concept:equivalence_relation",
+        "label": "equivalence relation",
+        "score": 2.0,
+        "source_title": "Vector Space Quotients"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:6.1": {
+    "cache_key": "7534e76384edde3ca3420faf1dbe462f988529d3f5c1cd3f3b585a374447664c",
+    "concepts": [
+      {
+        "id": "concept:codeword",
+        "label": "codeword",
+        "score": 2.0,
+        "source_title": "Linear Codes"
+      },
+      {
+        "id": "concept:check_digit",
+        "label": "check digit",
+        "score": 2.0,
+        "source_title": "Linear Codes"
+      },
+      {
+        "id": "concept:linear_code",
+        "label": "linear code",
+        "score": 2.0,
+        "source_title": "Linear Codes"
+      },
+      {
+        "id": "concept:generating_matrix",
+        "label": "generating matrix",
+        "score": 2.0,
+        "source_title": "Linear Codes"
+      },
+      {
+        "id": "concept:error_correcting_code",
+        "label": "error correcting code",
+        "score": 2.0,
+        "source_title": "Linear Codes"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:6.2": {
+    "cache_key": "133202245500812337e7f39d9de4b3af9e6c55ea110e0f5ea72b78a83c82f765",
+    "concepts": [
+      {
+        "id": "concept:linear_code",
+        "label": "linear code",
+        "score": 2.0,
+        "source_title": "Error-Correcting Codes"
+      },
+      {
+        "id": "concept:error_correction",
+        "label": "error correction",
+        "score": 2.0,
+        "source_title": "Error-Correcting Codes"
+      },
+      {
+        "id": "concept:hamming_distance",
+        "label": "hamming distance",
+        "score": 2.0,
+        "source_title": "Error-Correcting Codes"
+      },
+      {
+        "id": "concept:minimum_distance",
+        "label": "minimum distance",
+        "score": 2.0,
+        "source_title": "Error-Correcting Codes"
+      },
+      {
+        "id": "concept:error_correcting_code",
+        "label": "error correcting code",
+        "score": 2.0,
+        "source_title": "Error-Correcting Codes"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:6.3": {
+    "cache_key": "143da3f7b1628d8747570fe114e6a73d3f26ecb2b0264e3f84fbe5f8c9658c7a",
+    "concepts": [
+      {
+        "id": "concept:binary_code",
+        "label": "binary code",
+        "score": 2.0,
+        "source_title": "Codes With Large Minimal Distance"
+      },
+      {
+        "id": "concept:hadamard_code",
+        "label": "hadamard code",
+        "score": 2.0,
+        "source_title": "Codes With Large Minimal Distance"
+      },
+      {
+        "id": "concept:orthogonality",
+        "label": "orthogonality",
+        "score": 2.0,
+        "source_title": "Codes With Large Minimal Distance"
+      },
+      {
+        "id": "concept:minimal_distance",
+        "label": "minimal distance",
+        "score": 2.0,
+        "source_title": "Codes With Large Minimal Distance"
+      },
+      {
+        "id": "concept:maximization_problem",
+        "label": "maximization problem",
+        "score": 2.0,
+        "source_title": "Codes With Large Minimal Distance"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:6.4": {
+    "cache_key": "65d092dc964f1e204749c4d350594486f1db5daf0af1ada49b8b0c7752f72f13",
+    "concepts": [
+      {
+        "id": "concept:coset",
+        "label": "coset",
+        "score": 2.0,
+        "source_title": "Perfect Linear Codes"
+      },
+      {
+        "id": "concept:linear_code",
+        "label": "linear code",
+        "score": 2.0,
+        "source_title": "Perfect Linear Codes"
+      },
+      {
+        "id": "concept:hamming_code",
+        "label": "hamming code",
+        "score": 2.0,
+        "source_title": "Perfect Linear Codes"
+      },
+      {
+        "id": "concept:perfect_code",
+        "label": "perfect code",
+        "score": 2.0,
+        "source_title": "Perfect Linear Codes"
+      },
+      {
+        "id": "concept:error_correction",
+        "label": "error correction",
+        "score": 2.0,
+        "source_title": "Perfect Linear Codes"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:7.1": {
+    "cache_key": "1357397d6d2158a5c4b0a48a4f7002fe8d305cdf2d9f3390a68168ee5d7dbfa6",
+    "concepts": [
+      {
+        "id": "concept:basis",
+        "label": "basis",
+        "score": 2.0,
+        "source_title": "Definitions and Examples"
+      },
+      {
+        "id": "concept:mapping",
+        "label": "mapping",
+        "score": 2.0,
+        "source_title": "Definitions and Examples"
+      },
+      {
+        "id": "concept:eigenvalue",
+        "label": "eigenvalue",
+        "score": 2.0,
+        "source_title": "Definitions and Examples"
+      },
+      {
+        "id": "concept:vector_space",
+        "label": "vector space",
+        "score": 2.0,
+        "source_title": "Definitions and Examples"
+      },
+      {
+        "id": "concept:linear_transformation",
+        "label": "linear transformation",
+        "score": 2.0,
+        "source_title": "Definitions and Examples"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:7.2": {
+    "cache_key": "c1e407e54bf29db397224228082c030e377d5ab694b55e9d6bd27689f744dc9f",
+    "concepts": [
+      {
+        "id": "concept:matrix",
+        "label": "matrix",
+        "score": 2.0,
+        "source_title": "Linear Transformations on Fn and Matrices"
+      },
+      {
+        "id": "concept:rotation",
+        "label": "rotation",
+        "score": 2.0,
+        "source_title": "Linear Transformations on Fn and Matrices"
+      },
+      {
+        "id": "concept:composition",
+        "label": "composition",
+        "score": 2.0,
+        "source_title": "Linear Transformations on Fn and Matrices"
+      },
+      {
+        "id": "concept:linear_function",
+        "label": "linear function",
+        "score": 2.0,
+        "source_title": "Linear Transformations on Fn and Matrices"
+      },
+      {
+        "id": "concept:linear_transformation",
+        "label": "linear transformation",
+        "score": 2.0,
+        "source_title": "Linear Transformations on Fn and Matrices"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:7.3": {
+    "cache_key": "a8cc0fe0ff09b74ded54e5ddef0e234b5ad5f6ac29d0ef6899a5c50a0ba5265b",
+    "concepts": [
+      {
+        "id": "concept:projection",
+        "label": "projection",
+        "score": 2.0,
+        "source_title": "Geometry of Linear Transformations on Rn"
+      },
+      {
+        "id": "concept:reflection",
+        "label": "reflection",
+        "score": 2.0,
+        "source_title": "Geometry of Linear Transformations on Rn"
+      },
+      {
+        "id": "concept:parallelogram",
+        "label": "parallelogram",
+        "score": 2.0,
+        "source_title": "Geometry of Linear Transformations on Rn"
+      },
+      {
+        "id": "concept:linear_transformation",
+        "label": "linear transformation",
+        "score": 2.0,
+        "source_title": "Geometry of Linear Transformations on Rn"
+      },
+      {
+        "id": "concept:orthogonal_transformation",
+        "label": "orthogonal transformation",
+        "score": 2.0,
+        "source_title": "Geometry of Linear Transformations on Rn"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:7.4": {
+    "cache_key": "64b3f0fc833a67b3cfaa16fc7c9a137eaf8e555ae2154acf4c2c16c79796255d",
+    "concepts": [
+      {
+        "id": "concept:basis",
+        "label": "basis",
+        "score": 2.0,
+        "source_title": "The Matrix of a Linear Transformation"
+      },
+      {
+        "id": "concept:matrix",
+        "label": "matrix",
+        "score": 2.0,
+        "source_title": "The Matrix of a Linear Transformation"
+      },
+      {
+        "id": "concept:eigenvalue",
+        "label": "eigenvalue",
+        "score": 2.0,
+        "source_title": "The Matrix of a Linear Transformation"
+      },
+      {
+        "id": "concept:coordinates",
+        "label": "coordinates",
+        "score": 2.0,
+        "source_title": "The Matrix of a Linear Transformation"
+      },
+      {
+        "id": "concept:linear_transformation",
+        "label": "linear transformation",
+        "score": 2.0,
+        "source_title": "The Matrix of a Linear Transformation"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:7.5": {
+    "cache_key": "4abe80de3f34cfd047291dd7a2ede1a7206fd3d0712883aaef0d981ffaf93cd1",
+    "concepts": [
+      {
+        "id": "concept:image",
+        "label": "image",
+        "score": 2.0,
+        "source_title": "Further Results on Linear Transformations"
+      },
+      {
+        "id": "concept:kernel",
+        "label": "kernel",
+        "score": 2.0,
+        "source_title": "Further Results on Linear Transformations"
+      },
+      {
+        "id": "concept:dimension",
+        "label": "dimension",
+        "score": 2.0,
+        "source_title": "Further Results on Linear Transformations"
+      },
+      {
+        "id": "concept:isomorphism",
+        "label": "isomorphism",
+        "score": 2.0,
+        "source_title": "Further Results on Linear Transformations"
+      },
+      {
+        "id": "concept:linear_transformation",
+        "label": "linear transformation",
+        "score": 2.0,
+        "source_title": "Further Results on Linear Transformations"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:8.1": {
+    "cache_key": "3ec1ab5598ee3d6a7101c01a4faa7051824900db8e17a24374df33c0a3a85bb7",
+    "concepts": [
+      {
+        "id": "concept:signature",
+        "label": "signature",
+        "score": 2.0,
+        "source_title": "The Definition of the Determinant"
+      },
+      {
+        "id": "concept:determinant",
+        "label": "determinant",
+        "score": 2.0,
+        "source_title": "The Definition of the Determinant"
+      },
+      {
+        "id": "concept:permutation",
+        "label": "permutation",
+        "score": 2.0,
+        "source_title": "The Definition of the Determinant"
+      },
+      {
+        "id": "concept:nonsingular_matrix",
+        "label": "nonsingular matrix",
+        "score": 2.0,
+        "source_title": "The Definition of the Determinant"
+      },
+      {
+        "id": "concept:permutation_matrix",
+        "label": "permutation matrix",
+        "score": 2.0,
+        "source_title": "The Definition of the Determinant"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:8.2": {
+    "cache_key": "76bb6fd7d29249139c6997eb34c05789f0c23e1f2f8b465eb09ad81cc065be7b",
+    "concepts": [
+      {
+        "id": "concept:determinant",
+        "label": "determinant",
+        "score": 2.0,
+        "source_title": "Determinants and Row Operations"
+      },
+      {
+        "id": "concept:permutation",
+        "label": "permutation",
+        "score": 2.0,
+        "source_title": "Determinants and Row Operations"
+      },
+      {
+        "id": "concept:row_operation",
+        "label": "row operation",
+        "score": 2.0,
+        "source_title": "Determinants and Row Operations"
+      },
+      {
+        "id": "concept:elementary_matrix",
+        "label": "elementary matrix",
+        "score": 2.0,
+        "source_title": "Determinants and Row Operations"
+      },
+      {
+        "id": "concept:triangular_matrix",
+        "label": "triangular matrix",
+        "score": 2.0,
+        "source_title": "Determinants and Row Operations"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:8.3": {
+    "cache_key": "687089cba8581109ddda370875b9bd4938dbbde6863aa1d726ba828e58ab013c",
+    "concepts": [
+      {
+        "id": "concept:cofactor",
+        "label": "cofactor",
+        "score": 2.0,
+        "source_title": "Some Further Properties of the Determinant"
+      },
+      {
+        "id": "concept:determinant",
+        "label": "determinant",
+        "score": 2.0,
+        "source_title": "Some Further Properties of the Determinant"
+      },
+      {
+        "id": "concept:cramer_s_rule",
+        "label": "cramer's rule",
+        "score": 2.0,
+        "source_title": "Some Further Properties of the Determinant"
+      },
+      {
+        "id": "concept:laplace_expansion",
+        "label": "laplace expansion",
+        "score": 2.0,
+        "source_title": "Some Further Properties of the Determinant"
+      },
+      {
+        "id": "concept:linear_transformation",
+        "label": "linear transformation",
+        "score": 2.0,
+        "source_title": "Some Further Properties of the Determinant"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:8.4": {
+    "cache_key": "9bf019a6be78fadfe69cd6a4c52dfee2f4cc7535ff433e2ce3f5b2446a05e605",
+    "concepts": [
+      {
+        "id": "concept:volume",
+        "label": "volume",
+        "score": 2.0,
+        "source_title": "Geometric Applications of the Determinant"
+      },
+      {
+        "id": "concept:determinant",
+        "label": "determinant",
+        "score": 2.0,
+        "source_title": "Geometric Applications of the Determinant"
+      },
+      {
+        "id": "concept:cross_product",
+        "label": "cross product",
+        "score": 2.0,
+        "source_title": "Geometric Applications of the Determinant"
+      },
+      {
+        "id": "concept:vector_product",
+        "label": "vector product",
+        "score": 2.0,
+        "source_title": "Geometric Applications of the Determinant"
+      },
+      {
+        "id": "concept:unimodular_matrix",
+        "label": "unimodular matrix",
+        "score": 2.0,
+        "source_title": "Geometric Applications of the Determinant"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:9.1": {
+    "cache_key": "7c0dad11d4ab3232ca1f955d38b976de47514483e2d42c864973812454eb882d",
+    "concepts": [
+      {
+        "id": "concept:eigenvalue",
+        "label": "eigenvalue",
+        "score": 2.0,
+        "source_title": "Dynamical Systems"
+      },
+      {
+        "id": "concept:eigenvector",
+        "label": "eigenvector",
+        "score": 2.0,
+        "source_title": "Dynamical Systems"
+      },
+      {
+        "id": "concept:diagonalization",
+        "label": "diagonalization",
+        "score": 2.0,
+        "source_title": "Dynamical Systems"
+      },
+      {
+        "id": "concept:dynamical_system",
+        "label": "dynamical system",
+        "score": 2.0,
+        "source_title": "Dynamical Systems"
+      },
+      {
+        "id": "concept:characteristic_equation",
+        "label": "characteristic equation",
+        "score": 2.0,
+        "source_title": "Dynamical Systems"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:9.2": {
+    "cache_key": "638df2d24f5a2310117125496a65a8b81bd1ed339e85426022a63f96543c4028",
+    "concepts": [
+      {
+        "id": "concept:eigenpair",
+        "label": "eigenpair",
+        "score": 2.0,
+        "source_title": "Eigen theory: the Basic Definitions"
+      },
+      {
+        "id": "concept:eigenvalue",
+        "label": "eigenvalue",
+        "score": 2.0,
+        "source_title": "Eigen theory: the Basic Definitions"
+      },
+      {
+        "id": "concept:eigenvector",
+        "label": "eigenvector",
+        "score": 2.0,
+        "source_title": "Eigen theory: the Basic Definitions"
+      },
+      {
+        "id": "concept:linear_transformation",
+        "label": "linear transformation",
+        "score": 2.0,
+        "source_title": "Eigen theory: the Basic Definitions"
+      },
+      {
+        "id": "concept:characteristic_polynomial",
+        "label": "characteristic polynomial",
+        "score": 2.0,
+        "source_title": "Eigen theory: the Basic Definitions"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:9.3": {
+    "cache_key": "47cafe45374acf50c5a5abe63110b1ea426254d8c84ba332919f0c6382f0440c",
+    "concepts": [
+      {
+        "id": "concept:eigenspace",
+        "label": "eigenspace",
+        "score": 2.0,
+        "source_title": "Eigenvectors and Diagonalizability"
+      },
+      {
+        "id": "concept:eigenvalue",
+        "label": "eigenvalue",
+        "score": 2.0,
+        "source_title": "Eigenvectors and Diagonalizability"
+      },
+      {
+        "id": "concept:eigenvector",
+        "label": "eigenvector",
+        "score": 2.0,
+        "source_title": "Eigenvectors and Diagonalizability"
+      },
+      {
+        "id": "concept:diagonalization",
+        "label": "diagonalization",
+        "score": 2.0,
+        "source_title": "Eigenvectors and Diagonalizability"
+      },
+      {
+        "id": "concept:linear_transformation",
+        "label": "linear transformation",
+        "score": 2.0,
+        "source_title": "Eigenvectors and Diagonalizability"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:9.4": {
+    "cache_key": "c00abe133a7dedb2d3ea826c9cf590d9a3b2d95a9189824650e3ae7264115018",
+    "concepts": [
+      {
+        "id": "concept:eigenspace",
+        "label": "eigenspace",
+        "score": 2.0,
+        "source_title": "When is a Matrix Diagonalizable?"
+      },
+      {
+        "id": "concept:eigenvalue",
+        "label": "eigenvalue",
+        "score": 2.0,
+        "source_title": "When is a Matrix Diagonalizable?"
+      },
+      {
+        "id": "concept:eigenvector",
+        "label": "eigenvector",
+        "score": 2.0,
+        "source_title": "When is a Matrix Diagonalizable?"
+      },
+      {
+        "id": "concept:diagonalizable",
+        "label": "diagonalizable",
+        "score": 2.0,
+        "source_title": "When is a Matrix Diagonalizable?"
+      },
+      {
+        "id": "concept:cayley_hamilton_theorem",
+        "label": "cayley hamilton theorem",
+        "score": 2.0,
+        "source_title": "When is a Matrix Diagonalizable?"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:9.5": {
+    "cache_key": "9988569e1445f6614d5ac4801d8fda8ba3f392a158ae9bdf7bab35c508edeff3",
+    "concepts": [
+      {
+        "id": "concept:matrix",
+        "label": "matrix",
+        "score": 2.0,
+        "source_title": "The Exponential of a Matrix"
+      },
+      {
+        "id": "concept:nilpotent",
+        "label": "nilpotent",
+        "score": 2.0,
+        "source_title": "The Exponential of a Matrix"
+      },
+      {
+        "id": "concept:eigenvalue",
+        "label": "eigenvalue",
+        "score": 2.0,
+        "source_title": "The Exponential of a Matrix"
+      },
+      {
+        "id": "concept:exponential",
+        "label": "exponential",
+        "score": 2.0,
+        "source_title": "The Exponential of a Matrix"
+      },
+      {
+        "id": "concept:diagonalization",
+        "label": "diagonalization",
+        "score": 2.0,
+        "source_title": "The Exponential of a Matrix"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:10.1": {
+    "cache_key": "2f361dde3a0efeebfbc82629bd7720923d58c2a2c70917c468218808b724372a",
+    "concepts": [
+      {
+        "id": "concept:subspace",
+        "label": "subspace",
+        "score": 2.0,
+        "source_title": "The Orthogonal Projection on a Subspace"
+      },
+      {
+        "id": "concept:pseudo_inverse",
+        "label": "pseudo inverse",
+        "score": 2.0,
+        "source_title": "The Orthogonal Projection on a Subspace"
+      },
+      {
+        "id": "concept:least_squares_problem",
+        "label": "least squares problem",
+        "score": 2.0,
+        "source_title": "The Orthogonal Projection on a Subspace"
+      },
+      {
+        "id": "concept:orthogonal_complement",
+        "label": "orthogonal complement",
+        "score": 2.0,
+        "source_title": "The Orthogonal Projection on a Subspace"
+      },
+      {
+        "id": "concept:orthogonal_projection",
+        "label": "orthogonal projection",
+        "score": 2.0,
+        "source_title": "The Orthogonal Projection on a Subspace"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:10.2": {
+    "cache_key": "ed7ed6194ff43d16fc4351e406434003f37817d6995487e807a02476bcf5bef1",
+    "concepts": [
+      {
+        "id": "concept:subspace",
+        "label": "subspace",
+        "score": 2.0,
+        "source_title": "Orthonormal Sets"
+      },
+      {
+        "id": "concept:projection",
+        "label": "projection",
+        "score": 2.0,
+        "source_title": "Orthonormal Sets"
+      },
+      {
+        "id": "concept:orthonormal_set",
+        "label": "orthonormal set",
+        "score": 2.0,
+        "source_title": "Orthonormal Sets"
+      },
+      {
+        "id": "concept:orthonormal_basis",
+        "label": "orthonormal basis",
+        "score": 2.0,
+        "source_title": "Orthonormal Sets"
+      },
+      {
+        "id": "concept:linear_independence",
+        "label": "linear independence",
+        "score": 2.0,
+        "source_title": "Orthonormal Sets"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:10.3": {
+    "cache_key": "0d2680c009c1cdbe221577f4f4317294271fccd553fa70b9c4eb717950eb4444",
+    "concepts": [
+      {
+        "id": "concept:gram_schmidt",
+        "label": "gram schmidt",
+        "score": 2.0,
+        "source_title": "Gram-Schmidt and the QR-Factorization"
+      },
+      {
+        "id": "concept:qr_decomposition",
+        "label": "qr decomposition",
+        "score": 2.0,
+        "source_title": "Gram-Schmidt and the QR-Factorization"
+      },
+      {
+        "id": "concept:orthonormal_basis",
+        "label": "orthonormal basis",
+        "score": 2.0,
+        "source_title": "Gram-Schmidt and the QR-Factorization"
+      },
+      {
+        "id": "concept:inner_product_space",
+        "label": "inner product space",
+        "score": 2.0,
+        "source_title": "Gram-Schmidt and the QR-Factorization"
+      },
+      {
+        "id": "concept:linear_independence",
+        "label": "linear independence",
+        "score": 2.0,
+        "source_title": "Gram-Schmidt and the QR-Factorization"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:10.4": {
+    "cache_key": "b815a50e1d774adb64ef1a87b18484ab466841f899fd4783d8915451f3129752",
+    "concepts": [
+      {
+        "id": "concept:isometry",
+        "label": "isometry",
+        "score": 2.0,
+        "source_title": "Further Remarks on Inner Product Spaces"
+      },
+      {
+        "id": "concept:inner_product",
+        "label": "inner product",
+        "score": 2.0,
+        "source_title": "Further Remarks on Inner Product Spaces"
+      },
+      {
+        "id": "concept:orthonormal_basis",
+        "label": "orthonormal basis",
+        "score": 2.0,
+        "source_title": "Further Remarks on Inner Product Spaces"
+      },
+      {
+        "id": "concept:linear_transformation",
+        "label": "linear transformation",
+        "score": 2.0,
+        "source_title": "Further Remarks on Inner Product Spaces"
+      },
+      {
+        "id": "concept:hermitian_inner_product",
+        "label": "hermitian inner product",
+        "score": 2.0,
+        "source_title": "Further Remarks on Inner Product Spaces"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:10.5": {
+    "cache_key": "8fcc590cb17d17b4d5293c4bf0aca1ff2b2d7fe808a36ffde298784507f341f2",
+    "concepts": [
+      {
+        "id": "concept:group",
+        "label": "group",
+        "score": 2.0,
+        "source_title": "The Group of Rotations of R3"
+      },
+      {
+        "id": "concept:matrix",
+        "label": "matrix",
+        "score": 2.0,
+        "source_title": "The Group of Rotations of R3"
+      },
+      {
+        "id": "concept:rotation",
+        "label": "rotation",
+        "score": 2.0,
+        "source_title": "The Group of Rotations of R3"
+      },
+      {
+        "id": "concept:symmetry",
+        "label": "symmetry",
+        "score": 2.0,
+        "source_title": "The Group of Rotations of R3"
+      },
+      {
+        "id": "concept:determinant",
+        "label": "determinant",
+        "score": 2.0,
+        "source_title": "The Group of Rotations of R3"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:11.1": {
+    "cache_key": "19b2c181749f299aa94dcee967e8fdebe7c48d181077b43ae77d5716202b36ce",
+    "concepts": [
+      {
+        "id": "concept:eigenvalue",
+        "label": "eigenvalue",
+        "score": 2.0,
+        "source_title": "The Normal Matrix Theorem"
+      },
+      {
+        "id": "concept:normal_matrix",
+        "label": "normal matrix",
+        "score": 2.0,
+        "source_title": "The Normal Matrix Theorem"
+      },
+      {
+        "id": "concept:unitary_matrix",
+        "label": "unitary matrix",
+        "score": 2.0,
+        "source_title": "The Normal Matrix Theorem"
+      },
+      {
+        "id": "concept:diagonalization",
+        "label": "diagonalization",
+        "score": 2.0,
+        "source_title": "The Normal Matrix Theorem"
+      },
+      {
+        "id": "concept:hermitian_matrix",
+        "label": "hermitian matrix",
+        "score": 2.0,
+        "source_title": "The Normal Matrix Theorem"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:11.2": {
+    "cache_key": "946cd7db391193c0bffab44efafd12cda965b3f962f1f0da6bcff22655710be8",
+    "concepts": [
+      {
+        "id": "concept:eigenvalue",
+        "label": "eigenvalue",
+        "score": 2.0,
+        "source_title": "The Principal Axis Theorem"
+      },
+      {
+        "id": "concept:projection",
+        "label": "projection",
+        "score": 2.0,
+        "source_title": "The Principal Axis Theorem"
+      },
+      {
+        "id": "concept:hermitian_matrix",
+        "label": "hermitian matrix",
+        "score": 2.0,
+        "source_title": "The Principal Axis Theorem"
+      },
+      {
+        "id": "concept:principal_axis_theorem",
+        "label": "principal axis theorem",
+        "score": 2.0,
+        "source_title": "The Principal Axis Theorem"
+      },
+      {
+        "id": "concept:orthogonal_diagonalization",
+        "label": "orthogonal diagonalization",
+        "score": 2.0,
+        "source_title": "The Principal Axis Theorem"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:11.3": {
+    "cache_key": "bebe6d5c76a891ba77c0dc2a4ccaf3b8be6238a3990d58aa46dc35eaf304cdc3",
+    "concepts": [
+      {
+        "id": "concept:eigenvalue",
+        "label": "eigenvalue",
+        "score": 2.0,
+        "source_title": "Diagonalization of Self Adjoint Operators"
+      },
+      {
+        "id": "concept:hermitian_matrix",
+        "label": "hermitian matrix",
+        "score": 2.0,
+        "source_title": "Diagonalization of Self Adjoint Operators"
+      },
+      {
+        "id": "concept:inner_product_space",
+        "label": "inner product space",
+        "score": 2.0,
+        "source_title": "Diagonalization of Self Adjoint Operators"
+      },
+      {
+        "id": "concept:self_adjoint_operator",
+        "label": "self adjoint operator",
+        "score": 2.0,
+        "source_title": "Diagonalization of Self Adjoint Operators"
+      },
+      {
+        "id": "concept:principal_axis_theorem",
+        "label": "principal axis theorem",
+        "score": 2.0,
+        "source_title": "Diagonalization of Self Adjoint Operators"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:12.1": {
+    "cache_key": "11b25bd9cd3853574ebf48155633cbe47785d0154951909049724c56e8c769f4",
+    "concepts": [
+      {
+        "id": "concept:eigenvalue",
+        "label": "eigenvalue",
+        "score": 2.0,
+        "source_title": "Quadratic Forms"
+      },
+      {
+        "id": "concept:critical_point",
+        "label": "critical point",
+        "score": 2.0,
+        "source_title": "Quadratic Forms"
+      },
+      {
+        "id": "concept:quadratic_form",
+        "label": "quadratic form",
+        "score": 2.0,
+        "source_title": "Quadratic Forms"
+      },
+      {
+        "id": "concept:symmetric_matrix",
+        "label": "symmetric matrix",
+        "score": 2.0,
+        "source_title": "Quadratic Forms"
+      },
+      {
+        "id": "concept:positive_definite",
+        "label": "positive definite",
+        "score": 2.0,
+        "source_title": "Quadratic Forms"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:12.2": {
+    "cache_key": "bee80fd063af0323399b70e871219b58452fc9f1e0ba72be398ae2924e9868f7",
+    "concepts": [
+      {
+        "id": "concept:graph",
+        "label": "graph",
+        "score": 2.0,
+        "source_title": "Symmetric Matrices and Graph Theory"
+      },
+      {
+        "id": "concept:eigenvalue",
+        "label": "eigenvalue",
+        "score": 2.0,
+        "source_title": "Symmetric Matrices and Graph Theory"
+      },
+      {
+        "id": "concept:regular_graph",
+        "label": "regular graph",
+        "score": 2.0,
+        "source_title": "Symmetric Matrices and Graph Theory"
+      },
+      {
+        "id": "concept:adjacency_matrix",
+        "label": "adjacency matrix",
+        "score": 2.0,
+        "source_title": "Symmetric Matrices and Graph Theory"
+      },
+      {
+        "id": "concept:symmetric_matrix",
+        "label": "symmetric matrix",
+        "score": 2.0,
+        "source_title": "Symmetric Matrices and Graph Theory"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:12.3": {
+    "cache_key": "573094c26c8506551432b3e80be10b88a2b5491816e8a3dade8eddb4e21ae4ee",
+    "concepts": [
+      {
+        "id": "concept:eigenvalue",
+        "label": "eigenvalue",
+        "score": 2.0,
+        "source_title": "Computing Eigenvalues"
+      },
+      {
+        "id": "concept:convergence",
+        "label": "convergence",
+        "score": 2.0,
+        "source_title": "Computing Eigenvalues"
+      },
+      {
+        "id": "concept:power_method",
+        "label": "power method",
+        "score": 2.0,
+        "source_title": "Computing Eigenvalues"
+      },
+      {
+        "id": "concept:qr_algorithm",
+        "label": "qr algorithm",
+        "score": 2.0,
+        "source_title": "Computing Eigenvalues"
+      },
+      {
+        "id": "concept:unitary_matrix",
+        "label": "unitary matrix",
+        "score": 2.0,
+        "source_title": "Computing Eigenvalues"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:13.1": {
+    "cache_key": "57e38f149f415d7e4ab59d9aa926b4ec948bfcc57021e8bb06e88fed8d085d94",
+    "concepts": [
+      {
+        "id": "concept:nilpotent",
+        "label": "nilpotent",
+        "score": 2.0,
+        "source_title": "The Main Result"
+      },
+      {
+        "id": "concept:eigenvalue",
+        "label": "eigenvalue",
+        "score": 2.0,
+        "source_title": "The Main Result"
+      },
+      {
+        "id": "concept:semi_simple",
+        "label": "semi simple",
+        "score": 2.0,
+        "source_title": "The Main Result"
+      },
+      {
+        "id": "concept:invariant_subspace",
+        "label": "invariant subspace",
+        "score": 2.0,
+        "source_title": "The Main Result"
+      },
+      {
+        "id": "concept:jordan_decomposition",
+        "label": "jordan decomposition",
+        "score": 2.0,
+        "source_title": "The Main Result"
+      }
+    ],
+    "strategy": "llm"
+  },
+  "math:13.2": {
+    "cache_key": "d056a3b49c47c82c4e8b58530e00ad25b6cf4318d261d02439ec001019400ac6",
+    "concepts": [
+      {
+        "id": "concept:eigenvalue",
+        "label": "eigenvalue",
+        "score": 2.0,
+        "source_title": "Further Results on Linear Transformations"
+      },
+      {
+        "id": "concept:nilpotent_matrix",
+        "label": "nilpotent matrix",
+        "score": 2.0,
+        "source_title": "Further Results on Linear Transformations"
+      },
+      {
+        "id": "concept:minimal_polynomial",
+        "label": "minimal polynomial",
+        "score": 2.0,
+        "source_title": "Further Results on Linear Transformations"
+      },
+      {
+        "id": "concept:jordan_decomposition",
+        "label": "jordan decomposition",
+        "score": 2.0,
+        "source_title": "Further Results on Linear Transformations"
+      },
+      {
+        "id": "concept:cayley_hamilton_theorem",
+        "label": "cayley hamilton theorem",
+        "score": 2.0,
+        "source_title": "Further Results on Linear Transformations"
+      }
+    ],
+    "strategy": "llm"
+  }
+}

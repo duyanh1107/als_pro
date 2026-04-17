@@ -70,3 +70,21 @@ class LessonDraft:
     @classmethod
     def from_dict(cls, data: dict) -> "LessonDraft":
         return cls(**data)
+
+
+@dataclass
+class CourseConceptReview:
+    # Teachers review the system-generated course concept vocabulary here before
+    # we reuse it for graph building and future curation flows.
+    course_id: str
+    mode: str = "augment"
+    added_concepts: list[str] = field(default_factory=list)
+    removed_concepts: list[str] = field(default_factory=list)
+    replacement_concepts: list[str] = field(default_factory=list)
+
+    def to_dict(self) -> dict:
+        return asdict(self)
+
+    @classmethod
+    def from_dict(cls, data: dict) -> "CourseConceptReview":
+        return cls(**data)

@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 import re
 import sys
 from pathlib import Path
@@ -15,8 +16,15 @@ except ImportError as exc:  # pragma: no cover - only triggered when the optiona
         "Streamlit is not installed. Install it with `pip install streamlit` to run the teacher review app."
     ) from exc
 
+from core.models import CourseConceptReview
+from graph.concept_graph_builder import build_course_concept_graph_for_id
+from graph.graph_store import get_concept_graph_path
+from graph.graph_store import load_concept_graph
 from llm.lesson_generator import get_mastery_band
 from services.content_service import get_course
+from services.content_service import list_courses
+from services.concept_store import load_course_concept_review
+from services.concept_store import save_course_concept_review
 from services.lesson_store import delete_lesson_draft
 from services.lesson_store import list_lesson_drafts
 from services.lesson_store import save_lesson_draft
@@ -28,7 +36,17 @@ ALLOWED_STATUSES = ["draft", "reviewed", "approved", "archived"]
 
 
 def main() -> None:
-    st.title("Teacher Lesson Review")
+    st.title("Teacher Review Workspace")
+    workspace = st.sidebar.radio(
+        "Workspace",
+        options=["Lesson drafts", "Course concepts"],
+        help="Use lesson drafts for content review and course concepts for concept curation.",
+    )
+
+    if workspace == "Course concepts":
+        render_course_concept_workspace()
+        return
+
     st.caption("Review RAG-grounded lesson drafts, inspect source chunks, and edit before release.")
 
     drafts = list_lesson_drafts()
@@ -291,6 +309,201 @@ def build_default_skill_weights(allowed_skills: list[str], primary_skill: str) -
 
 def clamp_weight_inputs(weight_inputs: dict[str, float]) -> dict[str, float]:
     return {skill: max(0.0, min(1.0, float(value))) for skill, value in weight_inputs.items()}
+
+
+def render_course_concept_workspace() -> None:
+    st.caption(
+        "Start from the system-generated course concepts, then let the teacher add/remove "
+        "entries or replace the list entirely."
+    )
+
+    courses = list_courses()
+    course_options = {f"{course.title} ({course.course_id})": course for course in courses}
+    selected_course_label = st.sidebar.selectbox("Course", list(course_options.keys()))
+    course = course_options[selected_course_label]
+
+    generated_concepts = get_generated_course_concepts(course.course_id)
+    generated_concept_labels = [item["concept"] for item in generated_concepts]
+    review = load_course_concept_review(course.course_id) or CourseConceptReview(course_id=course.course_id)
+
+    st.subheader("Course Concept Review")
+    st.write(f"Course ID: `{course.course_id}`")
+    st.caption(
+        "Teacher edits are stored separately from the generated graph. "
+        "Rebuilding the concept graph will apply them on top of the system output."
+    )
+
+    left_col, right_col = st.columns([1, 1.2], gap="large")
+
+    with left_col:
+        with st.container(border=True):
+            st.subheader("Review Mode")
+            review_mode = st.radio(
+                "How should teacher edits be applied?",
+                options=["augment", "replace"],
+                index=0 if review.mode == "augment" else 1,
+                format_func=lambda value: "Augment generated list" if value == "augment" else "Replace from scratch",
+                help="Augment keeps the system-generated list and lets the teacher add/remove concepts. Replace uses only the teacher's manual list.",
+            )
+
+            removed_concepts = st.multiselect(
+                "Remove generated concepts",
+                options=generated_concept_labels,
+                default=[concept for concept in review.removed_concepts if concept in generated_concept_labels],
+                help="These concepts will be filtered out from the generated graph for this course.",
+            )
+
+            added_text = st.text_area(
+                "Add concepts",
+                value="\n".join(review.added_concepts),
+                height=180,
+                help="One concept per line. These appear as teacher-added course concepts.",
+            )
+
+            replacement_text = st.text_area(
+                "Manual concept list (replace mode)",
+                value="\n".join(review.replacement_concepts),
+                height=220,
+                help="When replace mode is selected, this becomes the course concept catalog.",
+            )
+
+    with right_col:
+        with st.container(border=True):
+            st.subheader("Generated Concepts")
+            st.caption("This is the current system-generated concept list for the selected course, with phase-1 core scores.")
+            st.dataframe(
+                generated_concepts if generated_concepts else [{"concept": "No generated concepts found.", "core_score": None}],
+                use_container_width=True,
+                hide_index=True,
+            )
+
+        final_concepts = build_final_course_concepts(
+            generated_concepts=generated_concepts,
+            mode=review_mode,
+            added_concepts=parse_concept_text(added_text),
+            removed_concepts=removed_concepts,
+            replacement_concepts=parse_concept_text(replacement_text),
+        )
+        with st.container(border=True):
+            st.subheader("Teacher-Curated Preview")
+            st.caption(
+                "This preview shows the final course concept vocabulary after teacher edits. "
+                "Teacher-added concepts without a module match will appear as standalone concept nodes."
+            )
+            st.dataframe(
+                final_concepts if final_concepts else [{"concept": "No concepts selected.", "core_score": None}],
+                use_container_width=True,
+                hide_index=True,
+            )
+
+        with st.container(border=True):
+            st.subheader("Stored Graph Snapshot")
+            graph_path = get_concept_graph_path(course.course_id)
+            if graph_path.exists():
+                graph = load_concept_graph(course.course_id)
+                st.write(f"Graph version: `{graph['graph_version']}`")
+                st.write(f"Concept nodes: `{graph['concept_count']}`")
+                st.write(f"Edges: `{graph['edge_count']}`")
+            else:
+                st.caption("No concept graph snapshot has been saved for this course yet.")
+
+    review_to_save = CourseConceptReview(
+        course_id=course.course_id,
+        mode=review_mode,
+        added_concepts=parse_concept_text(added_text),
+        removed_concepts=removed_concepts,
+        replacement_concepts=parse_concept_text(replacement_text),
+    )
+
+    action_cols = st.columns(2)
+    if action_cols[0].button("Save concept review", type="primary", use_container_width=True):
+        path = save_course_concept_review(review_to_save)
+        st.success(f"Concept review saved to {path.name}.")
+
+    if action_cols[1].button("Save and rebuild concept graph", use_container_width=True):
+        save_course_concept_review(review_to_save)
+        graph = build_course_concept_graph_for_id(course.course_id)
+        st.success(
+            f"Concept review saved and graph rebuilt. "
+            f"Concept nodes: {graph['concept_count']} | Edges: {graph['edge_count']}"
+        )
+
+
+def get_generated_course_concepts(course_id: str) -> list[dict]:
+    """Load the generated concept catalog with core scores from the saved graph."""
+    graph_path = get_concept_graph_path(course_id)
+    graph = load_concept_graph(course_id) if graph_path.exists() else build_course_concept_graph_for_id(course_id)
+    concepts = sorted(
+        (
+            {
+                "concept": str(node.get("label", "")).strip(),
+                "core_score": float(node.get("core_score", 0.0)),
+            }
+            for node in graph["nodes"]
+            if node.get("type") == "concept" and str(node.get("label", "")).strip()
+        ),
+        key=lambda item: (-item["core_score"], item["concept"]),
+    )
+    return concepts
+
+
+def parse_concept_text(text: str) -> list[str]:
+    """Turn one-concept-per-line teacher input into a clean unique list."""
+    concepts: list[str] = []
+    seen: set[str] = set()
+    for line in text.splitlines():
+        normalized = normalize_concept_input(line)
+        if not normalized or normalized in seen:
+            continue
+        seen.add(normalized)
+        concepts.append(normalized)
+    return concepts
+
+
+def normalize_concept_input(value: str) -> str:
+    text = re.sub(r"\s+", " ", value.strip().lower())
+    return text
+
+
+def build_final_course_concepts(
+    generated_concepts: list[dict],
+    mode: str,
+    added_concepts: list[str],
+    removed_concepts: list[str],
+    replacement_concepts: list[str],
+) -> list[dict]:
+    """Preview the final course concept set after teacher edits."""
+    generated_score_map = {
+        normalize_concept_input(item["concept"]): float(item.get("core_score", 0.0))
+        for item in generated_concepts
+        if normalize_concept_input(item["concept"])
+    }
+    generated_rows = [
+        {
+            "concept": normalize_concept_input(item["concept"]),
+            "core_score": float(item.get("core_score", 0.0)),
+        }
+        for item in generated_concepts
+        if normalize_concept_input(item["concept"])
+    ]
+    removed = {normalize_concept_input(concept) for concept in removed_concepts if normalize_concept_input(concept)}
+
+    if mode == "replace":
+        return [
+            {
+                "concept": concept,
+                "core_score": generated_score_map.get(concept, 0.0),
+            }
+            for concept in replacement_concepts
+        ]
+
+    merged = [row for row in generated_rows if row["concept"] not in removed]
+    merged_concepts = {row["concept"] for row in merged}
+    for concept in added_concepts:
+        if concept not in merged_concepts:
+            merged.append({"concept": concept, "core_score": 0.0})
+            merged_concepts.add(concept)
+    return sorted(merged, key=lambda item: (-item["core_score"], item["concept"]))
 
 
 def format_draft_label(draft) -> str:

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Module Graph Debug</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f1ea;
+      color: #1f2937;
+    }
+    .app {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      height: 100vh;
+    }
+    .sidebar {
+      border-right: 1px solid #d6d3d1;
+      padding: 16px;
+      background: #fffaf4;
+      overflow: auto;
+    }
+    .canvas-wrap {
+      position: relative;
+      overflow: auto;
+      background: linear-gradient(180deg, #fffdf8 0%, #f7efe4 100%);
+    }
+    .section-title {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #6b7280;
+      margin: 16px 0 8px 0;
+    }
+    .stat {
+      margin: 4px 0;
+      font-size: 14px;
+    }
+    .filter-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 8px 0;
+      font-size: 14px;
+    }
+    .details {
+      margin-top: 12px;
+      padding: 12px;
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      white-space: pre-wrap;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    select {
+      width: 100%;
+      padding: 8px 10px;
+      border-radius: 10px;
+      border: 1px solid #d6d3d1;
+      background: white;
+      font-size: 14px;
+    }
+    svg {
+      width: 1600px;
+      height: 1000px;
+      display: block;
+    }
+    .node {
+      cursor: pointer;
+    }
+    .node rect {
+      fill: #fff;
+      stroke: #c08457;
+      stroke-width: 1.5;
+      rx: 14;
+      ry: 14;
+    }
+    .node.active rect {
+      fill: #fff7ed;
+      stroke: #ea580c;
+      stroke-width: 2.5;
+    }
+    .node text {
+      font-size: 12px;
+      fill: #1f2937;
+      pointer-events: none;
+    }
+    .edge {
+      fill: none;
+      stroke-width: 2;
+      opacity: 0.55;
+    }
+    .edge.prerequisite_of {
+      stroke: #2563eb;
+    }
+    .edge.related_to {
+      stroke: #f59e0b;
+    }
+    .edge.similar_to {
+      stroke: #7c3aed;
+    }
+    .helper-text {
+      color: #6b7280;
+      font-size: 13px;
+      line-height: 1.5;
+      margin-top: 8px;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      margin: 6px 0;
+    }
+    .legend-line {
+      width: 28px;
+      height: 0;
+      border-top: 3px solid;
+    }
+    .tooltip {
+      position: absolute;
+      pointer-events: none;
+      background: rgba(17, 24, 39, 0.92);
+      color: white;
+      padding: 10px 12px;
+      border-radius: 10px;
+      font-size: 12px;
+      line-height: 1.5;
+      max-width: 320px;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+      display: none;
+      z-index: 20;
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="section-title">Graph</div>
+      <div class="stat"><strong>Course:</strong> Linear Algebra Foundations</div>
+      <div class="stat"><strong>Version:</strong> phase_2_toc_plus_similarity</div>
+      <div class="stat"><strong>Nodes:</strong> 50</div>
+      <div class="stat"><strong>Edges:</strong> 245</div>
+
+      <div class="section-title">Filters</div>
+      <label class="filter-row">
+        <input type="checkbox" id="showPrereq" checked />
+        prerequisite_of
+      </label>
+      <label class="filter-row">
+        <input type="checkbox" id="showRelated" checked />
+        related_to
+      </label>
+      <label class="filter-row">
+        <input type="checkbox" id="showSimilar" checked />
+        similar_to
+      </label>
+
+      <div class="section-title">Focus Module</div>
+      <select id="moduleSelect">
+        <option value="math:2.1">math:2.1 - Linear equations: the beginning of algebra</option>
+<option value="math:2.2">math:2.2 - Matrices</option>
+<option value="math:2.3">math:2.3 - Reduced Row Echelon Form and Row Operations</option>
+<option value="math:2.4" selected>math:2.4 - Solving Linear Systems via Gaussian Reduction</option>
+<option value="math:3.1">math:3.1 - Matrix Multiplication</option>
+<option value="math:3.2">math:3.2 - Elementary Matrices and Row Operations</option>
+<option value="math:3.3">math:3.3 - Matrix Inverses</option>
+<option value="math:3.4">math:3.4 - The LPDU Factorization</option>
+<option value="math:4.1">math:4.1 - What is a Field?</option>
+<option value="math:4.2">math:4.2 - The Integers Modulo a Prime p</option>
+<option value="math:4.3">math:4.3 - The Field of Complex Numbers</option>
+<option value="math:4.4">math:4.4 - Vector Spaces</option>
+<option value="math:4.5">math:4.5 - Inner Product Spaces</option>
+<option value="math:4.6">math:4.6 - Subspaces and Spanning Sets</option>
+<option value="math:5.1">math:5.1 - The Notion of Dimension</option>
+<option value="math:5.2">math:5.2 - Bases and Dimension</option>
+<option value="math:5.3">math:5.3 - Some Results on Matrices</option>
+<option value="math:5.4">math:5.4 - Intersections and Sums of Subspaces</option>
+<option value="math:5.5">math:5.5 - Vector Space Quotients</option>
+<option value="math:6.1">math:6.1 - Linear Codes</option>
+<option value="math:6.2">math:6.2 - Error-Correcting Codes</option>
+<option value="math:6.3">math:6.3 - Codes With Large Minimal Distance</option>
+<option value="math:6.4">math:6.4 - Perfect Linear Codes</option>
+<option value="math:7.1">math:7.1 - Definitions and Examples</option>
+<option value="math:7.2">math:7.2 - Linear Transformations on Fn and Matrices</option>
+<option value="math:7.3">math:7.3 - Geometry of Linear Transformations on Rn</option>
+<option value="math:7.4">math:7.4 - The Matrix of a Linear Transformation</option>
+<option value="math:7.5">math:7.5 - Further Results on Linear Transformations</option>
+<option value="math:8.1">math:8.1 - The Definition of the Determinant</option>
+<option value="math:8.2">math:8.2 - Determinants and Row Operations</option>
+<option value="math:8.3">math:8.3 - Some Further Properties of the Determinant</option>
+<option value="math:8.4">math:8.4 - Geometric Applications of the Determinant</option>
+<option value="math:9.1">math:9.1 - Dynamical Systems</option>
+<option value="math:9.2">math:9.2 - Eigen theory: the Basic Definitions</option>
+<option value="math:9.3">math:9.3 - Eigenvectors and Diagonalizability</option>
+<option value="math:9.4">math:9.4 - When is a Matrix Diagonalizable?</option>
+<option value="math:9.5">math:9.5 - The Exponential of a Matrix</option>
+<option value="math:10.1">math:10.1 - The Orthogonal Projection on a Subspace</option>
+<option value="math:10.2">math:10.2 - Orthonormal Sets</option>
+<option value="math:10.3">math:10.3 - Gram-Schmidt and the QR-Factorization</option>
+<option value="math:10.4">math:10.4 - Further Remarks on Inner Product Spaces</option>
+<option value="math:10.5">math:10.5 - The Group of Rotations of R3</option>
+<option value="math:11.1">math:11.1 - The Normal Matrix Theorem</option>
+<option value="math:11.2">math:11.2 - The Principal Axis Theorem</option>
+<option value="math:11.3">math:11.3 - Diagonalization of Self Adjoint Operators</option>
+<option value="math:12.1">math:12.1 - Quadratic Forms</option>
+<option value="math:12.2">math:12.2 - Symmetric Matrices and Graph Theory</option>
+<option value="math:12.3">math:12.3 - Computing Eigenvalues</option>
+<option value="math:13.1">math:13.1 - The Main Result</option>
+<option value="math:13.2">math:13.2 - Further Results on Linear Transformations</option>
+      </select>
+      <div class="helper-text">
+        The viewer renders the selected module and its one-hop neighbors only.
+      </div>
+
+      <div class="section-title">Legend</div>
+      <div class="legend-item">
+        <span class="legend-line" style="border-color:#2563eb;"></span>
+        prerequisite_of
+      </div>
+      <div class="legend-item">
+        <span class="legend-line" style="border-color:#f59e0b;"></span>
+        related_to
+      </div>
+      <div class="legend-item">
+        <span class="legend-line" style="border-color:#7c3aed;"></span>
+        similar_to
+      </div>
+
+      <div class="section-title">Node Details</div>
+      <div id="details" class="details">Click a node to inspect module metadata and connected edges.</div>
+    </aside>
+
+    <main class="canvas-wrap">
+      <svg id="graph" viewBox="0 0 1600 1000"></svg>
+      <div id="tooltip" class="tooltip"></div>
+    </main>
+  </div>
+
+  <script>
+    const graph = {"course_id": "math", "course_title": "Linear Algebra Foundations", "graph_version": "phase_2_toc_plus_similarity", "node_count": 50, "edge_count": 245, "nodes": [{"id": "math:2.1", "type": "module", "course_id": "math", "title": "Linear equations: the beginning of algebra", "chapter_title": "Linear Equations and Matrices", "toc_number": "2.1", "start_page": 15, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:2.2", "type": "module", "course_id": "math", "title": "Matrices", "chapter_title": "Linear Equations and Matrices", "toc_number": "2.2", "start_page": 18, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:2.3", "type": "module", "course_id": "math", "title": "Reduced Row Echelon Form and Row Operations", "chapter_title": "Linear Equations and Matrices", "toc_number": "2.3", "start_page": 23, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:2.4", "type": "module", "course_id": "math", "title": "Solving Linear Systems via Gaussian Reduction", "chapter_title": "Linear Equations and Matrices", "toc_number": "2.4", "start_page": 26, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:3.1", "type": "module", "course_id": "math", "title": "Matrix Multiplication", "chapter_title": "More Matrix Theory", "toc_number": "3.1", "start_page": 37, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:3.2", "type": "module", "course_id": "math", "title": "Elementary Matrices and Row Operations", "chapter_title": "More Matrix Theory", "toc_number": "3.2", "start_page": 43, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:3.3", "type": "module", "course_id": "math", "title": "Matrix Inverses", "chapter_title": "More Matrix Theory", "toc_number": "3.3", "start_page": 49, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:3.4", "type": "module", "course_id": "math", "title": "The LPDU Factorization", "chapter_title": "More Matrix Theory", "toc_number": "3.4", "start_page": 59, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:4.1", "type": "module", "course_id": "math", "title": "What is a Field?", "chapter_title": "Fields and Vector Spaces", "toc_number": "4.1", "start_page": 75, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:4.2", "type": "module", "course_id": "math", "title": "The Integers Modulo a Prime p", "chapter_title": "Fields and Vector Spaces", "toc_number": "4.2", "start_page": 84, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:4.3", "type": "module", "course_id": "math", "title": "The Field of Complex Numbers", "chapter_title": "Fields and Vector Spaces", "toc_number": "4.3", "start_page": 93, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:4.4", "type": "module", "course_id": "math", "title": "Vector Spaces", "chapter_title": "Fields and Vector Spaces", "toc_number": "4.4", "start_page": 98, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:4.5", "type": "module", "course_id": "math", "title": "Inner Product Spaces", "chapter_title": "Fields and Vector Spaces", "toc_number": "4.5", "start_page": 105, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:4.6", "type": "module", "course_id": "math", "title": "Subspaces and Spanning Sets", "chapter_title": "Fields and Vector Spaces", "toc_number": "4.6", "start_page": 112, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:5.1", "type": "module", "course_id": "math", "title": "The Notion of Dimension", "chapter_title": "Finite Dimensional Vector Spaces", "toc_number": "5.1", "start_page": 119, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:5.2", "type": "module", "course_id": "math", "title": "Bases and Dimension", "chapter_title": "Finite Dimensional Vector Spaces", "toc_number": "5.2", "start_page": 126, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:5.3", "type": "module", "course_id": "math", "title": "Some Results on Matrices", "chapter_title": "Finite Dimensional Vector Spaces", "toc_number": "5.3", "start_page": 135, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:5.4", "type": "module", "course_id": "math", "title": "Intersections and Sums of Subspaces", "chapter_title": "Finite Dimensional Vector Spaces", "toc_number": "5.4", "start_page": 141, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:5.5", "type": "module", "course_id": "math", "title": "Vector Space Quotients", "chapter_title": "Finite Dimensional Vector Spaces", "toc_number": "5.5", "start_page": 148, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:6.1", "type": "module", "course_id": "math", "title": "Linear Codes", "chapter_title": "Linear Coding Theory", "toc_number": "6.1", "start_page": 155, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:6.2", "type": "module", "course_id": "math", "title": "Error-Correcting Codes", "chapter_title": "Linear Coding Theory", "toc_number": "6.2", "start_page": 162, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:6.3", "type": "module", "course_id": "math", "title": "Codes With Large Minimal Distance", "chapter_title": "Linear Coding Theory", "toc_number": "6.3", "start_page": 166, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:6.4", "type": "module", "course_id": "math", "title": "Perfect Linear Codes", "chapter_title": "Linear Coding Theory", "toc_number": "6.4", "start_page": 170, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:7.1", "type": "module", "course_id": "math", "title": "Definitions and Examples", "chapter_title": "Linear Transformations", "toc_number": "7.1", "start_page": 183, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:7.2", "type": "module", "course_id": "math", "title": "Linear Transformations on Fn and Matrices", "chapter_title": "Linear Transformations", "toc_number": "7.2", "start_page": 190, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:7.3", "type": "module", "course_id": "math", "title": "Geometry of Linear Transformations on Rn", "chapter_title": "Linear Transformations", "toc_number": "7.3", "start_page": 196, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:7.4", "type": "module", "course_id": "math", "title": "The Matrix of a Linear Transformation", "chapter_title": "Linear Transformations", "toc_number": "7.4", "start_page": 202, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:7.5", "type": "module", "course_id": "math", "title": "Further Results on Linear Transformations", "chapter_title": "Linear Transformations", "toc_number": "7.5", "start_page": 214, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:8.1", "type": "module", "course_id": "math", "title": "The Definition of the Determinant", "chapter_title": "An Introduction to the Theory of Determinants", "toc_number": "8.1", "start_page": 227, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:8.2", "type": "module", "course_id": "math", "title": "Determinants and Row Operations", "chapter_title": "An Introduction to the Theory of Determinants", "toc_number": "8.2", "start_page": 236, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:8.3", "type": "module", "course_id": "math", "title": "Some Further Properties of the Determinant", "chapter_title": "An Introduction to the Theory of Determinants", "toc_number": "8.3", "start_page": 244, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:8.4", "type": "module", "course_id": "math", "title": "Geometric Applications of the Determinant", "chapter_title": "An Introduction to the Theory of Determinants", "toc_number": "8.4", "start_page": 251, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:9.1", "type": "module", "course_id": "math", "title": "Dynamical Systems", "chapter_title": "Eigen theory", "toc_number": "9.1", "start_page": 257, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:9.2", "type": "module", "course_id": "math", "title": "Eigen theory: the Basic Definitions", "chapter_title": "Eigen theory", "toc_number": "9.2", "start_page": 263, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:9.3", "type": "module", "course_id": "math", "title": "Eigenvectors and Diagonalizability", "chapter_title": "Eigen theory", "toc_number": "9.3", "start_page": 274, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:9.4", "type": "module", "course_id": "math", "title": "When is a Matrix Diagonalizable?", "chapter_title": "Eigen theory", "toc_number": "9.4", "start_page": 280, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:9.5", "type": "module", "course_id": "math", "title": "The Exponential of a Matrix", "chapter_title": "Eigen theory", "toc_number": "9.5", "start_page": 291, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:10.1", "type": "module", "course_id": "math", "title": "The Orthogonal Projection on a Subspace", "chapter_title": "The Inner Product Spaces Rn and Cn", "toc_number": "10.1", "start_page": 297, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:10.2", "type": "module", "course_id": "math", "title": "Orthonormal Sets", "chapter_title": "The Inner Product Spaces Rn and Cn", "toc_number": "10.2", "start_page": 308, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:10.3", "type": "module", "course_id": "math", "title": "Gram-Schmidt and the QR-Factorization", "chapter_title": "The Inner Product Spaces Rn and Cn", "toc_number": "10.3", "start_page": 314, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:10.4", "type": "module", "course_id": "math", "title": "Further Remarks on Inner Product Spaces", "chapter_title": "The Inner Product Spaces Rn and Cn", "toc_number": "10.4", "start_page": 317, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:10.5", "type": "module", "course_id": "math", "title": "The Group of Rotations of R3", "chapter_title": "The Inner Product Spaces Rn and Cn", "toc_number": "10.5", "start_page": 324, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:11.1", "type": "module", "course_id": "math", "title": "The Normal Matrix Theorem", "chapter_title": "Unitary Diagonalization Theorems", "toc_number": "11.1", "start_page": 333, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:11.2", "type": "module", "course_id": "math", "title": "The Principal Axis Theorem", "chapter_title": "Unitary Diagonalization Theorems", "toc_number": "11.2", "start_page": 340, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:11.3", "type": "module", "course_id": "math", "title": "Diagonalization of Self Adjoint Operators", "chapter_title": "Unitary Diagonalization Theorems", "toc_number": "11.3", "start_page": 347, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:12.1", "type": "module", "course_id": "math", "title": "Quadratic Forms", "chapter_title": "Some Applications of Eigen theory", "toc_number": "12.1", "start_page": 357, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:12.2", "type": "module", "course_id": "math", "title": "Symmetric Matrices and Graph Theory", "chapter_title": "Some Applications of Eigen theory", "toc_number": "12.2", "start_page": 367, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:12.3", "type": "module", "course_id": "math", "title": "Computing Eigenvalues", "chapter_title": "Some Applications of Eigen theory", "toc_number": "12.3", "start_page": 370, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:13.1", "type": "module", "course_id": "math", "title": "The Main Result", "chapter_title": "The Jordan Decomposition Theorem", "toc_number": "13.1", "start_page": 378, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}, {"id": "math:13.2", "type": "module", "course_id": "math", "title": "Further Results on Linear Transformations", "chapter_title": "The Jordan Decomposition Theorem", "toc_number": "13.2", "start_page": 386, "primary_skill": "math:conceptual_understanding", "skills": ["math:procedural_fluency", "math:conceptual_understanding", "global:problem_decomposition", "global:logical_reasoning", "global:abstraction", "global:error_analysis"], "level": "section"}], "edges": [{"source": "math:2.1", "target": "math:2.2", "relation": "prerequisite_of", "directed": true, "weight": 0.9, "reason": "Consecutive modules in the same chapter usually build on each other."}, {"source": "math:2.1", "target": "math:2.2", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:2.1", "target": "math:2.3", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:2.1", "target": "math:2.4", "relation": "related_to", "directed": false, "weight": 0.75, "reason": "same chapter context, title token overlap=1"}, {"source": "math:2.1", "target": "math:6.1", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:2.1", "target": "math:6.4", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:2.1", "target": "math:7.2", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:2.1", "target": "math:7.3", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:2.1", "target": "math:7.4", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:2.1", "target": "math:7.5", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:2.1", "target": "math:13.2", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:2.2", "target": "math:2.3", "relation": "prerequisite_of", "directed": true, "weight": 0.9, "reason": "Consecutive modules in the same chapter usually build on each other."}, {"source": "math:2.2", "target": "math:2.3", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:2.2", "target": "math:2.4", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:2.2", "target": "math:3.1", "relation": "similar_to", "directed": false, "weight": 0.85, "reason": "module embedding similarity=0.85"}, {"source": "math:2.2", "target": "math:3.2", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:2.2", "target": "math:5.3", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:2.2", "target": "math:7.2", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:2.2", "target": "math:12.2", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:2.3", "target": "math:2.4", "relation": "prerequisite_of", "directed": true, "weight": 0.9, "reason": "Consecutive modules in the same chapter usually build on each other."}, {"source": "math:2.3", "target": "math:2.4", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:2.3", "target": "math:3.2", "relation": "related_to", "directed": false, "weight": 0.7, "reason": "title token overlap=2"}, {"source": "math:2.3", "target": "math:3.2", "relation": "similar_to", "directed": false, "weight": 0.84, "reason": "module embedding similarity=0.84"}, {"source": "math:2.3", "target": "math:8.2", "relation": "related_to", "directed": false, "weight": 0.7, "reason": "title token overlap=2"}, {"source": "math:2.4", "target": "math:6.1", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:2.4", "target": "math:6.4", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:2.4", "target": "math:7.2", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:2.4", "target": "math:7.3", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:2.4", "target": "math:7.4", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:2.4", "target": "math:7.5", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:2.4", "target": "math:9.1", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:2.4", "target": "math:13.2", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:3.1", "target": "math:3.2", "relation": "prerequisite_of", "directed": true, "weight": 0.9, "reason": "Consecutive modules in the same chapter usually build on each other."}, {"source": "math:3.1", "target": "math:3.2", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:3.1", "target": "math:3.3", "relation": "related_to", "directed": false, "weight": 0.75, "reason": "same chapter context, title token overlap=1"}, {"source": "math:3.1", "target": "math:3.3", "relation": "similar_to", "directed": false, "weight": 0.85, "reason": "module embedding similarity=0.85"}, {"source": "math:3.1", "target": "math:3.4", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:3.1", "target": "math:7.2", "relation": "similar_to", "directed": false, "weight": 0.83, "reason": "module embedding similarity=0.83"}, {"source": "math:3.1", "target": "math:7.4", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:3.1", "target": "math:9.4", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:3.1", "target": "math:9.5", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:3.1", "target": "math:11.1", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:3.2", "target": "math:3.3", "relation": "prerequisite_of", "directed": true, "weight": 0.9, "reason": "Consecutive modules in the same chapter usually build on each other."}, {"source": "math:3.2", "target": "math:3.3", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:3.2", "target": "math:3.3", "relation": "similar_to", "directed": false, "weight": 0.82, "reason": "module embedding similarity=0.82"}, {"source": "math:3.2", "target": "math:3.4", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:3.2", "target": "math:5.3", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:3.2", "target": "math:7.2", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:3.2", "target": "math:8.2", "relation": "related_to", "directed": false, "weight": 0.7, "reason": "title token overlap=2"}, {"source": "math:3.2", "target": "math:12.2", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:3.3", "target": "math:3.4", "relation": "prerequisite_of", "directed": true, "weight": 0.9, "reason": "Consecutive modules in the same chapter usually build on each other."}, {"source": "math:3.3", "target": "math:3.4", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:3.3", "target": "math:7.4", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:3.3", "target": "math:9.4", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:3.3", "target": "math:9.5", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:3.3", "target": "math:11.1", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:3.4", "target": "math:10.3", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:4.1", "target": "math:4.2", "relation": "prerequisite_of", "directed": true, "weight": 0.9, "reason": "Consecutive modules in the same chapter usually build on each other."}, {"source": "math:4.1", "target": "math:4.2", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:4.1", "target": "math:4.2", "relation": "similar_to", "directed": false, "weight": 0.85, "reason": "module embedding similarity=0.85"}, {"source": "math:4.1", "target": "math:4.3", "relation": "related_to", "directed": false, "weight": 0.75, "reason": "same chapter context, title token overlap=1"}, {"source": "math:4.1", "target": "math:4.4", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:4.1", "target": "math:4.5", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:4.1", "target": "math:4.6", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:4.1", "target": "math:9.4", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:4.2", "target": "math:4.3", "relation": "prerequisite_of", "directed": true, "weight": 0.9, "reason": "Consecutive modules in the same chapter usually build on each other."}, {"source": "math:4.2", "target": "math:4.3", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:4.2", "target": "math:4.4", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:4.2", "target": "math:4.5", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:4.2", "target": "math:4.6", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:4.3", "target": "math:4.4", "relation": "prerequisite_of", "directed": true, "weight": 0.9, "reason": "Consecutive modules in the same chapter usually build on each other."}, {"source": "math:4.3", "target": "math:4.4", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:4.3", "target": "math:4.5", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:4.3", "target": "math:4.6", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:4.4", "target": "math:4.5", "relation": "prerequisite_of", "directed": true, "weight": 0.9, "reason": "Consecutive modules in the same chapter usually build on each other."}, {"source": "math:4.4", "target": "math:4.5", "relation": "related_to", "directed": false, "weight": 0.75, "reason": "same chapter context, title token overlap=1"}, {"source": "math:4.4", "target": "math:4.6", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:4.4", "target": "math:5.5", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:4.4", "target": "math:10.4", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:4.5", "target": "math:4.6", "relation": "prerequisite_of", "directed": true, "weight": 0.9, "reason": "Consecutive modules in the same chapter usually build on each other."}, {"source": "math:4.5", "target": "math:4.6", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:4.5", "target": "math:10.4", "relation": "related_to", "directed": false, "weight": 0.7, "reason": "title token overlap=3"}, {"source": "math:4.5", "target": "math:10.4", "relation": "similar_to", "directed": false, "weight": 0.91, "reason": "module embedding similarity=0.91"}, {"source": "math:4.6", "target": "math:5.4", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:4.6", "target": "math:10.2", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:5.1", "target": "math:5.2", "relation": "prerequisite_of", "directed": true, "weight": 0.9, "reason": "Consecutive modules in the same chapter usually build on each other."}, {"source": "math:5.1", "target": "math:5.2", "relation": "related_to", "directed": false, "weight": 0.75, "reason": "same chapter context, title token overlap=1"}, {"source": "math:5.1", "target": "math:5.2", "relation": "similar_to", "directed": false, "weight": 0.92, "reason": "module embedding similarity=0.92"}, {"source": "math:5.1", "target": "math:5.3", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:5.1", "target": "math:5.4", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:5.1", "target": "math:5.5", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:5.2", "target": "math:5.3", "relation": "prerequisite_of", "directed": true, "weight": 0.9, "reason": "Consecutive modules in the same chapter usually build on each other."}, {"source": "math:5.2", "target": "math:5.3", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:5.2", "target": "math:5.3", "relation": "similar_to", "directed": false, "weight": 0.84, "reason": "module embedding similarity=0.84"}, {"source": "math:5.2", "target": "math:5.4", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:5.2", "target": "math:5.4", "relation": "similar_to", "directed": false, "weight": 0.83, "reason": "module embedding similarity=0.83"}, {"source": "math:5.2", "target": "math:5.5", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:5.3", "target": "math:5.4", "relation": "prerequisite_of", "directed": true, "weight": 0.9, "reason": "Consecutive modules in the same chapter usually build on each other."}, {"source": "math:5.3", "target": "math:5.4", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:5.3", "target": "math:5.5", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:5.3", "target": "math:7.2", "relation": "related_to", "directed": false, "weight": 0.7, "reason": "title token overlap=2"}, {"source": "math:5.3", "target": "math:7.3", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:5.3", "target": "math:7.5", "relation": "related_to", "directed": false, "weight": 0.7, "reason": "title token overlap=2"}, {"source": "math:5.3", "target": "math:8.3", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:5.3", "target": "math:10.1", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:5.3", "target": "math:10.4", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:5.3", "target": "math:12.2", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:5.3", "target": "math:13.2", "relation": "related_to", "directed": false, "weight": 0.7, "reason": "title token overlap=2"}, {"source": "math:5.4", "target": "math:5.5", "relation": "prerequisite_of", "directed": true, "weight": 0.9, "reason": "Consecutive modules in the same chapter usually build on each other."}, {"source": "math:5.4", "target": "math:5.5", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:6.1", "target": "math:6.2", "relation": "prerequisite_of", "directed": true, "weight": 0.9, "reason": "Consecutive modules in the same chapter usually build on each other."}, {"source": "math:6.1", "target": "math:6.2", "relation": "related_to", "directed": false, "weight": 0.75, "reason": "same chapter context, title token overlap=1"}, {"source": "math:6.1", "target": "math:6.2", "relation": "similar_to", "directed": false, "weight": 0.84, "reason": "module embedding similarity=0.84"}, {"source": "math:6.1", "target": "math:6.3", "relation": "related_to", "directed": false, "weight": 0.75, "reason": "same chapter context, title token overlap=1"}, {"source": "math:6.1", "target": "math:6.4", "relation": "related_to", "directed": false, "weight": 0.9, "reason": "same chapter context, title token overlap=2"}, {"source": "math:6.1", "target": "math:6.4", "relation": "similar_to", "directed": false, "weight": 0.85, "reason": "module embedding similarity=0.85"}, {"source": "math:6.1", "target": "math:7.2", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:6.1", "target": "math:7.3", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:6.1", "target": "math:7.4", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:6.1", "target": "math:7.5", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:6.1", "target": "math:13.2", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:6.2", "target": "math:6.3", "relation": "prerequisite_of", "directed": true, "weight": 0.9, "reason": "Consecutive modules in the same chapter usually build on each other."}, {"source": "math:6.2", "target": "math:6.3", "relation": "related_to", "directed": false, "weight": 0.75, "reason": "same chapter context, title token overlap=1"}, {"source": "math:6.2", "target": "math:6.3", "relation": "similar_to", "directed": false, "weight": 0.85, "reason": "module embedding similarity=0.85"}, {"source": "math:6.2", "target": "math:6.4", "relation": "related_to", "directed": false, "weight": 0.75, "reason": "same chapter context, title token overlap=1"}, {"source": "math:6.2", "target": "math:6.4", "relation": "similar_to", "directed": false, "weight": 0.86, "reason": "module embedding similarity=0.86"}, {"source": "math:6.3", "target": "math:6.4", "relation": "prerequisite_of", "directed": true, "weight": 0.9, "reason": "Consecutive modules in the same chapter usually build on each other."}, {"source": "math:6.3", "target": "math:6.4", "relation": "related_to", "directed": false, "weight": 0.75, "reason": "same chapter context, title token overlap=1"}, {"source": "math:6.3", "target": "math:6.4", "relation": "similar_to", "directed": false, "weight": 0.85, "reason": "module embedding similarity=0.85"}, {"source": "math:6.4", "target": "math:7.2", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:6.4", "target": "math:7.3", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:6.4", "target": "math:7.4", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:6.4", "target": "math:7.5", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:6.4", "target": "math:13.2", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:7.1", "target": "math:7.2", "relation": "prerequisite_of", "directed": true, "weight": 0.9, "reason": "Consecutive modules in the same chapter usually build on each other."}, {"source": "math:7.1", "target": "math:7.2", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:7.1", "target": "math:7.2", "relation": "similar_to", "directed": false, "weight": 0.83, "reason": "module embedding similarity=0.83"}, {"source": "math:7.1", "target": "math:7.3", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:7.1", "target": "math:7.4", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:7.1", "target": "math:7.4", "relation": "similar_to", "directed": false, "weight": 0.83, "reason": "module embedding similarity=0.83"}, {"source": "math:7.1", "target": "math:7.5", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:7.1", "target": "math:7.5", "relation": "similar_to", "directed": false, "weight": 0.87, "reason": "module embedding similarity=0.87"}, {"source": "math:7.1", "target": "math:9.2", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:7.2", "target": "math:7.3", "relation": "prerequisite_of", "directed": true, "weight": 0.9, "reason": "Consecutive modules in the same chapter usually build on each other."}, {"source": "math:7.2", "target": "math:7.3", "relation": "related_to", "directed": false, "weight": 0.9, "reason": "same chapter context, title token overlap=3"}, {"source": "math:7.2", "target": "math:7.4", "relation": "related_to", "directed": false, "weight": 0.75, "reason": "same chapter context, title token overlap=1"}, {"source": "math:7.2", "target": "math:7.4", "relation": "similar_to", "directed": false, "weight": 0.84, "reason": "module embedding similarity=0.84"}, {"source": "math:7.2", "target": "math:7.5", "relation": "related_to", "directed": false, "weight": 0.9, "reason": "same chapter context, title token overlap=3"}, {"source": "math:7.2", "target": "math:7.5", "relation": "similar_to", "directed": false, "weight": 0.84, "reason": "module embedding similarity=0.84"}, {"source": "math:7.2", "target": "math:10.1", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:7.2", "target": "math:10.4", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:7.2", "target": "math:12.2", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:7.2", "target": "math:13.2", "relation": "related_to", "directed": false, "weight": 0.7, "reason": "title token overlap=3"}, {"source": "math:7.3", "target": "math:7.4", "relation": "prerequisite_of", "directed": true, "weight": 0.9, "reason": "Consecutive modules in the same chapter usually build on each other."}, {"source": "math:7.3", "target": "math:7.4", "relation": "related_to", "directed": false, "weight": 0.75, "reason": "same chapter context, title token overlap=1"}, {"source": "math:7.3", "target": "math:7.5", "relation": "related_to", "directed": false, "weight": 0.9, "reason": "same chapter context, title token overlap=3"}, {"source": "math:7.3", "target": "math:10.1", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:7.3", "target": "math:10.4", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:7.3", "target": "math:13.2", "relation": "related_to", "directed": false, "weight": 0.7, "reason": "title token overlap=3"}, {"source": "math:7.4", "target": "math:7.5", "relation": "prerequisite_of", "directed": true, "weight": 0.9, "reason": "Consecutive modules in the same chapter usually build on each other."}, {"source": "math:7.4", "target": "math:7.5", "relation": "related_to", "directed": false, "weight": 0.75, "reason": "same chapter context, title token overlap=1"}, {"source": "math:7.4", "target": "math:7.5", "relation": "similar_to", "directed": false, "weight": 0.88, "reason": "module embedding similarity=0.88"}, {"source": "math:7.4", "target": "math:9.4", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:7.4", "target": "math:9.5", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:7.4", "target": "math:11.1", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:7.4", "target": "math:13.2", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:7.5", "target": "math:8.3", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:7.5", "target": "math:10.1", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:7.5", "target": "math:10.4", "relation": "related_to", "directed": false, "weight": 0.7, "reason": "title token overlap=2"}, {"source": "math:7.5", "target": "math:13.1", "relation": "similar_to", "directed": false, "weight": 0.86, "reason": "module embedding similarity=0.86"}, {"source": "math:7.5", "target": "math:13.2", "relation": "related_to", "directed": false, "weight": 0.7, "reason": "title token overlap=5"}, {"source": "math:8.1", "target": "math:8.2", "relation": "prerequisite_of", "directed": true, "weight": 0.9, "reason": "Consecutive modules in the same chapter usually build on each other."}, {"source": "math:8.1", "target": "math:8.2", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:8.1", "target": "math:8.2", "relation": "similar_to", "directed": false, "weight": 0.91, "reason": "module embedding similarity=0.91"}, {"source": "math:8.1", "target": "math:8.3", "relation": "related_to", "directed": false, "weight": 0.75, "reason": "same chapter context, title token overlap=1"}, {"source": "math:8.1", "target": "math:8.3", "relation": "similar_to", "directed": false, "weight": 0.85, "reason": "module embedding similarity=0.85"}, {"source": "math:8.1", "target": "math:8.4", "relation": "related_to", "directed": false, "weight": 0.75, "reason": "same chapter context, title token overlap=1"}, {"source": "math:8.1", "target": "math:8.4", "relation": "similar_to", "directed": false, "weight": 0.82, "reason": "module embedding similarity=0.82"}, {"source": "math:8.2", "target": "math:8.3", "relation": "prerequisite_of", "directed": true, "weight": 0.9, "reason": "Consecutive modules in the same chapter usually build on each other."}, {"source": "math:8.2", "target": "math:8.3", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:8.2", "target": "math:8.3", "relation": "similar_to", "directed": false, "weight": 0.91, "reason": "module embedding similarity=0.91"}, {"source": "math:8.2", "target": "math:8.4", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:8.2", "target": "math:8.4", "relation": "similar_to", "directed": false, "weight": 0.83, "reason": "module embedding similarity=0.83"}, {"source": "math:8.3", "target": "math:8.4", "relation": "prerequisite_of", "directed": true, "weight": 0.9, "reason": "Consecutive modules in the same chapter usually build on each other."}, {"source": "math:8.3", "target": "math:8.4", "relation": "related_to", "directed": false, "weight": 0.75, "reason": "same chapter context, title token overlap=1"}, {"source": "math:8.3", "target": "math:8.4", "relation": "similar_to", "directed": false, "weight": 0.83, "reason": "module embedding similarity=0.83"}, {"source": "math:8.3", "target": "math:10.4", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:8.3", "target": "math:13.2", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:9.1", "target": "math:9.2", "relation": "prerequisite_of", "directed": true, "weight": 0.9, "reason": "Consecutive modules in the same chapter usually build on each other."}, {"source": "math:9.1", "target": "math:9.2", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:9.1", "target": "math:9.2", "relation": "similar_to", "directed": false, "weight": 0.83, "reason": "module embedding similarity=0.83"}, {"source": "math:9.1", "target": "math:9.3", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:9.1", "target": "math:9.3", "relation": "similar_to", "directed": false, "weight": 0.84, "reason": "module embedding similarity=0.84"}, {"source": "math:9.1", "target": "math:9.4", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:9.1", "target": "math:9.5", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:9.2", "target": "math:9.3", "relation": "prerequisite_of", "directed": true, "weight": 0.9, "reason": "Consecutive modules in the same chapter usually build on each other."}, {"source": "math:9.2", "target": "math:9.3", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:9.2", "target": "math:9.3", "relation": "similar_to", "directed": false, "weight": 0.84, "reason": "module embedding similarity=0.84"}, {"source": "math:9.2", "target": "math:9.4", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:9.2", "target": "math:9.4", "relation": "similar_to", "directed": false, "weight": 0.87, "reason": "module embedding similarity=0.87"}, {"source": "math:9.2", "target": "math:9.5", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:9.2", "target": "math:12.2", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:9.3", "target": "math:9.4", "relation": "prerequisite_of", "directed": true, "weight": 0.9, "reason": "Consecutive modules in the same chapter usually build on each other."}, {"source": "math:9.3", "target": "math:9.4", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:9.3", "target": "math:9.4", "relation": "similar_to", "directed": false, "weight": 0.9, "reason": "module embedding similarity=0.90"}, {"source": "math:9.3", "target": "math:9.5", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:9.4", "target": "math:9.5", "relation": "prerequisite_of", "directed": true, "weight": 0.9, "reason": "Consecutive modules in the same chapter usually build on each other."}, {"source": "math:9.4", "target": "math:9.5", "relation": "related_to", "directed": false, "weight": 0.75, "reason": "same chapter context, title token overlap=1"}, {"source": "math:9.4", "target": "math:11.1", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:9.4", "target": "math:11.1", "relation": "similar_to", "directed": false, "weight": 0.83, "reason": "module embedding similarity=0.83"}, {"source": "math:9.5", "target": "math:11.1", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:10.1", "target": "math:10.2", "relation": "prerequisite_of", "directed": true, "weight": 0.9, "reason": "Consecutive modules in the same chapter usually build on each other."}, {"source": "math:10.1", "target": "math:10.2", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:10.1", "target": "math:10.2", "relation": "similar_to", "directed": false, "weight": 0.87, "reason": "module embedding similarity=0.87"}, {"source": "math:10.1", "target": "math:10.3", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:10.1", "target": "math:10.4", "relation": "related_to", "directed": false, "weight": 0.75, "reason": "same chapter context, title token overlap=1"}, {"source": "math:10.1", "target": "math:10.4", "relation": "similar_to", "directed": false, "weight": 0.83, "reason": "module embedding similarity=0.83"}, {"source": "math:10.1", "target": "math:10.5", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:10.1", "target": "math:13.2", "relation": "related_to", "directed": false, "weight": 0.55, "reason": "title token overlap=1"}, {"source": "math:10.2", "target": "math:10.3", "relation": "prerequisite_of", "directed": true, "weight": 0.9, "reason": "Consecutive modules in the same chapter usually build on each other."}, {"source": "math:10.2", "target": "math:10.3", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:10.2", "target": "math:10.4", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:10.2", "target": "math:10.4", "relation": "similar_to", "directed": false, "weight": 0.82, "reason": "module embedding similarity=0.82"}, {"source": "math:10.2", "target": "math:10.5", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:10.3", "target": "math:10.4", "relation": "prerequisite_of", "directed": true, "weight": 0.9, "reason": "Consecutive modules in the same chapter usually build on each other."}, {"source": "math:10.3", "target": "math:10.4", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:10.3", "target": "math:10.5", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:10.4", "target": "math:10.5", "relation": "prerequisite_of", "directed": true, "weight": 0.9, "reason": "Consecutive modules in the same chapter usually build on each other."}, {"source": "math:10.4", "target": "math:10.5", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:10.4", "target": "math:13.2", "relation": "related_to", "directed": false, "weight": 0.7, "reason": "title token overlap=2"}, {"source": "math:11.1", "target": "math:11.2", "relation": "prerequisite_of", "directed": true, "weight": 0.9, "reason": "Consecutive modules in the same chapter usually build on each other."}, {"source": "math:11.1", "target": "math:11.2", "relation": "related_to", "directed": false, "weight": 0.75, "reason": "same chapter context, title token overlap=1"}, {"source": "math:11.1", "target": "math:11.2", "relation": "similar_to", "directed": false, "weight": 0.87, "reason": "module embedding similarity=0.87"}, {"source": "math:11.1", "target": "math:11.3", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:11.2", "target": "math:11.3", "relation": "prerequisite_of", "directed": true, "weight": 0.9, "reason": "Consecutive modules in the same chapter usually build on each other."}, {"source": "math:11.2", "target": "math:11.3", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:11.2", "target": "math:11.3", "relation": "similar_to", "directed": false, "weight": 0.85, "reason": "module embedding similarity=0.85"}, {"source": "math:12.1", "target": "math:12.2", "relation": "prerequisite_of", "directed": true, "weight": 0.9, "reason": "Consecutive modules in the same chapter usually build on each other."}, {"source": "math:12.1", "target": "math:12.2", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:12.1", "target": "math:12.3", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:12.2", "target": "math:12.3", "relation": "prerequisite_of", "directed": true, "weight": 0.9, "reason": "Consecutive modules in the same chapter usually build on each other."}, {"source": "math:12.2", "target": "math:12.3", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:13.1", "target": "math:13.2", "relation": "prerequisite_of", "directed": true, "weight": 0.9, "reason": "Consecutive modules in the same chapter usually build on each other."}, {"source": "math:13.1", "target": "math:13.2", "relation": "related_to", "directed": false, "weight": 0.6, "reason": "same chapter context"}, {"source": "math:13.1", "target": "math:13.2", "relation": "similar_to", "directed": false, "weight": 0.89, "reason": "module embedding similarity=0.89"}]};
+    const svg = document.getElementById("graph");
+    const details = document.getElementById("details");
+    const moduleSelect = document.getElementById("moduleSelect");
+    const tooltip = document.getElementById("tooltip");
+    const relationFilters = {
+      prerequisite_of: document.getElementById("showPrereq"),
+      related_to: document.getElementById("showRelated"),
+      similar_to: document.getElementById("showSimilar"),
+    };
+    const nodes = graph.nodes.map(node => ({ ...node }));
+    const nodeMap = new Map(nodes.map(node => [node.id, node]));
+    let activeNodeId = moduleSelect.value;
+
+    function ensureDefs() {
+      const defs = document.createElementNS("http://www.w3.org/2000/svg", "defs");
+      defs.innerHTML = `
+        <marker id="arrow-prerequisite" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+          <path d="M0,0 L0,6 L9,3 z" fill="#2563eb"></path>
+        </marker>
+        <marker id="arrow-related" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+          <path d="M0,0 L0,6 L9,3 z" fill="#f59e0b"></path>
+        </marker>
+        <marker id="arrow-similar" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+          <path d="M0,0 L0,6 L9,3 z" fill="#7c3aed"></path>
+        </marker>
+      `;
+      svg.appendChild(defs);
+    }
+
+    function edgeVisible(edge) {
+      const checkbox = relationFilters[edge.relation];
+      return checkbox ? checkbox.checked : true;
+    }
+
+    function getFocusedSubgraph(centerId) {
+      const visibleEdges = graph.edges.filter(edgeVisible).filter(edge => edge.source === centerId || edge.target === centerId);
+      const visibleIds = new Set([centerId]);
+      visibleEdges.forEach(edge => {
+        visibleIds.add(edge.source);
+        visibleIds.add(edge.target);
+      });
+
+      return {
+        nodes: nodes.filter(node => visibleIds.has(node.id)),
+        edges: visibleEdges,
+      };
+    }
+
+    function render() {
+      svg.innerHTML = "";
+      ensureDefs();
+      const centerId = moduleSelect.value;
+      const subgraph = getFocusedSubgraph(centerId);
+      const centerNode = nodeMap.get(centerId);
+
+      const positionedNodes = [];
+      if (centerNode) {
+        positionedNodes.push({ ...centerNode, x: 680, y: 430, lane: "center" });
+      }
+
+      const incoming = subgraph.edges.filter(edge => edge.target === centerId);
+      const outgoing = subgraph.edges.filter(edge => edge.source === centerId);
+      const related = subgraph.edges.filter(
+        edge => edge.relation === "related_to" && edge.source !== centerId && edge.target !== centerId
+      );
+
+      incoming.forEach((edge, index) => {
+        const node = nodeMap.get(edge.source);
+        if (!node || node.id === centerId) return;
+        positionedNodes.push({ ...node, x: 180, y: 180 + index * 110, lane: "incoming" });
+      });
+
+      outgoing.forEach((edge, index) => {
+        const node = nodeMap.get(edge.target);
+        if (!node || node.id === centerId) return;
+        positionedNodes.push({ ...node, x: 1180, y: 180 + index * 110, lane: "outgoing" });
+      });
+
+      // Add same-hop related nodes that are neither direct prerequisites nor direct next modules.
+      const positionedIds = new Set(positionedNodes.map(node => node.id));
+      related.forEach((edge, index) => {
+        const candidateIds = [edge.source, edge.target].filter(id => id !== centerId && !positionedIds.has(id));
+        candidateIds.forEach((id, offset) => {
+          const node = nodeMap.get(id);
+          if (!node) return;
+          positionedNodes.push({ ...node, x: 680, y: 120 + (index + offset) * 110, lane: "related" });
+          positionedIds.add(id);
+        });
+      });
+
+      const positionedMap = new Map(positionedNodes.map(node => [node.id, node]));
+
+      subgraph.edges.forEach(edge => {
+        const source = positionedMap.get(edge.source);
+        const target = positionedMap.get(edge.target);
+        if (!source || !target) return;
+
+        const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+        const startX = source.x + 120;
+        const startY = source.y + 24;
+        const endX = target.x;
+        const endY = target.y + 24;
+        const controlX = (startX + endX) / 2;
+        const d = `M ${startX} ${startY} C ${controlX} ${startY}, ${controlX} ${endY}, ${endX} ${endY}`;
+        path.setAttribute("d", d);
+        path.setAttribute("class", `edge ${edge.relation}`);
+        path.setAttribute("data-source", edge.source);
+        path.setAttribute("data-target", edge.target);
+        path.setAttribute("data-relation", edge.relation);
+        if (edge.directed) {
+          path.setAttribute(
+            "marker-end",
+            edge.relation === "prerequisite_of"
+              ? "url(#arrow-prerequisite)"
+              : edge.relation === "related_to"
+                ? "url(#arrow-related)"
+                : "url(#arrow-similar)"
+          );
+        }
+        path.addEventListener("mousemove", event => showEdgeTooltip(event, edge));
+        path.addEventListener("mouseleave", hideTooltip);
+        svg.appendChild(path);
+      });
+
+      positionedNodes.forEach(node => {
+        const group = document.createElementNS("http://www.w3.org/2000/svg", "g");
+        group.setAttribute("class", `node${activeNodeId === node.id ? " active" : ""}`);
+        group.setAttribute("transform", `translate(${node.x}, ${node.y})`);
+
+        const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+        rect.setAttribute("width", "240");
+        rect.setAttribute("height", "48");
+        group.appendChild(rect);
+
+        const title = document.createElementNS("http://www.w3.org/2000/svg", "text");
+        title.setAttribute("x", "12");
+        title.setAttribute("y", "20");
+        title.textContent = `${node.toc_number || node.id}  ${node.title}`;
+        group.appendChild(title);
+
+        const page = document.createElementNS("http://www.w3.org/2000/svg", "text");
+        page.setAttribute("x", "12");
+        page.setAttribute("y", "36");
+        page.textContent = `page ${node.start_page || "?"}`;
+        group.appendChild(page);
+
+        group.addEventListener("click", () => showNodeDetails(node.id));
+        svg.appendChild(group);
+      });
+    }
+
+    function showEdgeTooltip(event, edge) {
+      tooltip.style.display = "block";
+      tooltip.style.left = `${event.clientX + 14}px`;
+      tooltip.style.top = `${event.clientY + 14}px`;
+      tooltip.textContent =
+`Relation: ${edge.relation}
+Directed: ${edge.directed ? "yes" : "no"}
+Weight: ${edge.weight}
+Source: ${edge.source}
+Target: ${edge.target}
+Reason: ${edge.reason}`;
+    }
+
+    function hideTooltip() {
+      tooltip.style.display = "none";
+    }
+
+    function showNodeDetails(nodeId) {
+      activeNodeId = nodeId;
+      moduleSelect.value = nodeId;
+      const node = nodeMap.get(nodeId);
+      const outgoing = graph.edges.filter(edge => edge.source === nodeId);
+      const incoming = graph.edges.filter(edge => edge.target === nodeId);
+
+      details.textContent =
+`Module
+${node.id} - ${node.title}
+
+Chapter
+${node.chapter_title || "Unknown"}
+
+Primary skill
+${node.primary_skill}
+
+Start page
+${node.start_page || "Unknown"}
+
+Outgoing edges
+${outgoing.map(edge => `- ${edge.relation} -> ${edge.target} (weight=${edge.weight}) | ${edge.reason}`).join("\n") || "None"}
+
+Incoming edges
+${incoming.map(edge => `- ${edge.relation} <- ${edge.source} (weight=${edge.weight}) | ${edge.reason}`).join("\n") || "None"}`;
+      render();
+    }
+
+    Object.values(relationFilters).forEach(checkbox => {
+      checkbox.addEventListener("change", render);
+    });
+    moduleSelect.addEventListener("change", () => showNodeDetails(moduleSelect.value));
+
+    showNodeDetails(moduleSelect.value);
+  </script>
+</body>
+</html>

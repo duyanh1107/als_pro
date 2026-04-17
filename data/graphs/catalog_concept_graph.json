@@ -1,0 +1,5398 @@
+{
+  "scope": "catalog",
+  "scope_id": "catalog",
+  "graph_type": "concept_graph",
+  "graph_version": "phase_1_module_concept_graph",
+  "course_ids": [
+    "math",
+    "coding"
+  ],
+  "course_titles": [
+    "Linear Algebra Foundations",
+    "Programming Fundamentals"
+  ],
+  "module_count": 50,
+  "concept_count": 177,
+  "node_count": 227,
+  "edge_count": 230,
+  "nodes": [
+    {
+      "id": "math:2.1",
+      "type": "module",
+      "course_id": "math",
+      "title": "Linear equations: the beginning of algebra",
+      "chapter_title": "Linear Equations and Matrices",
+      "toc_number": "2.1",
+      "start_page": 15,
+      "level": "section"
+    },
+    {
+      "id": "math:2.2",
+      "type": "module",
+      "course_id": "math",
+      "title": "Matrices",
+      "chapter_title": "Linear Equations and Matrices",
+      "toc_number": "2.2",
+      "start_page": 18,
+      "level": "section"
+    },
+    {
+      "id": "math:2.3",
+      "type": "module",
+      "course_id": "math",
+      "title": "Reduced Row Echelon Form and Row Operations",
+      "chapter_title": "Linear Equations and Matrices",
+      "toc_number": "2.3",
+      "start_page": 23,
+      "level": "section"
+    },
+    {
+      "id": "math:2.4",
+      "type": "module",
+      "course_id": "math",
+      "title": "Solving Linear Systems via Gaussian Reduction",
+      "chapter_title": "Linear Equations and Matrices",
+      "toc_number": "2.4",
+      "start_page": 26,
+      "level": "section"
+    },
+    {
+      "id": "math:3.1",
+      "type": "module",
+      "course_id": "math",
+      "title": "Matrix Multiplication",
+      "chapter_title": "More Matrix Theory",
+      "toc_number": "3.1",
+      "start_page": 37,
+      "level": "section"
+    },
+    {
+      "id": "math:3.2",
+      "type": "module",
+      "course_id": "math",
+      "title": "Elementary Matrices and Row Operations",
+      "chapter_title": "More Matrix Theory",
+      "toc_number": "3.2",
+      "start_page": 43,
+      "level": "section"
+    },
+    {
+      "id": "math:3.3",
+      "type": "module",
+      "course_id": "math",
+      "title": "Matrix Inverses",
+      "chapter_title": "More Matrix Theory",
+      "toc_number": "3.3",
+      "start_page": 49,
+      "level": "section"
+    },
+    {
+      "id": "math:3.4",
+      "type": "module",
+      "course_id": "math",
+      "title": "The LPDU Factorization",
+      "chapter_title": "More Matrix Theory",
+      "toc_number": "3.4",
+      "start_page": 59,
+      "level": "section"
+    },
+    {
+      "id": "math:4.1",
+      "type": "module",
+      "course_id": "math",
+      "title": "What is a Field?",
+      "chapter_title": "Fields and Vector Spaces",
+      "toc_number": "4.1",
+      "start_page": 75,
+      "level": "section"
+    },
+    {
+      "id": "math:4.2",
+      "type": "module",
+      "course_id": "math",
+      "title": "The Integers Modulo a Prime p",
+      "chapter_title": "Fields and Vector Spaces",
+      "toc_number": "4.2",
+      "start_page": 84,
+      "level": "section"
+    },
+    {
+      "id": "math:4.3",
+      "type": "module",
+      "course_id": "math",
+      "title": "The Field of Complex Numbers",
+      "chapter_title": "Fields and Vector Spaces",
+      "toc_number": "4.3",
+      "start_page": 93,
+      "level": "section"
+    },
+    {
+      "id": "math:4.4",
+      "type": "module",
+      "course_id": "math",
+      "title": "Vector Spaces",
+      "chapter_title": "Fields and Vector Spaces",
+      "toc_number": "4.4",
+      "start_page": 98,
+      "level": "section"
+    },
+    {
+      "id": "math:4.5",
+      "type": "module",
+      "course_id": "math",
+      "title": "Inner Product Spaces",
+      "chapter_title": "Fields and Vector Spaces",
+      "toc_number": "4.5",
+      "start_page": 105,
+      "level": "section"
+    },
+    {
+      "id": "math:4.6",
+      "type": "module",
+      "course_id": "math",
+      "title": "Subspaces and Spanning Sets",
+      "chapter_title": "Fields and Vector Spaces",
+      "toc_number": "4.6",
+      "start_page": 112,
+      "level": "section"
+    },
+    {
+      "id": "math:5.1",
+      "type": "module",
+      "course_id": "math",
+      "title": "The Notion of Dimension",
+      "chapter_title": "Finite Dimensional Vector Spaces",
+      "toc_number": "5.1",
+      "start_page": 119,
+      "level": "section"
+    },
+    {
+      "id": "math:5.2",
+      "type": "module",
+      "course_id": "math",
+      "title": "Bases and Dimension",
+      "chapter_title": "Finite Dimensional Vector Spaces",
+      "toc_number": "5.2",
+      "start_page": 126,
+      "level": "section"
+    },
+    {
+      "id": "math:5.3",
+      "type": "module",
+      "course_id": "math",
+      "title": "Some Results on Matrices",
+      "chapter_title": "Finite Dimensional Vector Spaces",
+      "toc_number": "5.3",
+      "start_page": 135,
+      "level": "section"
+    },
+    {
+      "id": "math:5.4",
+      "type": "module",
+      "course_id": "math",
+      "title": "Intersections and Sums of Subspaces",
+      "chapter_title": "Finite Dimensional Vector Spaces",
+      "toc_number": "5.4",
+      "start_page": 141,
+      "level": "section"
+    },
+    {
+      "id": "math:5.5",
+      "type": "module",
+      "course_id": "math",
+      "title": "Vector Space Quotients",
+      "chapter_title": "Finite Dimensional Vector Spaces",
+      "toc_number": "5.5",
+      "start_page": 148,
+      "level": "section"
+    },
+    {
+      "id": "math:6.1",
+      "type": "module",
+      "course_id": "math",
+      "title": "Linear Codes",
+      "chapter_title": "Linear Coding Theory",
+      "toc_number": "6.1",
+      "start_page": 155,
+      "level": "section"
+    },
+    {
+      "id": "math:6.2",
+      "type": "module",
+      "course_id": "math",
+      "title": "Error-Correcting Codes",
+      "chapter_title": "Linear Coding Theory",
+      "toc_number": "6.2",
+      "start_page": 162,
+      "level": "section"
+    },
+    {
+      "id": "math:6.3",
+      "type": "module",
+      "course_id": "math",
+      "title": "Codes With Large Minimal Distance",
+      "chapter_title": "Linear Coding Theory",
+      "toc_number": "6.3",
+      "start_page": 166,
+      "level": "section"
+    },
+    {
+      "id": "math:6.4",
+      "type": "module",
+      "course_id": "math",
+      "title": "Perfect Linear Codes",
+      "chapter_title": "Linear Coding Theory",
+      "toc_number": "6.4",
+      "start_page": 170,
+      "level": "section"
+    },
+    {
+      "id": "math:7.1",
+      "type": "module",
+      "course_id": "math",
+      "title": "Definitions and Examples",
+      "chapter_title": "Linear Transformations",
+      "toc_number": "7.1",
+      "start_page": 183,
+      "level": "section"
+    },
+    {
+      "id": "math:7.2",
+      "type": "module",
+      "course_id": "math",
+      "title": "Linear Transformations on Fn and Matrices",
+      "chapter_title": "Linear Transformations",
+      "toc_number": "7.2",
+      "start_page": 190,
+      "level": "section"
+    },
+    {
+      "id": "math:7.3",
+      "type": "module",
+      "course_id": "math",
+      "title": "Geometry of Linear Transformations on Rn",
+      "chapter_title": "Linear Transformations",
+      "toc_number": "7.3",
+      "start_page": 196,
+      "level": "section"
+    },
+    {
+      "id": "math:7.4",
+      "type": "module",
+      "course_id": "math",
+      "title": "The Matrix of a Linear Transformation",
+      "chapter_title": "Linear Transformations",
+      "toc_number": "7.4",
+      "start_page": 202,
+      "level": "section"
+    },
+    {
+      "id": "math:7.5",
+      "type": "module",
+      "course_id": "math",
+      "title": "Further Results on Linear Transformations",
+      "chapter_title": "Linear Transformations",
+      "toc_number": "7.5",
+      "start_page": 214,
+      "level": "section"
+    },
+    {
+      "id": "math:8.1",
+      "type": "module",
+      "course_id": "math",
+      "title": "The Definition of the Determinant",
+      "chapter_title": "An Introduction to the Theory of Determinants",
+      "toc_number": "8.1",
+      "start_page": 227,
+      "level": "section"
+    },
+    {
+      "id": "math:8.2",
+      "type": "module",
+      "course_id": "math",
+      "title": "Determinants and Row Operations",
+      "chapter_title": "An Introduction to the Theory of Determinants",
+      "toc_number": "8.2",
+      "start_page": 236,
+      "level": "section"
+    },
+    {
+      "id": "math:8.3",
+      "type": "module",
+      "course_id": "math",
+      "title": "Some Further Properties of the Determinant",
+      "chapter_title": "An Introduction to the Theory of Determinants",
+      "toc_number": "8.3",
+      "start_page": 244,
+      "level": "section"
+    },
+    {
+      "id": "math:8.4",
+      "type": "module",
+      "course_id": "math",
+      "title": "Geometric Applications of the Determinant",
+      "chapter_title": "An Introduction to the Theory of Determinants",
+      "toc_number": "8.4",
+      "start_page": 251,
+      "level": "section"
+    },
+    {
+      "id": "math:9.1",
+      "type": "module",
+      "course_id": "math",
+      "title": "Dynamical Systems",
+      "chapter_title": "Eigen theory",
+      "toc_number": "9.1",
+      "start_page": 257,
+      "level": "section"
+    },
+    {
+      "id": "math:9.2",
+      "type": "module",
+      "course_id": "math",
+      "title": "Eigen theory: the Basic Definitions",
+      "chapter_title": "Eigen theory",
+      "toc_number": "9.2",
+      "start_page": 263,
+      "level": "section"
+    },
+    {
+      "id": "math:9.3",
+      "type": "module",
+      "course_id": "math",
+      "title": "Eigenvectors and Diagonalizability",
+      "chapter_title": "Eigen theory",
+      "toc_number": "9.3",
+      "start_page": 274,
+      "level": "section"
+    },
+    {
+      "id": "math:9.4",
+      "type": "module",
+      "course_id": "math",
+      "title": "When is a Matrix Diagonalizable?",
+      "chapter_title": "Eigen theory",
+      "toc_number": "9.4",
+      "start_page": 280,
+      "level": "section"
+    },
+    {
+      "id": "math:9.5",
+      "type": "module",
+      "course_id": "math",
+      "title": "The Exponential of a Matrix",
+      "chapter_title": "Eigen theory",
+      "toc_number": "9.5",
+      "start_page": 291,
+      "level": "section"
+    },
+    {
+      "id": "math:10.1",
+      "type": "module",
+      "course_id": "math",
+      "title": "The Orthogonal Projection on a Subspace",
+      "chapter_title": "The Inner Product Spaces Rn and Cn",
+      "toc_number": "10.1",
+      "start_page": 297,
+      "level": "section"
+    },
+    {
+      "id": "math:10.2",
+      "type": "module",
+      "course_id": "math",
+      "title": "Orthonormal Sets",
+      "chapter_title": "The Inner Product Spaces Rn and Cn",
+      "toc_number": "10.2",
+      "start_page": 308,
+      "level": "section"
+    },
+    {
+      "id": "math:10.3",
+      "type": "module",
+      "course_id": "math",
+      "title": "Gram-Schmidt and the QR-Factorization",
+      "chapter_title": "The Inner Product Spaces Rn and Cn",
+      "toc_number": "10.3",
+      "start_page": 314,
+      "level": "section"
+    },
+    {
+      "id": "math:10.4",
+      "type": "module",
+      "course_id": "math",
+      "title": "Further Remarks on Inner Product Spaces",
+      "chapter_title": "The Inner Product Spaces Rn and Cn",
+      "toc_number": "10.4",
+      "start_page": 317,
+      "level": "section"
+    },
+    {
+      "id": "math:10.5",
+      "type": "module",
+      "course_id": "math",
+      "title": "The Group of Rotations of R3",
+      "chapter_title": "The Inner Product Spaces Rn and Cn",
+      "toc_number": "10.5",
+      "start_page": 324,
+      "level": "section"
+    },
+    {
+      "id": "math:11.1",
+      "type": "module",
+      "course_id": "math",
+      "title": "The Normal Matrix Theorem",
+      "chapter_title": "Unitary Diagonalization Theorems",
+      "toc_number": "11.1",
+      "start_page": 333,
+      "level": "section"
+    },
+    {
+      "id": "math:11.2",
+      "type": "module",
+      "course_id": "math",
+      "title": "The Principal Axis Theorem",
+      "chapter_title": "Unitary Diagonalization Theorems",
+      "toc_number": "11.2",
+      "start_page": 340,
+      "level": "section"
+    },
+    {
+      "id": "math:11.3",
+      "type": "module",
+      "course_id": "math",
+      "title": "Diagonalization of Self Adjoint Operators",
+      "chapter_title": "Unitary Diagonalization Theorems",
+      "toc_number": "11.3",
+      "start_page": 347,
+      "level": "section"
+    },
+    {
+      "id": "math:12.1",
+      "type": "module",
+      "course_id": "math",
+      "title": "Quadratic Forms",
+      "chapter_title": "Some Applications of Eigen theory",
+      "toc_number": "12.1",
+      "start_page": 357,
+      "level": "section"
+    },
+    {
+      "id": "math:12.2",
+      "type": "module",
+      "course_id": "math",
+      "title": "Symmetric Matrices and Graph Theory",
+      "chapter_title": "Some Applications of Eigen theory",
+      "toc_number": "12.2",
+      "start_page": 367,
+      "level": "section"
+    },
+    {
+      "id": "math:12.3",
+      "type": "module",
+      "course_id": "math",
+      "title": "Computing Eigenvalues",
+      "chapter_title": "Some Applications of Eigen theory",
+      "toc_number": "12.3",
+      "start_page": 370,
+      "level": "section"
+    },
+    {
+      "id": "math:13.1",
+      "type": "module",
+      "course_id": "math",
+      "title": "The Main Result",
+      "chapter_title": "The Jordan Decomposition Theorem",
+      "toc_number": "13.1",
+      "start_page": 378,
+      "level": "section"
+    },
+    {
+      "id": "math:13.2",
+      "type": "module",
+      "course_id": "math",
+      "title": "Further Results on Linear Transformations",
+      "chapter_title": "The Jordan Decomposition Theorem",
+      "toc_number": "13.2",
+      "start_page": 386,
+      "level": "section"
+    },
+    {
+      "id": "concept:algebra",
+      "type": "concept",
+      "label": "algebra",
+      "aliases": [
+        "algebra"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:2.1"
+      ],
+      "source_titles": [
+        "Linear equations: the beginning of algebra"
+      ]
+    },
+    {
+      "id": "concept:linear_equations",
+      "type": "concept",
+      "label": "linear equations",
+      "aliases": [
+        "linear equations"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:2.1"
+      ],
+      "source_titles": [
+        "Linear equations: the beginning of algebra"
+      ]
+    },
+    {
+      "id": "concept:matrices",
+      "type": "concept",
+      "label": "matrices",
+      "aliases": [
+        "matrices"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:2.2",
+        "math:5.3",
+        "math:7.2"
+      ],
+      "source_titles": [
+        "Matrices",
+        "Some Results on Matrices",
+        "Linear Transformations on Fn and Matrices"
+      ]
+    },
+    {
+      "id": "concept:vectors",
+      "type": "concept",
+      "label": "vectors",
+      "aliases": [
+        "vectors"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:2.2"
+      ],
+      "source_titles": [
+        "Matrix Addition and Vectors"
+      ]
+    },
+    {
+      "id": "concept:matrix_product",
+      "type": "concept",
+      "label": "matrix product",
+      "aliases": [
+        "matrix product"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:2.2"
+      ],
+      "source_titles": [
+        "Matrix Product"
+      ]
+    },
+    {
+      "id": "concept:matrix_addition",
+      "type": "concept",
+      "label": "matrix addition",
+      "aliases": [
+        "matrix addition"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:2.2"
+      ],
+      "source_titles": [
+        "Matrix Addition and Vectors"
+      ]
+    },
+    {
+      "id": "concept:matrix_addition_and_vectors",
+      "type": "concept",
+      "label": "matrix addition and vectors",
+      "aliases": [
+        "matrix addition and vectors"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:2.2"
+      ],
+      "source_titles": [
+        "Matrix Addition and Vectors"
+      ]
+    },
+    {
+      "id": "concept:row_operations",
+      "type": "concept",
+      "label": "row operations",
+      "aliases": [
+        "row operations"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:2.3",
+        "math:2.4",
+        "math:3.2",
+        "math:8.2"
+      ],
+      "source_titles": [
+        "Reduced Row Echelon Form and Row Operations",
+        "Row Operations and Equivalent Systems",
+        "Elementary Matrices and Row Operations",
+        "Determinants and Row Operations"
+      ]
+    },
+    {
+      "id": "concept:reduced_row_echelon_form",
+      "type": "concept",
+      "label": "reduced row echelon form",
+      "aliases": [
+        "reduced row echelon form"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:2.3"
+      ],
+      "source_titles": [
+        "Reduced Row Echelon Form and Row Operations"
+      ]
+    },
+    {
+      "id": "concept:reduced_row_echelon_form_and_row_operations",
+      "type": "concept",
+      "label": "reduced row echelon form and row operations",
+      "aliases": [
+        "reduced row echelon form and row operations"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:2.3"
+      ],
+      "source_titles": [
+        "Reduced Row Echelon Form and Row Operations"
+      ]
+    },
+    {
+      "id": "concept:gaussian_reduction",
+      "type": "concept",
+      "label": "gaussian reduction",
+      "aliases": [
+        "gaussian reduction"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:2.4"
+      ],
+      "source_titles": [
+        "Solving Linear Systems via Gaussian Reduction"
+      ]
+    },
+    {
+      "id": "concept:solving_linear_systems",
+      "type": "concept",
+      "label": "solving linear systems",
+      "aliases": [
+        "solving linear systems"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:2.4"
+      ],
+      "source_titles": [
+        "Solving Linear Systems via Gaussian Reduction"
+      ]
+    },
+    {
+      "id": "concept:uniqueness",
+      "type": "concept",
+      "label": "uniqueness",
+      "aliases": [
+        "uniqueness"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:2.4"
+      ],
+      "source_titles": [
+        "Criteria for Consistency and Uniqueness"
+      ]
+    },
+    {
+      "id": "concept:homogeneous_case",
+      "type": "concept",
+      "label": "homogeneous case",
+      "aliases": [
+        "homogeneous case"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:2.4"
+      ],
+      "source_titles": [
+        "The Homogeneous Case"
+      ]
+    },
+    {
+      "id": "concept:matrix_multiplication",
+      "type": "concept",
+      "label": "matrix multiplication",
+      "aliases": [
+        "matrix multiplication"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:3.1"
+      ],
+      "source_titles": [
+        "Matrix Multiplication"
+      ]
+    },
+    {
+      "id": "concept:transpose_of_a_matrix",
+      "type": "concept",
+      "label": "transpose of a matrix",
+      "aliases": [
+        "transpose of a matrix"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:3.1"
+      ],
+      "source_titles": [
+        "The Transpose of a Matrix"
+      ]
+    },
+    {
+      "id": "concept:elementary_matrices",
+      "type": "concept",
+      "label": "elementary matrices",
+      "aliases": [
+        "elementary matrices"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:3.2"
+      ],
+      "source_titles": [
+        "Elementary Matrices and Row Operations"
+      ]
+    },
+    {
+      "id": "concept:elementary_matrices_and_row_operations",
+      "type": "concept",
+      "label": "elementary matrices and row operations",
+      "aliases": [
+        "elementary matrices and row operations"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:3.2"
+      ],
+      "source_titles": [
+        "Elementary Matrices and Row Operations"
+      ]
+    },
+    {
+      "id": "concept:linear_systems",
+      "type": "concept",
+      "label": "linear systems",
+      "aliases": [
+        "linear systems"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:3.2"
+      ],
+      "source_titles": [
+        "Application to Linear Systems"
+      ]
+    },
+    {
+      "id": "concept:matrix_inverses",
+      "type": "concept",
+      "label": "matrix inverses",
+      "aliases": [
+        "matrix inverses"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:3.3"
+      ],
+      "source_titles": [
+        "Matrix Inverses"
+      ]
+    },
+    {
+      "id": "concept:matrix_groups",
+      "type": "concept",
+      "label": "matrix groups",
+      "aliases": [
+        "matrix groups"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:3.3"
+      ],
+      "source_titles": [
+        "Matrix Groups"
+      ]
+    },
+    {
+      "id": "concept:methods_for_finding_inverses",
+      "type": "concept",
+      "label": "methods for finding inverses",
+      "aliases": [
+        "methods for finding inverses"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:3.3"
+      ],
+      "source_titles": [
+        "Methods for Finding Inverses"
+      ]
+    },
+    {
+      "id": "concept:lpdu_factorization",
+      "type": "concept",
+      "label": "lpdu factorization",
+      "aliases": [
+        "lpdu factorization"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:3.4"
+      ],
+      "source_titles": [
+        "The LPDU Factorization"
+      ]
+    },
+    {
+      "id": "concept:lpdu",
+      "type": "concept",
+      "label": "lpdu",
+      "aliases": [
+        "lpdu"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:3.4"
+      ],
+      "source_titles": [
+        "LPDU and Reduced Row Echelon Form"
+      ]
+    },
+    {
+      "id": "concept:l_p_d",
+      "type": "concept",
+      "label": "l, p, d",
+      "aliases": [
+        "l, p, d"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:3.4"
+      ],
+      "source_titles": [
+        "The Basic Ingredients: L, P, D and U"
+      ]
+    },
+    {
+      "id": "concept:main_result",
+      "type": "concept",
+      "label": "main result",
+      "aliases": [
+        "main result"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:3.4",
+        "math:8.2",
+        "math:13.1"
+      ],
+      "source_titles": [
+        "The Main Result"
+      ]
+    },
+    {
+      "id": "concept:l_p_d_and_u",
+      "type": "concept",
+      "label": "l, p, d and u",
+      "aliases": [
+        "l, p, d and u"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:3.4"
+      ],
+      "source_titles": [
+        "The Basic Ingredients: L, P, D and U"
+      ]
+    },
+    {
+      "id": "concept:field",
+      "type": "concept",
+      "label": "field",
+      "aliases": [
+        "field"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:4.1"
+      ],
+      "source_titles": [
+        "What is a Field?"
+      ]
+    },
+    {
+      "id": "concept:products",
+      "type": "concept",
+      "label": "products",
+      "aliases": [
+        "products"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:4.1"
+      ],
+      "source_titles": [
+        "Arbitrary Sums and Products"
+      ]
+    },
+    {
+      "id": "concept:arbitrary_sums",
+      "type": "concept",
+      "label": "arbitrary sums",
+      "aliases": [
+        "arbitrary sums"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:4.1"
+      ],
+      "source_titles": [
+        "Arbitrary Sums and Products"
+      ]
+    },
+    {
+      "id": "concept:algebraic_number_field",
+      "type": "concept",
+      "label": "algebraic number field",
+      "aliases": [
+        "algebraic number field"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:4.1"
+      ],
+      "source_titles": [
+        "An Algebraic Number Field"
+      ]
+    },
+    {
+      "id": "concept:arbitrary_sums_and_products",
+      "type": "concept",
+      "label": "arbitrary sums and products",
+      "aliases": [
+        "arbitrary sums and products"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:4.1"
+      ],
+      "source_titles": [
+        "Arbitrary Sums and Products"
+      ]
+    },
+    {
+      "id": "concept:integers_modulo_a_prime_p",
+      "type": "concept",
+      "label": "integers modulo a prime p",
+      "aliases": [
+        "integers modulo a prime p"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:4.2"
+      ],
+      "source_titles": [
+        "The Integers Modulo a Prime p"
+      ]
+    },
+    {
+      "id": "concept:field_with_four_elements",
+      "type": "concept",
+      "label": "field with four elements",
+      "aliases": [
+        "field with four elements"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:4.2"
+      ],
+      "source_titles": [
+        "A Field with Four Elements"
+      ]
+    },
+    {
+      "id": "concept:characteristic_of_a_field",
+      "type": "concept",
+      "label": "characteristic of a field",
+      "aliases": [
+        "characteristic of a field"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:4.2"
+      ],
+      "source_titles": [
+        "The Characteristic of a Field"
+      ]
+    },
+    {
+      "id": "concept:connections_with_number_theory",
+      "type": "concept",
+      "label": "connections with number theory",
+      "aliases": [
+        "connections with number theory"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:4.2"
+      ],
+      "source_titles": [
+        "Connections With Number Theory"
+      ]
+    },
+    {
+      "id": "concept:field_of_complex_numbers",
+      "type": "concept",
+      "label": "field of complex numbers",
+      "aliases": [
+        "field of complex numbers"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:4.3"
+      ],
+      "source_titles": [
+        "The Field of Complex Numbers"
+      ]
+    },
+    {
+      "id": "concept:construction",
+      "type": "concept",
+      "label": "construction",
+      "aliases": [
+        "construction"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:4.3"
+      ],
+      "source_titles": [
+        "The Construction"
+      ]
+    },
+    {
+      "id": "concept:geometry_of_c",
+      "type": "concept",
+      "label": "geometry of c",
+      "aliases": [
+        "geometry of c"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:4.3"
+      ],
+      "source_titles": [
+        "The Geometry of C"
+      ]
+    },
+    {
+      "id": "concept:vector_spaces",
+      "type": "concept",
+      "label": "vector spaces",
+      "aliases": [
+        "vector spaces"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:4.4"
+      ],
+      "source_titles": [
+        "Vector Spaces"
+      ]
+    },
+    {
+      "id": "concept:vector_space",
+      "type": "concept",
+      "label": "vector space",
+      "aliases": [
+        "vector space"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:4.4"
+      ],
+      "source_titles": [
+        "The Notion of a Vector Space"
+      ]
+    },
+    {
+      "id": "concept:inner_product_spaces",
+      "type": "concept",
+      "label": "inner product spaces",
+      "aliases": [
+        "inner product spaces"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:4.5",
+        "math:10.4"
+      ],
+      "source_titles": [
+        "Inner Product Spaces",
+        "Further Remarks on Inner Product Spaces"
+      ]
+    },
+    {
+      "id": "concept:real_case",
+      "type": "concept",
+      "label": "real case",
+      "aliases": [
+        "real case"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:4.5"
+      ],
+      "source_titles": [
+        "The Real Case"
+      ]
+    },
+    {
+      "id": "concept:orthogonality",
+      "type": "concept",
+      "label": "orthogonality",
+      "aliases": [
+        "orthogonality"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:4.5"
+      ],
+      "source_titles": [
+        "Orthogonality"
+      ]
+    },
+    {
+      "id": "concept:hermitian_inner_products",
+      "type": "concept",
+      "label": "hermitian inner products",
+      "aliases": [
+        "hermitian inner products"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:4.5",
+        "math:10.4"
+      ],
+      "source_titles": [
+        "Hermitian Inner Products"
+      ]
+    },
+    {
+      "id": "concept:subspaces",
+      "type": "concept",
+      "label": "subspaces",
+      "aliases": [
+        "subspaces"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:4.6"
+      ],
+      "source_titles": [
+        "Subspaces and Spanning Sets"
+      ]
+    },
+    {
+      "id": "concept:spanning_sets",
+      "type": "concept",
+      "label": "spanning sets",
+      "aliases": [
+        "spanning sets"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:4.6"
+      ],
+      "source_titles": [
+        "Subspaces and Spanning Sets"
+      ]
+    },
+    {
+      "id": "concept:subspaces_and_spanning_sets",
+      "type": "concept",
+      "label": "subspaces and spanning sets",
+      "aliases": [
+        "subspaces and spanning sets"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:4.6"
+      ],
+      "source_titles": [
+        "Subspaces and Spanning Sets"
+      ]
+    },
+    {
+      "id": "concept:subspace",
+      "type": "concept",
+      "label": "subspace",
+      "aliases": [
+        "subspace"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:4.6"
+      ],
+      "source_titles": [
+        "The Definition of a Subspace"
+      ]
+    },
+    {
+      "id": "concept:dimension",
+      "type": "concept",
+      "label": "dimension",
+      "aliases": [
+        "dimension"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:5.1",
+        "math:5.2"
+      ],
+      "source_titles": [
+        "The Notion of Dimension",
+        "Bases and Dimension"
+      ]
+    },
+    {
+      "id": "concept:basis",
+      "type": "concept",
+      "label": "basis",
+      "aliases": [
+        "basis"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:5.1"
+      ],
+      "source_titles": [
+        "The Definition of a Basis"
+      ]
+    },
+    {
+      "id": "concept:linear_independence",
+      "type": "concept",
+      "label": "linear independence",
+      "aliases": [
+        "linear independence"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:5.1"
+      ],
+      "source_titles": [
+        "Linear Independence"
+      ]
+    },
+    {
+      "id": "concept:bases",
+      "type": "concept",
+      "label": "bases",
+      "aliases": [
+        "bases"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:5.2"
+      ],
+      "source_titles": [
+        "Bases and Dimension"
+      ]
+    },
+    {
+      "id": "concept:bases_and_dimension",
+      "type": "concept",
+      "label": "bases and dimension",
+      "aliases": [
+        "bases and dimension"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:5.2"
+      ],
+      "source_titles": [
+        "Bases and Dimension"
+      ]
+    },
+    {
+      "id": "concept:dimension_theorem",
+      "type": "concept",
+      "label": "dimension theorem",
+      "aliases": [
+        "dimension theorem"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:5.2"
+      ],
+      "source_titles": [
+        "The Dimension Theorem"
+      ]
+    },
+    {
+      "id": "concept:basis_of_the_column_space",
+      "type": "concept",
+      "label": "basis of the column space",
+      "aliases": [
+        "basis of the column space"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:5.3"
+      ],
+      "source_titles": [
+        "A Basis of the Column Space"
+      ]
+    },
+    {
+      "id": "concept:uniqueness_of_row_echelon_form",
+      "type": "concept",
+      "label": "uniqueness of row echelon form",
+      "aliases": [
+        "uniqueness of row echelon form"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:5.3"
+      ],
+      "source_titles": [
+        "The Uniqueness of Row Echelon Form"
+      ]
+    },
+    {
+      "id": "concept:row_space_of_a_and_the_ranks_of_a_and_at",
+      "type": "concept",
+      "label": "row space of a and the ranks of a and at",
+      "aliases": [
+        "row space of a and the ranks of a and at"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:5.3"
+      ],
+      "source_titles": [
+        "The Row Space of A and the Ranks of A and AT"
+      ]
+    },
+    {
+      "id": "concept:intersections",
+      "type": "concept",
+      "label": "intersections",
+      "aliases": [
+        "intersections"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:5.4"
+      ],
+      "source_titles": [
+        "Intersections and Sums of Subspaces"
+      ]
+    },
+    {
+      "id": "concept:sums_of_subspaces",
+      "type": "concept",
+      "label": "sums of subspaces",
+      "aliases": [
+        "sums of subspaces"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:5.4"
+      ],
+      "source_titles": [
+        "Intersections and Sums of Subspaces"
+      ]
+    },
+    {
+      "id": "concept:intersections_and_sums_of_subspaces",
+      "type": "concept",
+      "label": "intersections and sums of subspaces",
+      "aliases": [
+        "intersections and sums of subspaces"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:5.4"
+      ],
+      "source_titles": [
+        "Intersections and Sums of Subspaces"
+      ]
+    },
+    {
+      "id": "concept:sums",
+      "type": "concept",
+      "label": "sums",
+      "aliases": [
+        "sums"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:5.4"
+      ],
+      "source_titles": [
+        "Intersections and Sums"
+      ]
+    },
+    {
+      "id": "concept:external_direct_sums",
+      "type": "concept",
+      "label": "external direct sums",
+      "aliases": [
+        "external direct sums"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:5.4"
+      ],
+      "source_titles": [
+        "External Direct Sums"
+      ]
+    },
+    {
+      "id": "concept:vector_space_quotients",
+      "type": "concept",
+      "label": "vector space quotients",
+      "aliases": [
+        "vector space quotients"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:5.5"
+      ],
+      "source_titles": [
+        "Vector Space Quotients"
+      ]
+    },
+    {
+      "id": "concept:cosets",
+      "type": "concept",
+      "label": "cosets",
+      "aliases": [
+        "cosets"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:5.5",
+        "math:6.4"
+      ],
+      "source_titles": [
+        "Cosets",
+        "Perfect Codes and Cosets"
+      ]
+    },
+    {
+      "id": "concept:quotient_spaces",
+      "type": "concept",
+      "label": "quotient spaces",
+      "aliases": [
+        "quotient spaces"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:5.5"
+      ],
+      "source_titles": [
+        "Equivalence Relations and Quotient Spaces"
+      ]
+    },
+    {
+      "id": "concept:equivalence_relations",
+      "type": "concept",
+      "label": "equivalence relations",
+      "aliases": [
+        "equivalence relations"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:5.5"
+      ],
+      "source_titles": [
+        "Equivalence Relations and Quotient Spaces"
+      ]
+    },
+    {
+      "id": "concept:equivalence_relations_and_quotient_spaces",
+      "type": "concept",
+      "label": "equivalence relations and quotient spaces",
+      "aliases": [
+        "equivalence relations and quotient spaces"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:5.5"
+      ],
+      "source_titles": [
+        "Equivalence Relations and Quotient Spaces"
+      ]
+    },
+    {
+      "id": "concept:linear_codes",
+      "type": "concept",
+      "label": "linear codes",
+      "aliases": [
+        "linear codes"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:6.1"
+      ],
+      "source_titles": [
+        "Linear Codes"
+      ]
+    },
+    {
+      "id": "concept:code",
+      "type": "concept",
+      "label": "code",
+      "aliases": [
+        "code"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:6.1"
+      ],
+      "source_titles": [
+        "The Notion of a Code"
+      ]
+    },
+    {
+      "id": "concept:international_standard_book_number",
+      "type": "concept",
+      "label": "international standard book number",
+      "aliases": [
+        "international standard book number"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:6.1"
+      ],
+      "source_titles": [
+        "The International Standard Book Number"
+      ]
+    },
+    {
+      "id": "concept:linear_codes_defined_by_generating_matrices",
+      "type": "concept",
+      "label": "linear codes defined by generating matrices",
+      "aliases": [
+        "linear codes defined by generating matrices"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:6.1"
+      ],
+      "source_titles": [
+        "Linear Codes Defined by Generating Matrices"
+      ]
+    },
+    {
+      "id": "concept:error_correcting_codes",
+      "type": "concept",
+      "label": "error correcting codes",
+      "aliases": [
+        "error correcting codes"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:6.2"
+      ],
+      "source_titles": [
+        "Error-Correcting Codes"
+      ]
+    },
+    {
+      "id": "concept:key_result",
+      "type": "concept",
+      "label": "key result",
+      "aliases": [
+        "key result"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:6.2"
+      ],
+      "source_titles": [
+        "The Key Result"
+      ]
+    },
+    {
+      "id": "concept:hamming_distance",
+      "type": "concept",
+      "label": "hamming distance",
+      "aliases": [
+        "hamming distance"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:6.2"
+      ],
+      "source_titles": [
+        "Hamming Distance"
+      ]
+    },
+    {
+      "id": "concept:codes_with_large_minimal_distance",
+      "type": "concept",
+      "label": "codes with large minimal distance",
+      "aliases": [
+        "codes with large minimal distance"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:6.3"
+      ],
+      "source_titles": [
+        "Codes With Large Minimal Distance"
+      ]
+    },
+    {
+      "id": "concept:hadamard_codes",
+      "type": "concept",
+      "label": "hadamard codes",
+      "aliases": [
+        "hadamard codes"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:6.3"
+      ],
+      "source_titles": [
+        "Hadamard Codes"
+      ]
+    },
+    {
+      "id": "concept:maximization_problem",
+      "type": "concept",
+      "label": "maximization problem",
+      "aliases": [
+        "maximization problem"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:6.3"
+      ],
+      "source_titles": [
+        "A Maximization Problem"
+      ]
+    },
+    {
+      "id": "concept:perfect_linear_codes",
+      "type": "concept",
+      "label": "perfect linear codes",
+      "aliases": [
+        "perfect linear codes"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:6.4"
+      ],
+      "source_titles": [
+        "Perfect Linear Codes"
+      ]
+    },
+    {
+      "id": "concept:hat_problem",
+      "type": "concept",
+      "label": "hat problem",
+      "aliases": [
+        "hat problem"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:6.4"
+      ],
+      "source_titles": [
+        "The hat problem"
+      ]
+    },
+    {
+      "id": "concept:perfect_codes",
+      "type": "concept",
+      "label": "perfect codes",
+      "aliases": [
+        "perfect codes"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:6.4"
+      ],
+      "source_titles": [
+        "Perfect Codes and Cosets"
+      ]
+    },
+    {
+      "id": "concept:geometric_problem",
+      "type": "concept",
+      "label": "geometric problem",
+      "aliases": [
+        "geometric problem"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:6.4"
+      ],
+      "source_titles": [
+        "A Geometric Problem"
+      ]
+    },
+    {
+      "id": "concept:mappings",
+      "type": "concept",
+      "label": "mappings",
+      "aliases": [
+        "mappings"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:7.1"
+      ],
+      "source_titles": [
+        "Mappings"
+      ]
+    },
+    {
+      "id": "concept:general_properties_of_linear_transformations",
+      "type": "concept",
+      "label": "general properties of linear transformations",
+      "aliases": [
+        "general properties of linear transformations"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:7.1"
+      ],
+      "source_titles": [
+        "General Properties of Linear Transformations"
+      ]
+    },
+    {
+      "id": "concept:linear_transformations_on_fn",
+      "type": "concept",
+      "label": "linear transformations on fn",
+      "aliases": [
+        "linear transformations on fn"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:7.2"
+      ],
+      "source_titles": [
+        "Linear Transformations on Fn and Matrices"
+      ]
+    },
+    {
+      "id": "concept:linear_transformations_on_fn_and_matrices",
+      "type": "concept",
+      "label": "linear transformations on fn and matrices",
+      "aliases": [
+        "linear transformations on fn and matrices"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:7.2"
+      ],
+      "source_titles": [
+        "Linear Transformations on Fn and Matrices"
+      ]
+    },
+    {
+      "id": "concept:example",
+      "type": "concept",
+      "label": "example",
+      "aliases": [
+        "example"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:7.2"
+      ],
+      "source_titles": [
+        "An Example: Rotations of R2"
+      ]
+    },
+    {
+      "id": "concept:composition",
+      "type": "concept",
+      "label": "composition",
+      "aliases": [
+        "composition"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:7.2"
+      ],
+      "source_titles": [
+        "Composition and Multiplication"
+      ]
+    },
+    {
+      "id": "concept:geometry_of_linear_transformations_on_rn",
+      "type": "concept",
+      "label": "geometry of linear transformations on rn",
+      "aliases": [
+        "geometry of linear transformations on rn"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:7.3"
+      ],
+      "source_titles": [
+        "Geometry of Linear Transformations on Rn"
+      ]
+    },
+    {
+      "id": "concept:orthogonal_transformations",
+      "type": "concept",
+      "label": "orthogonal transformations",
+      "aliases": [
+        "orthogonal transformations"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:7.3"
+      ],
+      "source_titles": [
+        "Orthogonal Transformations"
+      ]
+    },
+    {
+      "id": "concept:transformations_of_the_plane",
+      "type": "concept",
+      "label": "transformations of the plane",
+      "aliases": [
+        "transformations of the plane"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:7.3"
+      ],
+      "source_titles": [
+        "Transformations of the Plane"
+      ]
+    },
+    {
+      "id": "concept:matrix_of_a_linear_transformation",
+      "type": "concept",
+      "label": "matrix of a linear transformation",
+      "aliases": [
+        "matrix of a linear transformation"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:7.4"
+      ],
+      "source_titles": [
+        "The Matrix of a Linear Transformation"
+      ]
+    },
+    {
+      "id": "concept:matrix_mb_b_t",
+      "type": "concept",
+      "label": "matrix mb b' (t",
+      "aliases": [
+        "matrix mb b' (t"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:7.4"
+      ],
+      "source_titles": [
+        "The Matrix MB B' (T)"
+      ]
+    },
+    {
+      "id": "concept:coordinates_with_respect_to_a_basis",
+      "type": "concept",
+      "label": "coordinates with respect to a basis",
+      "aliases": [
+        "coordinates with respect to a basis"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:7.4"
+      ],
+      "source_titles": [
+        "Coordinates With Respect to a Basis"
+      ]
+    },
+    {
+      "id": "concept:changing_basis_for_the_matrix_of_a_linear_transformation",
+      "type": "concept",
+      "label": "changing basis for the matrix of a linear transformation",
+      "aliases": [
+        "changing basis for the matrix of a linear transformation"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:7.4"
+      ],
+      "source_titles": [
+        "Changing Basis for the Matrix of a Linear Transformation"
+      ]
+    },
+    {
+      "id": "concept:linear_transformations",
+      "type": "concept",
+      "label": "linear transformations",
+      "aliases": [
+        "linear transformations"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:7.5",
+        "math:9.2",
+        "math:13.2"
+      ],
+      "source_titles": [
+        "Further Results on Linear Transformations",
+        "Further Remarks on Linear Transformations"
+      ]
+    },
+    {
+      "id": "concept:kernel",
+      "type": "concept",
+      "label": "kernel",
+      "aliases": [
+        "kernel"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:7.5"
+      ],
+      "source_titles": [
+        "The Kernel and Image of a Linear Transformation"
+      ]
+    },
+    {
+      "id": "concept:complex_linear_transformations",
+      "type": "concept",
+      "label": "complex linear transformations",
+      "aliases": [
+        "complex linear transformations"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:7.5"
+      ],
+      "source_titles": [
+        "Complex Linear Transformations"
+      ]
+    },
+    {
+      "id": "concept:image_of_a_linear_transformation",
+      "type": "concept",
+      "label": "image of a linear transformation",
+      "aliases": [
+        "image of a linear transformation"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:7.5"
+      ],
+      "source_titles": [
+        "The Kernel and Image of a Linear Transformation"
+      ]
+    },
+    {
+      "id": "concept:kernel_and_image_of_a_linear_transformation",
+      "type": "concept",
+      "label": "kernel and image of a linear transformation",
+      "aliases": [
+        "kernel and image of a linear transformation"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:7.5"
+      ],
+      "source_titles": [
+        "The Kernel and Image of a Linear Transformation"
+      ]
+    },
+    {
+      "id": "concept:determinant",
+      "type": "concept",
+      "label": "determinant",
+      "aliases": [
+        "determinant"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:8.1",
+        "math:8.4"
+      ],
+      "source_titles": [
+        "The Definition of the Determinant",
+        "Geometric Applications of the Determinant"
+      ]
+    },
+    {
+      "id": "concept:permutations",
+      "type": "concept",
+      "label": "permutations",
+      "aliases": [
+        "permutations"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:8.1"
+      ],
+      "source_titles": [
+        "Permutations and Permutation Matrices"
+      ]
+    },
+    {
+      "id": "concept:permutation_matrices",
+      "type": "concept",
+      "label": "permutation matrices",
+      "aliases": [
+        "permutation matrices"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:8.1"
+      ],
+      "source_titles": [
+        "Permutations and Permutation Matrices"
+      ]
+    },
+    {
+      "id": "concept:some_combinatorial_preliminaries",
+      "type": "concept",
+      "label": "some combinatorial preliminaries",
+      "aliases": [
+        "some combinatorial preliminaries"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:8.1"
+      ],
+      "source_titles": [
+        "Some Combinatorial Preliminaries"
+      ]
+    },
+    {
+      "id": "concept:determinant_of_a_permutation_matrix",
+      "type": "concept",
+      "label": "determinant of a permutation matrix",
+      "aliases": [
+        "determinant of a permutation matrix"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:8.1"
+      ],
+      "source_titles": [
+        "The Determinant of a Permutation Matrix"
+      ]
+    },
+    {
+      "id": "concept:determinants",
+      "type": "concept",
+      "label": "determinants",
+      "aliases": [
+        "determinants"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:8.2",
+        "math:8.4"
+      ],
+      "source_titles": [
+        "Determinants and Row Operations",
+        "Determinants and Volumes"
+      ]
+    },
+    {
+      "id": "concept:determinants_and_row_operations",
+      "type": "concept",
+      "label": "determinants and row operations",
+      "aliases": [
+        "determinants and row operations"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:8.2"
+      ],
+      "source_titles": [
+        "Determinants and Row Operations"
+      ]
+    },
+    {
+      "id": "concept:consequences",
+      "type": "concept",
+      "label": "consequences",
+      "aliases": [
+        "consequences"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:8.2"
+      ],
+      "source_titles": [
+        "Consequences"
+      ]
+    },
+    {
+      "id": "concept:some_further_properties_of_the_determinant",
+      "type": "concept",
+      "label": "some further properties of the determinant",
+      "aliases": [
+        "some further properties of the determinant"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:8.3"
+      ],
+      "source_titles": [
+        "Some Further Properties of the Determinant"
+      ]
+    },
+    {
+      "id": "concept:cramer_s_rule",
+      "type": "concept",
+      "label": "cramer's rule",
+      "aliases": [
+        "cramer's rule"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:8.3"
+      ],
+      "source_titles": [
+        "Cramer's Rule"
+      ]
+    },
+    {
+      "id": "concept:laplace_expansion",
+      "type": "concept",
+      "label": "laplace expansion",
+      "aliases": [
+        "laplace expansion"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:8.3"
+      ],
+      "source_titles": [
+        "The Laplace Expansion"
+      ]
+    },
+    {
+      "id": "concept:case_of_equal_rows",
+      "type": "concept",
+      "label": "case of equal rows",
+      "aliases": [
+        "case of equal rows"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:8.3"
+      ],
+      "source_titles": [
+        "The Case of Equal Rows"
+      ]
+    },
+    {
+      "id": "concept:characterization_of_the_determinant",
+      "type": "concept",
+      "label": "characterization of the determinant",
+      "aliases": [
+        "characterization of the determinant"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:8.3"
+      ],
+      "source_titles": [
+        "A Characterization of the Determinant"
+      ]
+    },
+    {
+      "id": "concept:cross",
+      "type": "concept",
+      "label": "cross",
+      "aliases": [
+        "cross"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:8.4"
+      ],
+      "source_titles": [
+        "Cross and Vector Products"
+      ]
+    },
+    {
+      "id": "concept:volumes",
+      "type": "concept",
+      "label": "volumes",
+      "aliases": [
+        "volumes"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:8.4"
+      ],
+      "source_titles": [
+        "Determinants and Volumes"
+      ]
+    },
+    {
+      "id": "concept:vector_products",
+      "type": "concept",
+      "label": "vector products",
+      "aliases": [
+        "vector products"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:8.4"
+      ],
+      "source_titles": [
+        "Cross and Vector Products"
+      ]
+    },
+    {
+      "id": "concept:dynamical_systems",
+      "type": "concept",
+      "label": "dynamical systems",
+      "aliases": [
+        "dynamical systems"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:9.1"
+      ],
+      "source_titles": [
+        "Dynamical Systems"
+      ]
+    },
+    {
+      "id": "concept:eigenvalue_problem",
+      "type": "concept",
+      "label": "eigenvalue problem",
+      "aliases": [
+        "eigenvalue problem"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:9.1"
+      ],
+      "source_titles": [
+        "The Eigenvalue Problem"
+      ]
+    },
+    {
+      "id": "concept:fibonacci_sequence",
+      "type": "concept",
+      "label": "fibonacci sequence",
+      "aliases": [
+        "fibonacci sequence"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:9.1"
+      ],
+      "source_titles": [
+        "The Fibonacci Sequence"
+      ]
+    },
+    {
+      "id": "concept:infinite_dimensional_example",
+      "type": "concept",
+      "label": "infinite dimensional example",
+      "aliases": [
+        "infinite dimensional example"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:9.1"
+      ],
+      "source_titles": [
+        "An Infinite Dimensional Example"
+      ]
+    },
+    {
+      "id": "concept:eigen_theory",
+      "type": "concept",
+      "label": "eigen theory",
+      "aliases": [
+        "eigen theory"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:9.2"
+      ],
+      "source_titles": [
+        "Eigen theory: the Basic Definitions"
+      ]
+    },
+    {
+      "id": "concept:characteristic_polynomial",
+      "type": "concept",
+      "label": "characteristic polynomial",
+      "aliases": [
+        "characteristic polynomial"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:9.2"
+      ],
+      "source_titles": [
+        "The Characteristic Polynomial"
+      ]
+    },
+    {
+      "id": "concept:formulas_for_the_characteristic_polynomial",
+      "type": "concept",
+      "label": "formulas for the characteristic polynomial",
+      "aliases": [
+        "formulas for the characteristic polynomial"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:9.2"
+      ],
+      "source_titles": [
+        "Formulas for the Characteristic Polynomial"
+      ]
+    },
+    {
+      "id": "concept:diagonalizability",
+      "type": "concept",
+      "label": "diagonalizability",
+      "aliases": [
+        "diagonalizability"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:9.3"
+      ],
+      "source_titles": [
+        "Eigenvectors and Diagonalizability"
+      ]
+    },
+    {
+      "id": "concept:eigenvectors",
+      "type": "concept",
+      "label": "eigenvectors",
+      "aliases": [
+        "eigenvectors"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:9.3"
+      ],
+      "source_titles": [
+        "Eigenvectors and Diagonalizability"
+      ]
+    },
+    {
+      "id": "concept:eigenvectors_and_diagonalizability",
+      "type": "concept",
+      "label": "eigenvectors and diagonalizability",
+      "aliases": [
+        "eigenvectors and diagonalizability"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:9.3"
+      ],
+      "source_titles": [
+        "Eigenvectors and Diagonalizability"
+      ]
+    },
+    {
+      "id": "concept:eigenspaces",
+      "type": "concept",
+      "label": "eigenspaces",
+      "aliases": [
+        "eigenspaces"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:9.3"
+      ],
+      "source_titles": [
+        "Eigenspaces"
+      ]
+    },
+    {
+      "id": "concept:semi_simple_linear_transformations",
+      "type": "concept",
+      "label": "semi simple linear transformations",
+      "aliases": [
+        "semi simple linear transformations"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:9.3"
+      ],
+      "source_titles": [
+        "Semi-simple Linear Transformations and Diagonalizability"
+      ]
+    },
+    {
+      "id": "concept:when_is_a_matrix_diagonalizable",
+      "type": "concept",
+      "label": "when is a matrix diagonalizable",
+      "aliases": [
+        "when is a matrix diagonalizable"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:9.4"
+      ],
+      "source_titles": [
+        "When is a Matrix Diagonalizable?"
+      ]
+    },
+    {
+      "id": "concept:characterization",
+      "type": "concept",
+      "label": "characterization",
+      "aliases": [
+        "characterization"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:9.4"
+      ],
+      "source_titles": [
+        "A Characterization"
+      ]
+    },
+    {
+      "id": "concept:cayley_hamilton_theorem",
+      "type": "concept",
+      "label": "cayley hamilton theorem",
+      "aliases": [
+        "cayley hamilton theorem"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:9.4",
+        "math:13.2"
+      ],
+      "source_titles": [
+        "The Cayley-Hamilton Theorem"
+      ]
+    },
+    {
+      "id": "concept:do_non_diagonalizable_matrices_exist",
+      "type": "concept",
+      "label": "do non diagonalizable matrices exist",
+      "aliases": [
+        "do non diagonalizable matrices exist"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:9.4"
+      ],
+      "source_titles": [
+        "Do Non-diagonalizable Matrices Exist?"
+      ]
+    },
+    {
+      "id": "concept:tridiagonalization_of_complex_matrices",
+      "type": "concept",
+      "label": "tridiagonalization of complex matrices",
+      "aliases": [
+        "tridiagonalization of complex matrices"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:9.4"
+      ],
+      "source_titles": [
+        "Tridiagonalization of Complex Matrices"
+      ]
+    },
+    {
+      "id": "concept:exponential_of_a_matrix",
+      "type": "concept",
+      "label": "exponential of a matrix",
+      "aliases": [
+        "exponential of a matrix"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:9.5"
+      ],
+      "source_titles": [
+        "The Exponential of a Matrix"
+      ]
+    },
+    {
+      "id": "concept:exponential",
+      "type": "concept",
+      "label": "exponential",
+      "aliases": [
+        "exponential"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:9.5"
+      ],
+      "source_titles": [
+        "The Exponential"
+      ]
+    },
+    {
+      "id": "concept:uncoupling_systems",
+      "type": "concept",
+      "label": "uncoupling systems",
+      "aliases": [
+        "uncoupling systems"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:9.5"
+      ],
+      "source_titles": [
+        "Uncoupling systems"
+      ]
+    },
+    {
+      "id": "concept:pseudoinverse",
+      "type": "concept",
+      "label": "pseudoinverse",
+      "aliases": [
+        "pseudoinverse"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:10.1"
+      ],
+      "source_titles": [
+        "Inconsistent Systems and the Pseudoinverse"
+      ]
+    },
+    {
+      "id": "concept:orthogonal_projection_on_a_subspace",
+      "type": "concept",
+      "label": "orthogonal projection on a subspace",
+      "aliases": [
+        "orthogonal projection on a subspace"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:10.1"
+      ],
+      "source_titles": [
+        "The Orthogonal Projection on a Subspace"
+      ]
+    },
+    {
+      "id": "concept:inconsistent_systems",
+      "type": "concept",
+      "label": "inconsistent systems",
+      "aliases": [
+        "inconsistent systems"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:10.1"
+      ],
+      "source_titles": [
+        "Inconsistent Systems and the Pseudoinverse"
+      ]
+    },
+    {
+      "id": "concept:projection_on_a_subspace",
+      "type": "concept",
+      "label": "projection on a subspace",
+      "aliases": [
+        "projection on a subspace"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:10.1"
+      ],
+      "source_titles": [
+        "The Projection on a Subspace"
+      ]
+    },
+    {
+      "id": "concept:orthogonal_complement_of_a_subspace",
+      "type": "concept",
+      "label": "orthogonal complement of a subspace",
+      "aliases": [
+        "orthogonal complement of a subspace"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:10.1"
+      ],
+      "source_titles": [
+        "The Orthogonal Complement of a Subspace"
+      ]
+    },
+    {
+      "id": "concept:orthonormal_sets",
+      "type": "concept",
+      "label": "orthonormal sets",
+      "aliases": [
+        "orthonormal sets"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:10.2"
+      ],
+      "source_titles": [
+        "Orthonormal Sets"
+      ]
+    },
+    {
+      "id": "concept:orthonormal_bases",
+      "type": "concept",
+      "label": "orthonormal bases",
+      "aliases": [
+        "orthonormal bases"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:10.2"
+      ],
+      "source_titles": [
+        "Orthonormal Bases"
+      ]
+    },
+    {
+      "id": "concept:projections",
+      "type": "concept",
+      "label": "projections",
+      "aliases": [
+        "projections"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:10.2"
+      ],
+      "source_titles": [
+        "Projections and Orthonormal Bases"
+      ]
+    },
+    {
+      "id": "concept:projections_and_orthonormal_bases",
+      "type": "concept",
+      "label": "projections and orthonormal bases",
+      "aliases": [
+        "projections and orthonormal bases"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:10.2"
+      ],
+      "source_titles": [
+        "Projections and Orthonormal Bases"
+      ]
+    },
+    {
+      "id": "concept:gram_schmidt",
+      "type": "concept",
+      "label": "gram schmidt",
+      "aliases": [
+        "gram schmidt"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:10.3"
+      ],
+      "source_titles": [
+        "Gram-Schmidt and the QR-Factorization"
+      ]
+    },
+    {
+      "id": "concept:qr_factorization",
+      "type": "concept",
+      "label": "qr factorization",
+      "aliases": [
+        "qr factorization"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:10.3"
+      ],
+      "source_titles": [
+        "Gram-Schmidt and the QR-Factorization"
+      ]
+    },
+    {
+      "id": "concept:gram_schmidt_and_the_qr_factorization",
+      "type": "concept",
+      "label": "gram schmidt and the qr factorization",
+      "aliases": [
+        "gram schmidt and the qr factorization"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:10.3"
+      ],
+      "source_titles": [
+        "Gram-Schmidt and the QR-Factorization"
+      ]
+    },
+    {
+      "id": "concept:qr_decomposition",
+      "type": "concept",
+      "label": "qr decomposition",
+      "aliases": [
+        "qr decomposition"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:10.3"
+      ],
+      "source_titles": [
+        "The QR-Decomposition"
+      ]
+    },
+    {
+      "id": "concept:isometries",
+      "type": "concept",
+      "label": "isometries",
+      "aliases": [
+        "isometries"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:10.4"
+      ],
+      "source_titles": [
+        "Isometries"
+      ]
+    },
+    {
+      "id": "concept:space_c_a_b",
+      "type": "concept",
+      "label": "space c[a,b",
+      "aliases": [
+        "space c[a,b"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:10.4"
+      ],
+      "source_titles": [
+        "The Space C[a,b]"
+      ]
+    },
+    {
+      "id": "concept:space_of_linear_transformations_l_rn_rn",
+      "type": "concept",
+      "label": "space of linear transformations l(rn, rn",
+      "aliases": [
+        "space of linear transformations l(rn, rn"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:10.4"
+      ],
+      "source_titles": [
+        "The Space of Linear Transformations L(Rn, Rn)"
+      ]
+    },
+    {
+      "id": "concept:group_of_rotations_of_r3",
+      "type": "concept",
+      "label": "group of rotations of r3",
+      "aliases": [
+        "group of rotations of r3"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:10.5"
+      ],
+      "source_titles": [
+        "The Group of Rotations of R3"
+      ]
+    },
+    {
+      "id": "concept:rotations_of_r3",
+      "type": "concept",
+      "label": "rotations of r3",
+      "aliases": [
+        "rotations of r3"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:10.5"
+      ],
+      "source_titles": [
+        "Rotations of R3"
+      ]
+    },
+    {
+      "id": "concept:rotation_groups_of_solids",
+      "type": "concept",
+      "label": "rotation groups of solids",
+      "aliases": [
+        "rotation groups of solids"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:10.5"
+      ],
+      "source_titles": [
+        "Rotation Groups of Solids"
+      ]
+    },
+    {
+      "id": "concept:normal_matrix_theorem",
+      "type": "concept",
+      "label": "normal matrix theorem",
+      "aliases": [
+        "normal matrix theorem"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:11.1"
+      ],
+      "source_titles": [
+        "The Normal Matrix Theorem"
+      ]
+    },
+    {
+      "id": "concept:principal_axis_theorem",
+      "type": "concept",
+      "label": "principal axis theorem",
+      "aliases": [
+        "principal axis theorem"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:11.2"
+      ],
+      "source_titles": [
+        "The Principal Axis Theorem"
+      ]
+    },
+    {
+      "id": "concept:projection_formula_for_symmetric_matrices",
+      "type": "concept",
+      "label": "projection formula for symmetric matrices",
+      "aliases": [
+        "projection formula for symmetric matrices"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:11.2"
+      ],
+      "source_titles": [
+        "A Projection Formula for Symmetric Matrices"
+      ]
+    },
+    {
+      "id": "concept:diagonalization_of_self_adjoint_operators",
+      "type": "concept",
+      "label": "diagonalization of self adjoint operators",
+      "aliases": [
+        "diagonalization of self adjoint operators"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:11.3"
+      ],
+      "source_titles": [
+        "Diagonalization of Self Adjoint Operators"
+      ]
+    },
+    {
+      "id": "concept:geometry_of_self_adjointness",
+      "type": "concept",
+      "label": "geometry of self adjointness",
+      "aliases": [
+        "geometry of self adjointness"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:11.3"
+      ],
+      "source_titles": [
+        "The Geometry of Self Adjointness"
+      ]
+    },
+    {
+      "id": "concept:infinite_dimensional_self_adjoint_operator",
+      "type": "concept",
+      "label": "infinite dimensional self adjoint operator",
+      "aliases": [
+        "infinite dimensional self adjoint operator"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:11.3"
+      ],
+      "source_titles": [
+        "An Infinite Dimensional Self Adjoint Operator"
+      ]
+    },
+    {
+      "id": "concept:another_proof_of_the_principal_axis_theorem",
+      "type": "concept",
+      "label": "another proof of the principal axis theorem",
+      "aliases": [
+        "another proof of the principal axis theorem"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:11.3"
+      ],
+      "source_titles": [
+        "Another Proof of the Principal Axis Theorem"
+      ]
+    },
+    {
+      "id": "concept:quadratic_forms",
+      "type": "concept",
+      "label": "quadratic forms",
+      "aliases": [
+        "quadratic forms"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:12.1"
+      ],
+      "source_titles": [
+        "Quadratic Forms"
+      ]
+    },
+    {
+      "id": "concept:definition",
+      "type": "concept",
+      "label": "definition",
+      "aliases": [
+        "definition"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:12.1"
+      ],
+      "source_titles": [
+        "The Definition"
+      ]
+    },
+    {
+      "id": "concept:sylvester_s_theorem",
+      "type": "concept",
+      "label": "sylvester's theorem",
+      "aliases": [
+        "sylvester's theorem"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:12.1"
+      ],
+      "source_titles": [
+        "Sylvester's Theorem"
+      ]
+    },
+    {
+      "id": "concept:test_for_positivity",
+      "type": "concept",
+      "label": "test for positivity",
+      "aliases": [
+        "test for positivity"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:12.1"
+      ],
+      "source_titles": [
+        "A Test For Positivity"
+      ]
+    },
+    {
+      "id": "concept:critical_point_theory",
+      "type": "concept",
+      "label": "critical point theory",
+      "aliases": [
+        "critical point theory"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:12.1"
+      ],
+      "source_titles": [
+        "Critical Point Theory"
+      ]
+    },
+    {
+      "id": "concept:graph_theory",
+      "type": "concept",
+      "label": "graph theory",
+      "aliases": [
+        "graph theory"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:12.2"
+      ],
+      "source_titles": [
+        "Symmetric Matrices and Graph Theory"
+      ]
+    },
+    {
+      "id": "concept:symmetric_matrices",
+      "type": "concept",
+      "label": "symmetric matrices",
+      "aliases": [
+        "symmetric matrices"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:12.2"
+      ],
+      "source_titles": [
+        "Symmetric Matrices and Graph Theory"
+      ]
+    },
+    {
+      "id": "concept:symmetric_matrices_and_graph_theory",
+      "type": "concept",
+      "label": "symmetric matrices and graph theory",
+      "aliases": [
+        "symmetric matrices and graph theory"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:12.2"
+      ],
+      "source_titles": [
+        "Symmetric Matrices and Graph Theory"
+      ]
+    },
+    {
+      "id": "concept:regular_graphs",
+      "type": "concept",
+      "label": "regular graphs",
+      "aliases": [
+        "regular graphs"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:12.2"
+      ],
+      "source_titles": [
+        "The Adjacency Matrix and Regular Graphs"
+      ]
+    },
+    {
+      "id": "concept:adjacency_matrix",
+      "type": "concept",
+      "label": "adjacency matrix",
+      "aliases": [
+        "adjacency matrix"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:12.2"
+      ],
+      "source_titles": [
+        "The Adjacency Matrix and Regular Graphs"
+      ]
+    },
+    {
+      "id": "concept:computing_eigenvalues",
+      "type": "concept",
+      "label": "computing eigenvalues",
+      "aliases": [
+        "computing eigenvalues"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:12.3"
+      ],
+      "source_titles": [
+        "Computing Eigenvalues"
+      ]
+    },
+    {
+      "id": "concept:power_method",
+      "type": "concept",
+      "label": "power method",
+      "aliases": [
+        "power method"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:12.3"
+      ],
+      "source_titles": [
+        "The Power Method"
+      ]
+    },
+    {
+      "id": "concept:qr_convergence_theorem",
+      "type": "concept",
+      "label": "qr convergence theorem",
+      "aliases": [
+        "qr convergence theorem"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:12.3"
+      ],
+      "source_titles": [
+        "The QR-Convergence Theorem"
+      ]
+    },
+    {
+      "id": "concept:jordan_canonical_form",
+      "type": "concept",
+      "label": "jordan canonical form",
+      "aliases": [
+        "jordan canonical form"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:13.2"
+      ],
+      "source_titles": [
+        "The Jordan Canonical Form"
+      ]
+    },
+    {
+      "id": "concept:connection_with_number_theory",
+      "type": "concept",
+      "label": "connection with number theory",
+      "aliases": [
+        "connection with number theory"
+      ],
+      "courses": [
+        "math"
+      ],
+      "module_ids": [
+        "math:13.2"
+      ],
+      "source_titles": [
+        "A Connection With Number Theory"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "math:2.1",
+      "target": "concept:algebra",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Linear equations: the beginning of algebra"
+    },
+    {
+      "source": "math:2.1",
+      "target": "concept:linear_equations",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Linear equations: the beginning of algebra"
+    },
+    {
+      "source": "math:2.2",
+      "target": "concept:matrices",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Matrices"
+    },
+    {
+      "source": "math:2.2",
+      "target": "concept:vectors",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Matrix Addition and Vectors"
+    },
+    {
+      "source": "math:2.2",
+      "target": "concept:matrix_product",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Matrix Product"
+    },
+    {
+      "source": "math:2.2",
+      "target": "concept:matrix_addition",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Matrix Addition and Vectors"
+    },
+    {
+      "source": "math:2.2",
+      "target": "concept:matrix_addition_and_vectors",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Matrix Addition and Vectors"
+    },
+    {
+      "source": "math:2.3",
+      "target": "concept:row_operations",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Reduced Row Echelon Form and Row Operations"
+    },
+    {
+      "source": "math:2.3",
+      "target": "concept:reduced_row_echelon_form",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Reduced Row Echelon Form and Row Operations"
+    },
+    {
+      "source": "math:2.3",
+      "target": "concept:reduced_row_echelon_form_and_row_operations",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Reduced Row Echelon Form and Row Operations"
+    },
+    {
+      "source": "math:2.4",
+      "target": "concept:gaussian_reduction",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Solving Linear Systems via Gaussian Reduction"
+    },
+    {
+      "source": "math:2.4",
+      "target": "concept:solving_linear_systems",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Solving Linear Systems via Gaussian Reduction"
+    },
+    {
+      "source": "math:2.4",
+      "target": "concept:uniqueness",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Criteria for Consistency and Uniqueness"
+    },
+    {
+      "source": "math:2.4",
+      "target": "concept:row_operations",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Row Operations and Equivalent Systems"
+    },
+    {
+      "source": "math:2.4",
+      "target": "concept:homogeneous_case",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The Homogeneous Case"
+    },
+    {
+      "source": "math:3.1",
+      "target": "concept:matrix_multiplication",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Matrix Multiplication"
+    },
+    {
+      "source": "math:3.1",
+      "target": "concept:transpose_of_a_matrix",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The Transpose of a Matrix"
+    },
+    {
+      "source": "math:3.2",
+      "target": "concept:row_operations",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Elementary Matrices and Row Operations"
+    },
+    {
+      "source": "math:3.2",
+      "target": "concept:elementary_matrices",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Elementary Matrices and Row Operations"
+    },
+    {
+      "source": "math:3.2",
+      "target": "concept:elementary_matrices_and_row_operations",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Elementary Matrices and Row Operations"
+    },
+    {
+      "source": "math:3.2",
+      "target": "concept:linear_systems",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Application to Linear Systems"
+    },
+    {
+      "source": "math:3.3",
+      "target": "concept:matrix_inverses",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Matrix Inverses"
+    },
+    {
+      "source": "math:3.3",
+      "target": "concept:matrix_groups",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Matrix Groups"
+    },
+    {
+      "source": "math:3.3",
+      "target": "concept:methods_for_finding_inverses",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Methods for Finding Inverses"
+    },
+    {
+      "source": "math:3.4",
+      "target": "concept:lpdu_factorization",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: The LPDU Factorization"
+    },
+    {
+      "source": "math:3.4",
+      "target": "concept:lpdu",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: LPDU and Reduced Row Echelon Form"
+    },
+    {
+      "source": "math:3.4",
+      "target": "concept:l_p_d",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The Basic Ingredients: L, P, D and U"
+    },
+    {
+      "source": "math:3.4",
+      "target": "concept:main_result",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The Main Result"
+    },
+    {
+      "source": "math:3.4",
+      "target": "concept:l_p_d_and_u",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The Basic Ingredients: L, P, D and U"
+    },
+    {
+      "source": "math:4.1",
+      "target": "concept:field",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 3.0,
+      "reason": "Concept extracted from module-linked title: What is a Field?"
+    },
+    {
+      "source": "math:4.1",
+      "target": "concept:products",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Arbitrary Sums and Products"
+    },
+    {
+      "source": "math:4.1",
+      "target": "concept:arbitrary_sums",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Arbitrary Sums and Products"
+    },
+    {
+      "source": "math:4.1",
+      "target": "concept:algebraic_number_field",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: An Algebraic Number Field"
+    },
+    {
+      "source": "math:4.1",
+      "target": "concept:arbitrary_sums_and_products",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Arbitrary Sums and Products"
+    },
+    {
+      "source": "math:4.2",
+      "target": "concept:integers_modulo_a_prime_p",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: The Integers Modulo a Prime p"
+    },
+    {
+      "source": "math:4.2",
+      "target": "concept:field_with_four_elements",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: A Field with Four Elements"
+    },
+    {
+      "source": "math:4.2",
+      "target": "concept:characteristic_of_a_field",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The Characteristic of a Field"
+    },
+    {
+      "source": "math:4.2",
+      "target": "concept:connections_with_number_theory",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Connections With Number Theory"
+    },
+    {
+      "source": "math:4.3",
+      "target": "concept:field_of_complex_numbers",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: The Field of Complex Numbers"
+    },
+    {
+      "source": "math:4.3",
+      "target": "concept:construction",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The Construction"
+    },
+    {
+      "source": "math:4.3",
+      "target": "concept:geometry_of_c",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The Geometry of C"
+    },
+    {
+      "source": "math:4.4",
+      "target": "concept:vector_spaces",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Vector Spaces"
+    },
+    {
+      "source": "math:4.4",
+      "target": "concept:vector_space",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The Notion of a Vector Space"
+    },
+    {
+      "source": "math:4.5",
+      "target": "concept:inner_product_spaces",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Inner Product Spaces"
+    },
+    {
+      "source": "math:4.5",
+      "target": "concept:real_case",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The Real Case"
+    },
+    {
+      "source": "math:4.5",
+      "target": "concept:orthogonality",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Orthogonality"
+    },
+    {
+      "source": "math:4.5",
+      "target": "concept:hermitian_inner_products",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Hermitian Inner Products"
+    },
+    {
+      "source": "math:4.6",
+      "target": "concept:subspaces",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Subspaces and Spanning Sets"
+    },
+    {
+      "source": "math:4.6",
+      "target": "concept:spanning_sets",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Subspaces and Spanning Sets"
+    },
+    {
+      "source": "math:4.6",
+      "target": "concept:subspaces_and_spanning_sets",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Subspaces and Spanning Sets"
+    },
+    {
+      "source": "math:4.6",
+      "target": "concept:subspace",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The Definition of a Subspace"
+    },
+    {
+      "source": "math:5.1",
+      "target": "concept:dimension",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: The Notion of Dimension"
+    },
+    {
+      "source": "math:5.1",
+      "target": "concept:basis",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The Definition of a Basis"
+    },
+    {
+      "source": "math:5.1",
+      "target": "concept:linear_independence",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Linear Independence"
+    },
+    {
+      "source": "math:5.2",
+      "target": "concept:dimension",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 3.0,
+      "reason": "Concept extracted from module-linked title: Bases and Dimension"
+    },
+    {
+      "source": "math:5.2",
+      "target": "concept:bases",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Bases and Dimension"
+    },
+    {
+      "source": "math:5.2",
+      "target": "concept:bases_and_dimension",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Bases and Dimension"
+    },
+    {
+      "source": "math:5.2",
+      "target": "concept:dimension_theorem",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The Dimension Theorem"
+    },
+    {
+      "source": "math:5.3",
+      "target": "concept:matrices",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Some Results on Matrices"
+    },
+    {
+      "source": "math:5.3",
+      "target": "concept:basis_of_the_column_space",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: A Basis of the Column Space"
+    },
+    {
+      "source": "math:5.3",
+      "target": "concept:uniqueness_of_row_echelon_form",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The Uniqueness of Row Echelon Form"
+    },
+    {
+      "source": "math:5.3",
+      "target": "concept:row_space_of_a_and_the_ranks_of_a_and_at",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The Row Space of A and the Ranks of A and AT"
+    },
+    {
+      "source": "math:5.4",
+      "target": "concept:intersections",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 3.0,
+      "reason": "Concept extracted from module-linked title: Intersections and Sums of Subspaces"
+    },
+    {
+      "source": "math:5.4",
+      "target": "concept:sums_of_subspaces",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Intersections and Sums of Subspaces"
+    },
+    {
+      "source": "math:5.4",
+      "target": "concept:intersections_and_sums_of_subspaces",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Intersections and Sums of Subspaces"
+    },
+    {
+      "source": "math:5.4",
+      "target": "concept:sums",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Intersections and Sums"
+    },
+    {
+      "source": "math:5.4",
+      "target": "concept:external_direct_sums",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: External Direct Sums"
+    },
+    {
+      "source": "math:5.5",
+      "target": "concept:vector_space_quotients",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Vector Space Quotients"
+    },
+    {
+      "source": "math:5.5",
+      "target": "concept:cosets",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Cosets"
+    },
+    {
+      "source": "math:5.5",
+      "target": "concept:quotient_spaces",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Equivalence Relations and Quotient Spaces"
+    },
+    {
+      "source": "math:5.5",
+      "target": "concept:equivalence_relations",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Equivalence Relations and Quotient Spaces"
+    },
+    {
+      "source": "math:5.5",
+      "target": "concept:equivalence_relations_and_quotient_spaces",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Equivalence Relations and Quotient Spaces"
+    },
+    {
+      "source": "math:6.1",
+      "target": "concept:linear_codes",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Linear Codes"
+    },
+    {
+      "source": "math:6.1",
+      "target": "concept:code",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The Notion of a Code"
+    },
+    {
+      "source": "math:6.1",
+      "target": "concept:international_standard_book_number",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The International Standard Book Number"
+    },
+    {
+      "source": "math:6.1",
+      "target": "concept:linear_codes_defined_by_generating_matrices",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Linear Codes Defined by Generating Matrices"
+    },
+    {
+      "source": "math:6.2",
+      "target": "concept:error_correcting_codes",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Error-Correcting Codes"
+    },
+    {
+      "source": "math:6.2",
+      "target": "concept:key_result",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The Key Result"
+    },
+    {
+      "source": "math:6.2",
+      "target": "concept:hamming_distance",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Hamming Distance"
+    },
+    {
+      "source": "math:6.3",
+      "target": "concept:codes_with_large_minimal_distance",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Codes With Large Minimal Distance"
+    },
+    {
+      "source": "math:6.3",
+      "target": "concept:hadamard_codes",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Hadamard Codes"
+    },
+    {
+      "source": "math:6.3",
+      "target": "concept:maximization_problem",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: A Maximization Problem"
+    },
+    {
+      "source": "math:6.4",
+      "target": "concept:perfect_linear_codes",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Perfect Linear Codes"
+    },
+    {
+      "source": "math:6.4",
+      "target": "concept:cosets",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Perfect Codes and Cosets"
+    },
+    {
+      "source": "math:6.4",
+      "target": "concept:hat_problem",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The hat problem"
+    },
+    {
+      "source": "math:6.4",
+      "target": "concept:perfect_codes",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Perfect Codes and Cosets"
+    },
+    {
+      "source": "math:6.4",
+      "target": "concept:geometric_problem",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: A Geometric Problem"
+    },
+    {
+      "source": "math:7.1",
+      "target": "concept:mappings",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Mappings"
+    },
+    {
+      "source": "math:7.1",
+      "target": "concept:general_properties_of_linear_transformations",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: General Properties of Linear Transformations"
+    },
+    {
+      "source": "math:7.2",
+      "target": "concept:matrices",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Linear Transformations on Fn and Matrices"
+    },
+    {
+      "source": "math:7.2",
+      "target": "concept:linear_transformations_on_fn",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Linear Transformations on Fn and Matrices"
+    },
+    {
+      "source": "math:7.2",
+      "target": "concept:linear_transformations_on_fn_and_matrices",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Linear Transformations on Fn and Matrices"
+    },
+    {
+      "source": "math:7.2",
+      "target": "concept:example",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: An Example: Rotations of R2"
+    },
+    {
+      "source": "math:7.2",
+      "target": "concept:composition",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Composition and Multiplication"
+    },
+    {
+      "source": "math:7.3",
+      "target": "concept:geometry_of_linear_transformations_on_rn",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Geometry of Linear Transformations on Rn"
+    },
+    {
+      "source": "math:7.3",
+      "target": "concept:orthogonal_transformations",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Orthogonal Transformations"
+    },
+    {
+      "source": "math:7.3",
+      "target": "concept:transformations_of_the_plane",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Transformations of the Plane"
+    },
+    {
+      "source": "math:7.4",
+      "target": "concept:matrix_of_a_linear_transformation",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: The Matrix of a Linear Transformation"
+    },
+    {
+      "source": "math:7.4",
+      "target": "concept:matrix_mb_b_t",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The Matrix MB B' (T)"
+    },
+    {
+      "source": "math:7.4",
+      "target": "concept:coordinates_with_respect_to_a_basis",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Coordinates With Respect to a Basis"
+    },
+    {
+      "source": "math:7.4",
+      "target": "concept:changing_basis_for_the_matrix_of_a_linear_transformation",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Changing Basis for the Matrix of a Linear Transformation"
+    },
+    {
+      "source": "math:7.5",
+      "target": "concept:linear_transformations",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Further Results on Linear Transformations"
+    },
+    {
+      "source": "math:7.5",
+      "target": "concept:kernel",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The Kernel and Image of a Linear Transformation"
+    },
+    {
+      "source": "math:7.5",
+      "target": "concept:complex_linear_transformations",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Complex Linear Transformations"
+    },
+    {
+      "source": "math:7.5",
+      "target": "concept:image_of_a_linear_transformation",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The Kernel and Image of a Linear Transformation"
+    },
+    {
+      "source": "math:7.5",
+      "target": "concept:kernel_and_image_of_a_linear_transformation",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The Kernel and Image of a Linear Transformation"
+    },
+    {
+      "source": "math:8.1",
+      "target": "concept:determinant",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: The Definition of the Determinant"
+    },
+    {
+      "source": "math:8.1",
+      "target": "concept:permutations",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Permutations and Permutation Matrices"
+    },
+    {
+      "source": "math:8.1",
+      "target": "concept:permutation_matrices",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Permutations and Permutation Matrices"
+    },
+    {
+      "source": "math:8.1",
+      "target": "concept:some_combinatorial_preliminaries",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Some Combinatorial Preliminaries"
+    },
+    {
+      "source": "math:8.1",
+      "target": "concept:determinant_of_a_permutation_matrix",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The Determinant of a Permutation Matrix"
+    },
+    {
+      "source": "math:8.2",
+      "target": "concept:determinants",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Determinants and Row Operations"
+    },
+    {
+      "source": "math:8.2",
+      "target": "concept:row_operations",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Determinants and Row Operations"
+    },
+    {
+      "source": "math:8.2",
+      "target": "concept:determinants_and_row_operations",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Determinants and Row Operations"
+    },
+    {
+      "source": "math:8.2",
+      "target": "concept:main_result",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The Main Result"
+    },
+    {
+      "source": "math:8.2",
+      "target": "concept:consequences",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Consequences"
+    },
+    {
+      "source": "math:8.3",
+      "target": "concept:some_further_properties_of_the_determinant",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Some Further Properties of the Determinant"
+    },
+    {
+      "source": "math:8.3",
+      "target": "concept:cramer_s_rule",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Cramer's Rule"
+    },
+    {
+      "source": "math:8.3",
+      "target": "concept:laplace_expansion",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The Laplace Expansion"
+    },
+    {
+      "source": "math:8.3",
+      "target": "concept:case_of_equal_rows",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The Case of Equal Rows"
+    },
+    {
+      "source": "math:8.3",
+      "target": "concept:characterization_of_the_determinant",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: A Characterization of the Determinant"
+    },
+    {
+      "source": "math:8.4",
+      "target": "concept:determinant",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Geometric Applications of the Determinant"
+    },
+    {
+      "source": "math:8.4",
+      "target": "concept:cross",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Cross and Vector Products"
+    },
+    {
+      "source": "math:8.4",
+      "target": "concept:volumes",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Determinants and Volumes"
+    },
+    {
+      "source": "math:8.4",
+      "target": "concept:determinants",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Determinants and Volumes"
+    },
+    {
+      "source": "math:8.4",
+      "target": "concept:vector_products",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Cross and Vector Products"
+    },
+    {
+      "source": "math:9.1",
+      "target": "concept:dynamical_systems",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Dynamical Systems"
+    },
+    {
+      "source": "math:9.1",
+      "target": "concept:eigenvalue_problem",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The Eigenvalue Problem"
+    },
+    {
+      "source": "math:9.1",
+      "target": "concept:fibonacci_sequence",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The Fibonacci Sequence"
+    },
+    {
+      "source": "math:9.1",
+      "target": "concept:infinite_dimensional_example",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: An Infinite Dimensional Example"
+    },
+    {
+      "source": "math:9.2",
+      "target": "concept:eigen_theory",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Eigen theory: the Basic Definitions"
+    },
+    {
+      "source": "math:9.2",
+      "target": "concept:linear_transformations",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Further Remarks on Linear Transformations"
+    },
+    {
+      "source": "math:9.2",
+      "target": "concept:characteristic_polynomial",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The Characteristic Polynomial"
+    },
+    {
+      "source": "math:9.2",
+      "target": "concept:formulas_for_the_characteristic_polynomial",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Formulas for the Characteristic Polynomial"
+    },
+    {
+      "source": "math:9.3",
+      "target": "concept:diagonalizability",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 3.0,
+      "reason": "Concept extracted from module-linked title: Eigenvectors and Diagonalizability"
+    },
+    {
+      "source": "math:9.3",
+      "target": "concept:eigenvectors",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Eigenvectors and Diagonalizability"
+    },
+    {
+      "source": "math:9.3",
+      "target": "concept:eigenvectors_and_diagonalizability",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Eigenvectors and Diagonalizability"
+    },
+    {
+      "source": "math:9.3",
+      "target": "concept:eigenspaces",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Eigenspaces"
+    },
+    {
+      "source": "math:9.3",
+      "target": "concept:semi_simple_linear_transformations",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Semi-simple Linear Transformations and Diagonalizability"
+    },
+    {
+      "source": "math:9.4",
+      "target": "concept:when_is_a_matrix_diagonalizable",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: When is a Matrix Diagonalizable?"
+    },
+    {
+      "source": "math:9.4",
+      "target": "concept:characterization",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: A Characterization"
+    },
+    {
+      "source": "math:9.4",
+      "target": "concept:cayley_hamilton_theorem",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The Cayley-Hamilton Theorem"
+    },
+    {
+      "source": "math:9.4",
+      "target": "concept:do_non_diagonalizable_matrices_exist",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Do Non-diagonalizable Matrices Exist?"
+    },
+    {
+      "source": "math:9.4",
+      "target": "concept:tridiagonalization_of_complex_matrices",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Tridiagonalization of Complex Matrices"
+    },
+    {
+      "source": "math:9.5",
+      "target": "concept:exponential_of_a_matrix",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: The Exponential of a Matrix"
+    },
+    {
+      "source": "math:9.5",
+      "target": "concept:exponential",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The Exponential"
+    },
+    {
+      "source": "math:9.5",
+      "target": "concept:uncoupling_systems",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Uncoupling systems"
+    },
+    {
+      "source": "math:10.1",
+      "target": "concept:pseudoinverse",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Inconsistent Systems and the Pseudoinverse"
+    },
+    {
+      "source": "math:10.1",
+      "target": "concept:orthogonal_projection_on_a_subspace",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: The Orthogonal Projection on a Subspace"
+    },
+    {
+      "source": "math:10.1",
+      "target": "concept:inconsistent_systems",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Inconsistent Systems and the Pseudoinverse"
+    },
+    {
+      "source": "math:10.1",
+      "target": "concept:projection_on_a_subspace",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The Projection on a Subspace"
+    },
+    {
+      "source": "math:10.1",
+      "target": "concept:orthogonal_complement_of_a_subspace",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The Orthogonal Complement of a Subspace"
+    },
+    {
+      "source": "math:10.2",
+      "target": "concept:orthonormal_sets",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Orthonormal Sets"
+    },
+    {
+      "source": "math:10.2",
+      "target": "concept:orthonormal_bases",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Orthonormal Bases"
+    },
+    {
+      "source": "math:10.2",
+      "target": "concept:projections",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Projections and Orthonormal Bases"
+    },
+    {
+      "source": "math:10.2",
+      "target": "concept:projections_and_orthonormal_bases",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Projections and Orthonormal Bases"
+    },
+    {
+      "source": "math:10.3",
+      "target": "concept:gram_schmidt",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Gram-Schmidt and the QR-Factorization"
+    },
+    {
+      "source": "math:10.3",
+      "target": "concept:qr_factorization",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Gram-Schmidt and the QR-Factorization"
+    },
+    {
+      "source": "math:10.3",
+      "target": "concept:gram_schmidt_and_the_qr_factorization",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Gram-Schmidt and the QR-Factorization"
+    },
+    {
+      "source": "math:10.3",
+      "target": "concept:qr_decomposition",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The QR-Decomposition"
+    },
+    {
+      "source": "math:10.4",
+      "target": "concept:inner_product_spaces",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Further Remarks on Inner Product Spaces"
+    },
+    {
+      "source": "math:10.4",
+      "target": "concept:isometries",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Isometries"
+    },
+    {
+      "source": "math:10.4",
+      "target": "concept:space_c_a_b",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The Space C[a,b]"
+    },
+    {
+      "source": "math:10.4",
+      "target": "concept:hermitian_inner_products",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Hermitian Inner Products"
+    },
+    {
+      "source": "math:10.4",
+      "target": "concept:space_of_linear_transformations_l_rn_rn",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The Space of Linear Transformations L(Rn, Rn)"
+    },
+    {
+      "source": "math:10.5",
+      "target": "concept:group_of_rotations_of_r3",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: The Group of Rotations of R3"
+    },
+    {
+      "source": "math:10.5",
+      "target": "concept:rotations_of_r3",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Rotations of R3"
+    },
+    {
+      "source": "math:10.5",
+      "target": "concept:rotation_groups_of_solids",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Rotation Groups of Solids"
+    },
+    {
+      "source": "math:11.1",
+      "target": "concept:normal_matrix_theorem",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: The Normal Matrix Theorem"
+    },
+    {
+      "source": "math:11.2",
+      "target": "concept:principal_axis_theorem",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: The Principal Axis Theorem"
+    },
+    {
+      "source": "math:11.2",
+      "target": "concept:projection_formula_for_symmetric_matrices",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: A Projection Formula for Symmetric Matrices"
+    },
+    {
+      "source": "math:11.3",
+      "target": "concept:diagonalization_of_self_adjoint_operators",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Diagonalization of Self Adjoint Operators"
+    },
+    {
+      "source": "math:11.3",
+      "target": "concept:geometry_of_self_adjointness",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The Geometry of Self Adjointness"
+    },
+    {
+      "source": "math:11.3",
+      "target": "concept:infinite_dimensional_self_adjoint_operator",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: An Infinite Dimensional Self Adjoint Operator"
+    },
+    {
+      "source": "math:11.3",
+      "target": "concept:another_proof_of_the_principal_axis_theorem",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Another Proof of the Principal Axis Theorem"
+    },
+    {
+      "source": "math:12.1",
+      "target": "concept:quadratic_forms",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Quadratic Forms"
+    },
+    {
+      "source": "math:12.1",
+      "target": "concept:definition",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The Definition"
+    },
+    {
+      "source": "math:12.1",
+      "target": "concept:sylvester_s_theorem",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Sylvester's Theorem"
+    },
+    {
+      "source": "math:12.1",
+      "target": "concept:test_for_positivity",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: A Test For Positivity"
+    },
+    {
+      "source": "math:12.1",
+      "target": "concept:critical_point_theory",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: Critical Point Theory"
+    },
+    {
+      "source": "math:12.2",
+      "target": "concept:graph_theory",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Symmetric Matrices and Graph Theory"
+    },
+    {
+      "source": "math:12.2",
+      "target": "concept:symmetric_matrices",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Symmetric Matrices and Graph Theory"
+    },
+    {
+      "source": "math:12.2",
+      "target": "concept:symmetric_matrices_and_graph_theory",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Symmetric Matrices and Graph Theory"
+    },
+    {
+      "source": "math:12.2",
+      "target": "concept:regular_graphs",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The Adjacency Matrix and Regular Graphs"
+    },
+    {
+      "source": "math:12.2",
+      "target": "concept:adjacency_matrix",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The Adjacency Matrix and Regular Graphs"
+    },
+    {
+      "source": "math:12.3",
+      "target": "concept:computing_eigenvalues",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Computing Eigenvalues"
+    },
+    {
+      "source": "math:12.3",
+      "target": "concept:power_method",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The Power Method"
+    },
+    {
+      "source": "math:12.3",
+      "target": "concept:qr_convergence_theorem",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The QR-Convergence Theorem"
+    },
+    {
+      "source": "math:13.1",
+      "target": "concept:main_result",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: The Main Result"
+    },
+    {
+      "source": "math:13.2",
+      "target": "concept:linear_transformations",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 2.0,
+      "reason": "Concept extracted from module-linked title: Further Results on Linear Transformations"
+    },
+    {
+      "source": "math:13.2",
+      "target": "concept:jordan_canonical_form",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The Jordan Canonical Form"
+    },
+    {
+      "source": "math:13.2",
+      "target": "concept:cayley_hamilton_theorem",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: The Cayley-Hamilton Theorem"
+    },
+    {
+      "source": "math:13.2",
+      "target": "concept:connection_with_number_theory",
+      "relation": "module_teaches_concept",
+      "directed": true,
+      "weight": 1.0,
+      "reason": "Concept extracted from module-linked title: A Connection With Number Theory"
+    },
+    {
+      "source": "concept:algebra",
+      "target": "concept:matrices",
+      "relation": "concept_prerequisite_of",
+      "directed": true,
+      "weight": 0.85,
+      "reason": "Primary concepts inherited the learning order between math:2.1 and math:2.2."
+    },
+    {
+      "source": "concept:matrices",
+      "target": "concept:row_operations",
+      "relation": "concept_prerequisite_of",
+      "directed": true,
+      "weight": 0.85,
+      "reason": "Primary concepts inherited the learning order between math:2.2 and math:2.3."
+    },
+    {
+      "source": "concept:row_operations",
+      "target": "concept:gaussian_reduction",
+      "relation": "concept_prerequisite_of",
+      "directed": true,
+      "weight": 0.85,
+      "reason": "Primary concepts inherited the learning order between math:2.3 and math:2.4."
+    },
+    {
+      "source": "concept:matrix_multiplication",
+      "target": "concept:row_operations",
+      "relation": "concept_prerequisite_of",
+      "directed": true,
+      "weight": 0.85,
+      "reason": "Primary concepts inherited the learning order between math:3.1 and math:3.2."
+    },
+    {
+      "source": "concept:row_operations",
+      "target": "concept:matrix_inverses",
+      "relation": "concept_prerequisite_of",
+      "directed": true,
+      "weight": 0.85,
+      "reason": "Primary concepts inherited the learning order between math:3.2 and math:3.3."
+    },
+    {
+      "source": "concept:matrix_inverses",
+      "target": "concept:lpdu_factorization",
+      "relation": "concept_prerequisite_of",
+      "directed": true,
+      "weight": 0.85,
+      "reason": "Primary concepts inherited the learning order between math:3.3 and math:3.4."
+    },
+    {
+      "source": "concept:field",
+      "target": "concept:integers_modulo_a_prime_p",
+      "relation": "concept_prerequisite_of",
+      "directed": true,
+      "weight": 0.85,
+      "reason": "Primary concepts inherited the learning order between math:4.1 and math:4.2."
+    },
+    {
+      "source": "concept:integers_modulo_a_prime_p",
+      "target": "concept:field_of_complex_numbers",
+      "relation": "concept_prerequisite_of",
+      "directed": true,
+      "weight": 0.85,
+      "reason": "Primary concepts inherited the learning order between math:4.2 and math:4.3."
+    },
+    {
+      "source": "concept:field_of_complex_numbers",
+      "target": "concept:vector_spaces",
+      "relation": "concept_prerequisite_of",
+      "directed": true,
+      "weight": 0.85,
+      "reason": "Primary concepts inherited the learning order between math:4.3 and math:4.4."
+    },
+    {
+      "source": "concept:vector_spaces",
+      "target": "concept:inner_product_spaces",
+      "relation": "concept_prerequisite_of",
+      "directed": true,
+      "weight": 0.85,
+      "reason": "Primary concepts inherited the learning order between math:4.4 and math:4.5."
+    },
+    {
+      "source": "concept:inner_product_spaces",
+      "target": "concept:subspaces",
+      "relation": "concept_prerequisite_of",
+      "directed": true,
+      "weight": 0.85,
+      "reason": "Primary concepts inherited the learning order between math:4.5 and math:4.6."
+    },
+    {
+      "source": "concept:dimension",
+      "target": "concept:matrices",
+      "relation": "concept_prerequisite_of",
+      "directed": true,
+      "weight": 0.85,
+      "reason": "Primary concepts inherited the learning order between math:5.2 and math:5.3."
+    },
+    {
+      "source": "concept:matrices",
+      "target": "concept:intersections",
+      "relation": "concept_prerequisite_of",
+      "directed": true,
+      "weight": 0.85,
+      "reason": "Primary concepts inherited the learning order between math:5.3 and math:5.4."
+    },
+    {
+      "source": "concept:intersections",
+      "target": "concept:vector_space_quotients",
+      "relation": "concept_prerequisite_of",
+      "directed": true,
+      "weight": 0.85,
+      "reason": "Primary concepts inherited the learning order between math:5.4 and math:5.5."
+    },
+    {
+      "source": "concept:linear_codes",
+      "target": "concept:error_correcting_codes",
+      "relation": "concept_prerequisite_of",
+      "directed": true,
+      "weight": 0.85,
+      "reason": "Primary concepts inherited the learning order between math:6.1 and math:6.2."
+    },
+    {
+      "source": "concept:error_correcting_codes",
+      "target": "concept:codes_with_large_minimal_distance",
+      "relation": "concept_prerequisite_of",
+      "directed": true,
+      "weight": 0.85,
+      "reason": "Primary concepts inherited the learning order between math:6.2 and math:6.3."
+    },
+    {
+      "source": "concept:codes_with_large_minimal_distance",
+      "target": "concept:perfect_linear_codes",
+      "relation": "concept_prerequisite_of",
+      "directed": true,
+      "weight": 0.85,
+      "reason": "Primary concepts inherited the learning order between math:6.3 and math:6.4."
+    },
+    {
+      "source": "concept:mappings",
+      "target": "concept:matrices",
+      "relation": "concept_prerequisite_of",
+      "directed": true,
+      "weight": 0.85,
+      "reason": "Primary concepts inherited the learning order between math:7.1 and math:7.2."
+    },
+    {
+      "source": "concept:matrices",
+      "target": "concept:geometry_of_linear_transformations_on_rn",
+      "relation": "concept_prerequisite_of",
+      "directed": true,
+      "weight": 0.85,
+      "reason": "Primary concepts inherited the learning order between math:7.2 and math:7.3."
+    },
+    {
+      "source": "concept:geometry_of_linear_transformations_on_rn",
+      "target": "concept:matrix_of_a_linear_transformation",
+      "relation": "concept_prerequisite_of",
+      "directed": true,
+      "weight": 0.85,
+      "reason": "Primary concepts inherited the learning order between math:7.3 and math:7.4."
+    },
+    {
+      "source": "concept:matrix_of_a_linear_transformation",
+      "target": "concept:linear_transformations",
+      "relation": "concept_prerequisite_of",
+      "directed": true,
+      "weight": 0.85,
+      "reason": "Primary concepts inherited the learning order between math:7.4 and math:7.5."
+    },
+    {
+      "source": "concept:determinant",
+      "target": "concept:determinants",
+      "relation": "concept_prerequisite_of",
+      "directed": true,
+      "weight": 0.85,
+      "reason": "Primary concepts inherited the learning order between math:8.1 and math:8.2."
+    },
+    {
+      "source": "concept:determinants",
+      "target": "concept:some_further_properties_of_the_determinant",
+      "relation": "concept_prerequisite_of",
+      "directed": true,
+      "weight": 0.85,
+      "reason": "Primary concepts inherited the learning order between math:8.2 and math:8.3."
+    },
+    {
+      "source": "concept:some_further_properties_of_the_determinant",
+      "target": "concept:determinant",
+      "relation": "concept_prerequisite_of",
+      "directed": true,
+      "weight": 0.85,
+      "reason": "Primary concepts inherited the learning order between math:8.3 and math:8.4."
+    },
+    {
+      "source": "concept:dynamical_systems",
+      "target": "concept:eigen_theory",
+      "relation": "concept_prerequisite_of",
+      "directed": true,
+      "weight": 0.85,
+      "reason": "Primary concepts inherited the learning order between math:9.1 and math:9.2."
+    },
+    {
+      "source": "concept:eigen_theory",
+      "target": "concept:diagonalizability",
+      "relation": "concept_prerequisite_of",
+      "directed": true,
+      "weight": 0.85,
+      "reason": "Primary concepts inherited the learning order between math:9.2 and math:9.3."
+    },
+    {
+      "source": "concept:diagonalizability",
+      "target": "concept:when_is_a_matrix_diagonalizable",
+      "relation": "concept_prerequisite_of",
+      "directed": true,
+      "weight": 0.85,
+      "reason": "Primary concepts inherited the learning order between math:9.3 and math:9.4."
+    },
+    {
+      "source": "concept:when_is_a_matrix_diagonalizable",
+      "target": "concept:exponential_of_a_matrix",
+      "relation": "concept_prerequisite_of",
+      "directed": true,
+      "weight": 0.85,
+      "reason": "Primary concepts inherited the learning order between math:9.4 and math:9.5."
+    },
+    {
+      "source": "concept:pseudoinverse",
+      "target": "concept:orthonormal_sets",
+      "relation": "concept_prerequisite_of",
+      "directed": true,
+      "weight": 0.85,
+      "reason": "Primary concepts inherited the learning order between math:10.1 and math:10.2."
+    },
+    {
+      "source": "concept:orthonormal_sets",
+      "target": "concept:gram_schmidt",
+      "relation": "concept_prerequisite_of",
+      "directed": true,
+      "weight": 0.85,
+      "reason": "Primary concepts inherited the learning order between math:10.2 and math:10.3."
+    },
+    {
+      "source": "concept:gram_schmidt",
+      "target": "concept:inner_product_spaces",
+      "relation": "concept_prerequisite_of",
+      "directed": true,
+      "weight": 0.85,
+      "reason": "Primary concepts inherited the learning order between math:10.3 and math:10.4."
+    },
+    {
+      "source": "concept:inner_product_spaces",
+      "target": "concept:group_of_rotations_of_r3",
+      "relation": "concept_prerequisite_of",
+      "directed": true,
+      "weight": 0.85,
+      "reason": "Primary concepts inherited the learning order between math:10.4 and math:10.5."
+    },
+    {
+      "source": "concept:normal_matrix_theorem",
+      "target": "concept:principal_axis_theorem",
+      "relation": "concept_prerequisite_of",
+      "directed": true,
+      "weight": 0.85,
+      "reason": "Primary concepts inherited the learning order between math:11.1 and math:11.2."
+    },
+    {
+      "source": "concept:principal_axis_theorem",
+      "target": "concept:diagonalization_of_self_adjoint_operators",
+      "relation": "concept_prerequisite_of",
+      "directed": true,
+      "weight": 0.85,
+      "reason": "Primary concepts inherited the learning order between math:11.2 and math:11.3."
+    },
+    {
+      "source": "concept:quadratic_forms",
+      "target": "concept:graph_theory",
+      "relation": "concept_prerequisite_of",
+      "directed": true,
+      "weight": 0.85,
+      "reason": "Primary concepts inherited the learning order between math:12.1 and math:12.2."
+    },
+    {
+      "source": "concept:graph_theory",
+      "target": "concept:computing_eigenvalues",
+      "relation": "concept_prerequisite_of",
+      "directed": true,
+      "weight": 0.85,
+      "reason": "Primary concepts inherited the learning order between math:12.2 and math:12.3."
+    },
+    {
+      "source": "concept:main_result",
+      "target": "concept:linear_transformations",
+      "relation": "concept_prerequisite_of",
+      "directed": true,
+      "weight": 0.85,
+      "reason": "Primary concepts inherited the learning order between math:13.1 and math:13.2."
+    }
+  ]
+}
